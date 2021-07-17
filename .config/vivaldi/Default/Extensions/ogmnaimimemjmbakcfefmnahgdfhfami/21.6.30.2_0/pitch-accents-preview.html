@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Yomichan Pitch Accents Preview</title>
+    <link rel="icon" type="image/png" href="/images/icon16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/icon19.png" sizes="19x19">
+    <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/icon38.png" sizes="38x38">
+    <link rel="icon" type="image/png" href="/images/icon48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="/images/icon64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="/images/icon128.png" sizes="128x128">
+    <link rel="stylesheet" type="text/css" href="/css/display.css">
+    <link rel="stylesheet" type="text/css" href="/css/pitch-accents-preview.css">
+</head>
+<body>
+
+<div class="content"><div class="content-body">
+
+<ul>
+    <li>
+        <strong>Downstep notation</strong> -
+        <span class="format-preview" lang="ja">
+            <span class="pitch-accent-characters"><span class="pitch-accent-character" data-position="0" data-pitch="high" data-pitch-next="low"><span class="pitch-accent-character-inner">よ</span></span><span class="pitch-accent-character" data-position="1" data-pitch="low" data-pitch-next="low"><span class="pitch-accent-character-inner">む</span></span></span>
+        </span>
+    </li>
+    <li>
+        <strong>Downstep position</strong> -
+        <span class="format-preview">
+            <span class="pitch-accent-position">1</span>
+        </span>
+    </li>
+    <li>
+        <strong>Graph</strong> -
+        <span class="format-preview">
+            <span class="pitch-accent-details">
+                <svg class="pitch-accent-graph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" focusable="false">
+                    <path class="pitch-accent-graph-line" d="M25 25 L75 75"></path>
+                    <path class="pitch-accent-graph-line-tail" d="M75 75 L125 75"></path>
+                    <use href="#pitch-accent-graph-dot-downstep" x="25" y="25"></use>
+                    <use href="#pitch-accent-graph-dot" x="75" y="75"></use>
+                    <use href="#pitch-accent-graph-triangle" x="125" y="75"></use>
+                </svg>
+            </span>
+        </span>
+    </li>
+</ul>
+
+</div></div>
+
+<!-- Scripts -->
+<script src="/js/core.js"></script>
+
+<script src="/js/yomichan.js"></script>
+
+<script src="/js/comm/api.js"></script>
+<script src="/js/comm/cross-frame-api.js"></script>
+<script src="/js/display/display-generator.js"></script>
+<script src="/js/display/structured-content-generator.js"></script>
+<script src="/js/dom/html-template-collection.js"></script>
+
+<script src="/js/pages/settings/pitch-accents-preview-main.js"></script>
+
+</body>
+</html>

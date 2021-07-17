@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Session Buddy</title>
+<link rel="stylesheet" type="text/css" href="font/roboto/roboto.css">
+<link rel="stylesheet" type="text/css" href="font/lobster/lobster.css">
+<link rel="stylesheet" type="text/css" href="font/montserrat/montserrat.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.qtip.mod.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/sessionsPanel.css">
+<link rel="stylesheet" type="text/css" href="css/sbButton.css">
+<link rel="stylesheet" type="text/css" href="css/tabGroup.css">
+</head>
+<body>
+    <div id="appPanel" style="display: none;"><div id="navigationPanel"><div id="navigationPanelHeader" style="background-color:#3ea5ed;position:absolute;overflow-x:hidden; overflow-y: hidden; left: 0px; top: 0px; right: 0px; height: 60px;"><div>
+    <input id="searchBox" disabled class="searchBox" type="text" spellcheck="false" placeholder="Search sessions" />
+    <div id="searchCancelImg"></div></div></div><div id="sessionsPanelOuter"><div id="spShadowTop" class="contentShadowTop" style="top: 0px; -webkit-mask-box-image: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgba(0,0,0,0)), color-stop(0.25, rgba(0,0,0,1)), color-stop(0.75, rgba(0,0,0,1)), color-stop(1.0, rgba(0,0,0,0)));"></div><div id="sessionsPanelContainer"><div id="sessionsPanel" class="sessionsPanel_Root" tabindex="0"><div class="sessionsPanel_GroupHeader" style="padding-top: 0px"><span>Sessions </span></div><div style="padding: 3px 0px 1px 8px; color: #888;">Loading . . .</div></div></div></div></div><div id="splitter" class="splitter"><div style="background-color:#3ea5ed; position: absolute; overflow-x: hidden; overflow-y: hidden; left: 0px; top: 0px; right: 0px; height: 60px;"></div></div><div id="mainPanel"><div style="background:#3ea5ed;overflow-x: hidden; overflow-y: hidden; height: 60px;"><div id="applicationStatus"><div id="applicationStatusInner" style="xdisplay:none;top:60px;"><div id="appStatusMessage"></div><div id="appMessageCloseImg"></div></div></div><div id="mainPanelHeaderButtons"><div id="btnDonate" class="sbButton" style="display:none;">&nbsp;</div><div id="btnShowHideURLs" style="margin-left: 12px; display: inline-block;"><div id="btnHideURLs" disabled class="sbButton"></div><div id="btnShowURLs" disabled class="sbButton"></div></div><div id="btnConfigure" class="sbButton">&nbsp;</div></div></div><div id="sessionContentHeader"><span style="display:inline-block;height:100%;vertical-align:middle;width:0;"></span><div id="sessionTitle"></div><div id="sessionButtonGroup"><div id="saveButton" disabled class="sbButton" data-type="2">Save</div><div id="btnGroup_MergeSave" class="invisible"><div id="btnMerge" disabled class="sbButton" data-type="2">Merge</div><div id="saveButton2" disabled class="sbButton" data-type="2">Save</div></div><div id="restoreButton" disabled class="sbButton" data-type="2" data-rtype="RestoreSessionIntoASetOfWindows">Open</div><div id="actionsMenuButton" disabled class="sbButton" data-type="2">&nbsp;</div></div></div><div id="configMenu" class="dropdownMenu invisible"><div id="menuItemImport" class="menuItem">Import</div><div id="menuItemExport" class="menuItem" style="position:relative;">Export</div><div id="menuItemBackup" class="menuItem" style="position:relative;">Back up</div><div class="menuItemSeparator"></div><div id="Div2" class="menuItem">Settings</div><div id="Div3" class="menuItem">Help</div><div class="menuItemSeparator"></div><div id="Div1" class="menuItem">Rate</div><div id="Div4" class="menuItem">Donate</div><div class="menuItemSeparator"></div><div id="Div10" class="menuItem">About</div></div><div id="restoreMenu" class="dropdownMenu invisible"><div id="menuItemRestoreSetOfWindows" class="menuItem"><span style="padding-left:31px;">Open <span class="menuItemTabWindowCounts">tabs</span></span></div><div id="menuItemRestoreToOneWindow" class="menuItem"><span style="padding-left:31px;">Open <span class="menuItemTabCounts">tabs</span> in <span class="emph1">one window</span> </span></div><div id="menuItemRestoreToThisWindow" class="menuItem"><span style="padding-left:31px;">Open <span class="menuItemTabCounts">tabs</span> in <span class="emph1">this window</span> </span></div></div><div id="actionsMenu" class="dropdownMenu invisible"><div id="menuItem_Rename" class="menuItem"><span>Rename</span></div><div id="menuItem_Copy" class="menuItem"><span>Duplicate</span></div><div id="menuItem_Delete" class="menuItem"><span>Delete </span></div><div class="menuItemSeparator"></div><div id="menuItem_SortByTabTitle" class="menuItem"><span>Sort by title </span></div><div id="menuItem_SortByTabUrl" class="menuItem"><span>Sort by URL </span></div><div id="menuItem_MergeWindows" class="menuItem"><span>Unify windows </span></div><div id="menuItem_UpdateWithCurrent" class="menuItem"><span>Overwrite with current </span></div></div><div id="sessionStatus"><span id="sessionStatusLeft" class="sessionStatusLeft">Loading . . . </span><span id="sessionStatusRight" class="sessionStatusRight"></span></div><div id="searchTermMatchCounts" style="display: none;"><span id="searchTermMatchCountsText" class="searchTermMatchCountsText"></span><button id="searchShowAllButton">Show all</button><div id="searchCountsCloseImg"></div></div><div id="contentShadowTop" class="contentShadowTop2" style="top: 154px;"></div><div id="sessionRenderContainer" tabindex="0"></div></div></div>
+    <div id="dialogDiv" class="dialogDiv dialog_Hidden" style="display: none;"><div id="dialogHeader" style="overflow: hidden; cursor: pointer; font-size: 13px; margin: 0; font-weight: bold; white-space: nowrap;height:34px;"><span style="display:inline-block;height:100%;vertical-align:middle;width:0;"></span><span id="dialogHeaderContent" style="padding-left:15px;vertical-align: middle;"></span><div id="dialogCloseImg"></div>
+    </div><div id="dialogBodyContainer" style="padding: 10px;font-size:13px;"><div id="dialogBody_ImportSession">
+    <textarea id="sessionImportText" spellcheck="false" class="importExportText" style="min-width: 100px;" placeholder="paste text or drop a text file" wrap="off" rows="10"></textarea>
+    </div><div id="dialogBody_ExportSession">
+<div style="margin: 5px;" class="tabGroup_Root" tabindex="0">
+    <div class="tabGroup_tabRow_container"><ul id="exportTabs" class="tabGroup_tabRow">
+        <li id="tabGroup_tab_ExportText" class="tabGroup_tab tabGroup_tab_active">Text</li>
+        <li id="tabGroup_tab_ExportCSV" class="tabGroup_tab">CSV</li>
+        <li id="tabGroup_tab_ExportMarkdown" class="tabGroup_tab">Markdown</li>
+        <li id="tabGroup_tab_ExportHTML" class="tabGroup_tab">HTML</li>
+        <li id="tabGroup_tab_ExportJSON" class="tabGroup_tab">JSON</li>
+    </ul></div>
+    <div class="tabGroup_tabSheet tabGroup_tabSheet_visible" style="padding:12px 9px;"></div>
+    <div class="tabGroup_tabSheet" style="padding:12px 9px;"></div>
+    <div class="tabGroup_tabSheet" style="padding:12px 9px;"></div>
+    <div class="tabGroup_tabSheet" style="padding:12px 9px;"></div>
+    <div class="tabGroup_tabSheet" style="padding:12px 9px;"></div>
+    <textarea readonly id="sessionExportText" class="importExportText" spellcheck="false" placeholder="nothing to export" style="min-width: 100px;position: relative;top: -4px;" wrap="off"></textarea>
+    <div style="font-size:13px;height: 36px;line-height: 36px; position: relative; top:1px; background-color: hsl(0, 0%, 94%); margin: 12px 0;padding:5px;">
+        <div id="showSessionElementsDiv" style="display:inline-block;">
+            <span style="padding-left:13px;">Show:&nbsp; </span>
+            <div id="showSessions" class="dialogItem2 underlineOnHover" style="margin-left:8px;">
+                <input id="chkShowSessions" type="checkbox" /><span>Sessions</span>
+            </div>
+            <div id="showWindows" class="dialogItem2 underlineOnHover">
+                <input id="chkShowWindows" type="checkbox" /><span>Windows</span>
+            </div>
+            <div id="showTitles" class="dialogItem2 underlineOnHover">
+                <input id="chkShowTitles" type="checkbox" /><span>Titles</span>
+            </div>
+            <div id="showURLs" class="dialogItem2 underlineOnHover">
+                <input id="chkShowURLs" type="checkbox" /><span>URLs</span>
+            </div>
+            <div id="dummy_showTitles" class="dialogItem2" style="display:none;xcolor:hsl(0, 0%, 30%);">
+                <input disabled="disabled" checked="checked" type="checkbox" /><span>Titles</span>
+            </div>
+            <div id="dummy_showURLs" class="dialogItem2" style="display:none;xcolor:hsl(0, 0%, 30%);">
+                <input disabled="disabled" checked="checked" type="checkbox" /><span>URLs</span>
+            </div>
+        </div>
+        <div style="float:right;padding-right:13px;">
+            <select id="sessionExport_Scope" class="dropdown" style="margin-right: 7px; cursor: default;background-color: #fff;padding-left:20px;height:30px;">
+                <option value="selected">selected</option>
+                <option value="all">all</option>
+                <option value="previous">previous</option>
+                <option value="saved">saved</option>
+            </select><span>sessions</span><span id="exportSessionCount" style="color: hsl(0, 0%, 60%);margin-left: 4px;"></span>
+        </div>
+    </div>
+</div>
+</div><div id="dialogBody_SessionRename"><div style="white-space: nowrap;">Name:&nbsp;&nbsp;<input id="sessionNameInput_SessionRename" spellcheck="false" type="text" style="width: 271px;" /></div></div><div id="dialogBody_SessionSave"><div style="white-space: nowrap;">Name:&nbsp;&nbsp;<input id="sessionNameInput_SessionSave" spellcheck="false" type="text" style="width: 294px;" /></div></div><div id="dialogBody_CloseWot"><div id="closeWotMsgContainer"><div id="closeImg"></div><span id="closeWotMsg"></span></div><div class="closeWotDesc"><b>Tip:</b>&nbsp;&nbsp;To edit the current session instead,<br>click <div id="saveRef"></div> to save it first.</div></div><div id="dialogBody_IcognitoDisabled"><div id="icognitoDisabledMsg"></div><div class="icognitoDisabledDesc">You can enable it by checking<br><b>Allow in incognito</b> on the <span id="sbExtensionsPageOpen">Extensions page</span></div></div><div id="dialogBody_SessionMergeWarning"><div id="sessionMergeWarningMessage" style="text-align: center; padding-bottom: 11px; padding-top: 13px;"><div><div style="display: inline-block; vertical-align: middle; width: 63px; text-align: left;"><div id="mergeImg"></div></div><div style="display: inline-block;vertical-align: middle;">You are about to <b>merge and replace</b> <br> <span id="mergeSessionCount"></span>&nbsp;sessions with a single Saved Session.<br>
+    <br>
+    Is that what you want to do?
+    </div></div><div style="display: inline-block; width: 22px;">&nbsp;</div><div style="background: hsl(0, 0%, 93%); padding: 10px; margin: 17px 14px 0px 14px; line-height:22px;">If you don't want to replace sessions<br>
+    when merging, click <div id="saveRef"></div> instead.</div></div></div>
+    <div id="dialogBody_About">
+        <div style="text-align: center; padding-bottom: 11px; padding-top: 13px;">
+            <div style="display: inline-block;margin-top: 13px;"><div style="display: inline-block;position: relative;top: 4px;"><a href="https://sessionbuddy.com/" target="_blank"><img width="64" height="64" style="width: 64px;height: 64px;" src="/images/logo/logo_128x128.png" /></a></div><div style="vertical-align:top;margin-left:31px;display: inline-block;"><div style="margin-bottom: 7px; font-weight: bold; font-size: 19px;"><a href="https://sessionbuddy.com/" target="_blank" class="underlineOnHover" style="color: hsl(0,0%,35%);">Session Buddy v<span id="about_version"></span></a></div><div style="font-size: 11px; color: hsl(0, 0%, 61%);">Copyright &#9400; 2010-<span id="copyrightCurrentYear"></span>&nbsp;Hansifer<br />All rights reserved.</div></div></div>
+            <div style="margin: 36px 5px 5px 5px;" class="tabGroup_Root" tabindex="0">
+                <div class="tabGroup_tabRow_container"><ul class="tabGroup_tabRow">
+                    <li id="tabGroup_tab_TechnicalDetails" class="tabGroup_tab tabGroup_tab_active" style="width:144px;">Technical Details</li>
+                    <li id="tabGroup_tab_Attribution" class="tabGroup_tab" style="width:144px;">Attribution</li>
+                </ul></div>
+                <div class="tabGroup_tabSheet tabGroup_tabSheet_visible" style="padding:35px 0 5px;min-height:175px;">
+                    <div style="font-size: 12px; color: hsl(0, 0%, 30%);padding: 0 10px;">
+                        <table style="border-spacing: 4px; text-align: left;border-collapse: collapse;margin:0 40px;">
+                            <tr>
+                                <td class="fieldName" style="vertical-align: top; text-align: right;">Platform</td><td><span id="about_platform"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="fieldName" style="vertical-align: top; text-align: right;">Language</td><td><span id="about_language"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="fieldName" style="vertical-align: top; text-align: right;">User&nbsp;Agent</td><td><span id="about_userAgent"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="fieldName" style="vertical-align: top; text-align: right;">Pixel&nbsp;Ratio</td><td style="vertical-align:top;"><span id="about_pixelRatio" style="vertical-align:top;"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="fieldName" style="vertical-align: top; text-align: right;">SB&nbsp;ID</td><td style="vertical-align:top;"><span id="about_sbid" style="vertical-align:top;"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="fieldName" style="vertical-align: top; text-align: right;">SB&nbsp;Version</td><td style="vertical-align:top;"><span id="about_version2" style="vertical-align:top;"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="fieldName" style="vertical-align: top; text-align: right;">SB&nbsp;Status</td><td style="vertical-align:top;"><a id="sbStatusLink" href="status.html" target="_blank"><span id="sbStatus" style="color:hsl(0, 0%, 30%);vertical-align:top;cursor:pointer;text-decoration:underline;"></span></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tabGroup_tabSheet" style="padding:35px 0 12px;">
+                    <div class="aboutDialogScrolledDiv" style="height:150px;font-size: 12px;">
+                        <ul>
+                            <li class="infoLineItem2" style="margin-top:0;"><a class="infoLink info1" href="http://jquery.com/" target="_blank">jQuery</a> jQuery Foundation, Inc.  <a class="infoLink info2" href="http://jquery.org/license" target="_blank">jquery.org/license</a></li>
+                            <li class="infoLineItem2"><a class="infoLink info1" href="http://momentjs.com" target="_blank">moment.js</a> Tim Wood, Iskren Chernev, contributors  <a class="infoLink info2" href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a></li>
+                            <li class="infoLineItem2"><a class="infoLink info1" href="https://github.com/eligrey/FileSaver.js" target="_blank">FileSaver.js</a> Eli Grey  <a class="infoLink info2" href="http://github.com/eligrey/FileSaver.js/blob/master/LICENSE.md" target="_blank">License</a></li>
+                            <li class="infoLineItem2"><a class="infoLink info1" href="http://qtip2.com/" target="_blank">qTip2</a> Craig Thompson  <a class="infoLink info2" href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a></li>
+                            <li class="infoLineItem2"><a class="infoLink info1" href="http://www.google.com/fonts/specimen/Roboto" target="_blank">Roboto font</a> Christian Robertson  <a class="infoLink info2" href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License, version 2.0</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="color: hsl(0, 0%, 52%); font-size: 11px; margin-top: 15px; text-align: center; margin-left: 5px; margin-right: 5px; background: hsl(0, 0%, 94%); padding: 14px;">By using this software you agree to the Session Buddy<br /><a style="text-decoration: underline; color: hsl(0, 0%, 52%);" href="https://sessionbuddy.com/terms-and-conditions/" target="_blank">Terms and Conditions</a></div> </div>
+    </div>
+    <div id="dialogBody_Options"><div style="margin: 5px;" class="tabGroup_Root" tabindex="0">
+    <div class="tabGroup_tabRow_container"><ul class="tabGroup_tabRow">
+        <li id="tabGroup_tab_General" class="tabGroup_tab tabGroup_tab_active">General</li>
+        <li id="tabGroup_tab_Appearance" class="tabGroup_tab">Appearance</li>
+        <li id="tabGroup_tab_Filter" class="tabGroup_tab">Filter</li>
+        <li id="tabGroup_tab_Keyboard" class="tabGroup_tab">Keyboard</li>
+    </ul></div>
+    <div class="tabGroup_tabSheet tabGroup_tabSheet_visible">
+      <div><div style="margin-top: 9px;"><label for="chkShowPreviousSessions" class="dialogItem" style="margin-top: 3px;">
+        <input id="chkShowPreviousSessions" type="checkbox" /><span class="checkboxLabel" style="padding-right: 5px;">Automatically record sessions and show up to </span>
+        <select id="selPreviousSessionQueueSize" class="dropdown"></select><span class="checkboxLabel"><span>previous session</span><span id="sessionPluralAppend">s</span></span></label></div><div id="automaticallyRecordSessionsUnselectWarning" style="color: hsl(0, 0%, 67%); font-size: 11px; padding-left: 22px; padding-right: 28px; vertical-align: top;"><span>NOTE: deselecting this setting clears all recorded previous sessions and disables Session Buddy's ability to recover a session after an OS or browser crash. </span></div>
+      </div>
+      <div style="margin-top: 13px;"><label for="chkHideDuplicateTabsInCombinedSession" class="dialogItem"><input id="chkHideDuplicateTabsInCombinedSession" type="checkbox" /><span class="checkboxLabel">Hide duplicate tabs when displaying multiple sessions</span></label></div>
+      <div><label for="chkIgnoreUrlParamsInTabCompare" class="dialogItem" style="margin-left: 25px; margin-top: 0px;"><input id="chkIgnoreUrlParamsInTabCompare" type="checkbox" /><span class="checkboxLabel">Ignore URL parameters and fragment identifiers when comparing tabs</span></label></div>
+      <div style="margin-top: 10px;"><label for="chkIgnoreURLParmsInSearch" class="dialogItem"><input id="chkIgnoreURLParmsInSearch" type="checkbox" /><span class="checkboxLabel">Ignore URL parameters and fragment identifiers when searching</span></label></div>
+      <div><label for="chkAskForName" class="dialogItem"><input id="chkAskForName" type="checkbox" /><span class="checkboxLabel">Ask for name when saving sessions</span></label></div>
+      <div><label for="chk_UserSetting_ShowSessionCountsInNavigationPane" class="dialogItem"><input id="chk_UserSetting_ShowSessionCountsInNavigationPane" type="checkbox" /><span class="checkboxLabel">Show session counts in navigation pane</span></label></div>
+      <div><label for="chkShowTabCountsOnWindowHeaders" class="dialogItem"><input id="chkShowTabCountsOnWindowHeaders" type="checkbox" /><span class="checkboxLabel">Show tab counts on window headers</span></label></div>
+      <div><label for="chkShowExtensionBadge" class="dialogItem"><input id="chkShowExtensionBadge" type="checkbox" /><span class="checkboxLabel">Show tab count of current session on extension icon</span></label></div>
+    </div>
+    <div class="tabGroup_tabSheet"><div><label for="chk_UserSetting_ShowAdminTabsInItalic" class="dialogItem"><input id="chk_UserSetting_ShowAdminTabsInItalic" type="checkbox" /><span class="checkboxLabel">Show Chrome administrative tabs in <i>italic font</i></span></label></div><div><label for="chk_UserSetting_useClassicFont" class="dialogItem"><input id="chk_UserSetting_useClassicFont" type="checkbox" /><span class="checkboxLabel">Use classic Session Buddy font</span></label></div><div style="color: hsl(0,0%,25%); margin-top: 18px;"><div style="font-weight: 400; color: hsl(0, 0%, 5%); padding: 25px 6px 5px 11px; border-bottom: 1px solid #e1e1e1; height: 22px; line-height: 22px;margin:0 -5px 4px;font-size:13px;">Date and Time Format<div id="dateDisplay" style="-webkit-user-select: all; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;padding: 0px 6px;line-height: 22px;height: 22px;color:hsl(205, 83%, 50%);float:right;"></div></div><div><div><div class="dialogItem"><label class="underlineOnHover" style="height: 25px; line-height: 25px; display: inline-block;"><input type="radio" id="optDateDisplayTypeStandard" name="rbDateDisplayType" value="standard" style="margin-right:0px;width:19px;"/><span id="sessionSummaryPanelLocationLabel_Left" class="checkboxLabel" style="cursor: pointer;">Standard</span></label></div></div> <div><div class="dialogItem"><label class="underlineOnHover" style="height: 25px; line-height: 25px; display: inline-block;"><input type="radio" id="optDateDisplayTypeRelative" name="rbDateDisplayType" value="relative" style="margin-right:0px;width:19px;"/><span id="sessionSummaryPanelLocationLabel_Left" class="checkboxLabel" style="cursor: pointer;">Relative</span></label></div></div>
+    <div><div class="dialogItem"><label class="underlineOnHover" style="height: 25px; line-height: 25px; display: inline-block;"><input type="radio" id="optDateDisplayTypeCustom" name="rbDateDisplayType" value="custom" style="margin-right:0px;width:19px;"/><span id="sessionSummaryPanelLocationLabel_Left" class="checkboxLabel" style="cursor: pointer;">Custom</span></label><input id="txtCustomDateFormat" type="text" style="border: 1px solid hsl(0, 0%, 84%);vertical-align: middle;margin-left:10px;width: 250px;"/><a id="dateFormattingHelp" href="https://sessionbuddy.com/date-formatting/" target="_blank" style="margin-left: 10px; background: hsl(0, 0%, 91%); padding: 3px 9px;border-radius: 2px;color:#4C4C4C;vertical-align: middle;">?</a></div></div>
+    </div></div></div><div class="tabGroup_tabSheet"><label for="chkFilterSessionBuddyTabs" class="dialogItem" style="margin-top: 12px;"><input id="chkFilterSessionBuddyTabs" type="checkbox" /><span class="checkboxLabel">Hide Session Buddy tabs</span></label><div><label for="chkFilterChromeAdministrativeTabs" class="dialogItem"><input id="chkFilterChromeAdministrativeTabs" type="checkbox" /><span class="checkboxLabel">Hide Chrome administrative tabs</span></label></div></div><div class="tabGroup_tabSheet"><label for="chkEnableKeyboardShortcuts" class="dialogItem" style="margin-top: 12px;"><input id="chkEnableKeyboardShortcuts" type="checkbox" /><span class="checkboxLabel">Enable keyboard shortcuts </span></label><div id="keyboardKeyKey" style="font-size: 12px; padding-top: 7px; background: #eee; padding-left: 9px; padding-bottom: 7px; border-radius: 2px; color: hsl(0,0%,25%); margin-top: 18px;"><div style="padding-left: 5px; padding-bottom: 12px; font-weight: bold; color: hsl(0, 0%, 29%); padding: 5px 6px 5px 0px; margin-bottom: 9px; margin-left: 5px; margin-right: 10px; border-radius: 0px;">Global</div><div><span style="display: inline-block; margin-left: 5px;">
+    <div class="keyboardKeyLineItem"><span class="keyboardKey">C </span><span class="keyboardKeyDescription">Display current session</span></div>
+    <div class="keyboardKeyLineItem"><span class="keyboardKey">S </span><span class="keyboardKeyDescription">Save session</span></div>
+    <div class="keyboardKeyLineItem"><span class="keyboardKey">Q </span><span class="keyboardKeyDescription">Merge sessions</span></div>
+    <div class="keyboardKeyLineItem"><span class="keyboardKey">H </span><span class="keyboardKeyDescription">Show/hide duplicate tabs</span></div>
+    <div class="keyboardKeyLineItem"><span class="keyboardKey">W </span><span class="keyboardKeyDescription">Rename session</span></div></span><span style="display: inline-block; margin-left: 85px; vertical-align: top;">   
+    <div class="keyboardKeyLineItem"><span class="keyboardKey">F </span><span class="keyboardKeyDescription">Focus search field</span></div>
+    <div class="keyboardKeyLineItem"><span class="keyboardKey">Z </span><span class="keyboardKeyDescription">Undo last action</span></div>
+    <div class="keyboardKeyLineItem"><span class="keyboardKey">T </span><span class="keyboardKeyDescription">Import</span></div>
+    <div class="keyboardKeyLineItem"><span class="keyboardKey">V </span><span class="keyboardKeyDescription">Toggle session view</span></div>
+</span></div><div style="padding-left: 5px; padding-bottom: 12px; font-weight: bold; color: hsl(0, 0%, 29%); margin-top: 11px; padding: 5px 6px 5px 0px; margin-bottom: 9px; margin-left: 5px; margin-right: 10px; border-radius: 0px;">Navigation Pane</div><div><span style="display: inline-block; margin-left: 5px;">
+<div class="keyboardKeyLineItem"><span class="keyboardKey">E </span><span class="keyboardKeyDescription">Select previous session</span></div>
+<div class="keyboardKeyLineItem"><span class="keyboardKey">D </span><span class="keyboardKeyDescription">Select next session</span></div>
+</span>
+</div></div></div></div>
+    </div></div><div id="dialogFooter" style="position: relative; display: block; text-align: right; vertical-align: middle; margin: 0px 0px 0px 0px; padding: 6px 11px 6px .8em; white-space: nowrap;"><div id="dialogFooterCheckbox" class="dialogItem underlineOnHover" style="float: left; padding-left: 0px;margin-left:7px;margin-top:4px;height:28px;line-height:28px;"><span>
+    <input id="chkDialogFooter" type="checkbox" /></span><span id="dialogFooterCheckboxLabel" class="checkboxLabel">Never ask for name</span></div><div id="dialogFooterButtonLeft" class="sbButton" style="margin-left: 6px; margin-top: 4px; width: 60px; margin-bottom: 5px;">Yes</div><div id="dialogFooterButtonMiddle" class="sbButton" style="margin-left: 6px; margin-top: 4px; margin-bottom: 5px;">No</div><div id="dialogFooterButtonRight" class="sbButton" data-type="4" style="margin-left: 6px; margin-top: 4px; width: 60px; margin-bottom: 5px;">Cancel</div></div><div id="dialogSubfooter">When you click <b>Copy to Clipboard</b>, Chrome will ask you to grant Session Buddy permission to write to the clipboard.<br>This permisson <b>does not</b> allow Session Buddy to ever read the contents of the clipboard.</div></div><div id="dialogBackgroundOverlay" class="dialogBackgroundOverlay_Hidden" style="display: none;"></div><div id="dropOverlay"></div>
+<script src="main.bundle.js"></script>
+</body>
+</html>

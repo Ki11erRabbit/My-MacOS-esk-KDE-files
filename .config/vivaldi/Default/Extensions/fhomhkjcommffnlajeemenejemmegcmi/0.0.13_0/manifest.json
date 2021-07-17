@@ -1,0 +1,19 @@
+{
+   "content_scripts": [ {
+      "js": [ "jquery-1.12.4.min.js", "content.js" ],
+      "matches": [ "https://*.wikipedia.org/*", "https://*.wikibooks.org/*", "http://*.wikiwand.com/*", "https://*.wikiwand.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Renders Wikipedia equations with MathJax",
+   "icons": {
+      "128": "wiki-mjax-128.png",
+      "16": "wiki-mjax-16.png",
+      "48": "wiki-mjax-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDkTxb/92U6PfpS8WpXzAHcA9PXCYpdtmkT44Zl34RvdrOeAWWSgvz+NKgDCtQOedMQvUPKgJPM9YsryQDLzHQXS0CHQa/XEAmLXMgftijyXXesby2TgqftmJ0ohSPRf2jpMGYQ7XyXtVB5AAFGzOe633iGkba1jJEerkY+EPUrHwIDAQAB",
+   "manifest_version": 2,
+   "name": "Wikipedia with MathJax",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.13",
+   "web_accessible_resources": [ "texvc.js" ]
+}

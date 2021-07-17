@@ -1,0 +1,19 @@
+{
+   "background": {
+      "scripts": [ "createmenu.js", "eventPage.js" ]
+   },
+   "description": "Image Search Options for Chrome provides a set of highly customizable reverse image search context menu options.",
+   "icons": {
+      "128": "iso_128.png",
+      "16": "iso_16.png",
+      "48": "iso_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQkzVzx3oqSeob+MOqV15Vbi4KOtEnMR6WhJKmoWoY2X1FTMuqc6OI6X3n3ufhhaFWfy1KP9+3VsjJDwmz4cynNSATiAKsAzDOKuD/cRnFPucAFEwGhYUfcdy0Urb1uVj+DecieDLUFAaV+zj9PHYJkHQXd7/2WCPnEtrYF17ysQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "22",
+   "name": "Image Search Options",
+   "options_page": "options.html",
+   "permissions": [ "contextMenus", "tabs", "http://*/*", "https://*/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.0.7.5"
+}

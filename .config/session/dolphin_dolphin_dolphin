@@ -1,0 +1,17 @@
+[1]
+Active Tab Index=1
+Tab Count=2
+Tab Data 0=\x00\x00\x00\x02\x00\x00\x00\x00Kfile:///home/ki11errabbit/Games/Touhou%207%20-%20Perfect%20Cherry%20Blossom\x00\x00\x00\x00\x01\x00\x00\x00Tfile:///home/ki11errabbit/Games/Touhou%207%20-%20Perfect%20Cherry%20Blossom/th07.cfg\x00\x00\x00\x01\x00\x00\x00Tfile:///home/ki11errabbit/Games/Touhou%207%20-%20Perfect%20Cherry%20Blossom/th07.cfg\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x1b\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x01\x00\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+Tab Data 1=\x00\x00\x00\x02\x00\x00\x00\x00$file:///home/ki11errabbit/Downloads/\x00\x00\x00\x00\x01\x00\x00\x009file:///home/ki11errabbit/Downloads/extension_3_6_0_0.crx\x00\x00\x00\x01\x00\x00\x009file:///home/ki11errabbit/Downloads/extension_3_6_0_0.crx\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x1b\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x01\x00\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+
+[WindowProperties1]
+ClassName=DolphinMainWindow
+HDMI-A-0 DisplayPort-1 Height 1920x1080=761
+HDMI-A-0 DisplayPort-1 Width 1920x1080=973
+HDMI-A-0 DisplayPort-1 XPosition 1920x1080=2096
+HDMI-A-0 DisplayPort-1 YPosition 1920x1080=153
+MenuBar=Disabled
+ObjectName=Dolphin#1
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAACz/wCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAABABAAAJ+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAqAAACzwAAAGMBAAAJAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAAEAEAAAkAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAABABAAAJAAADFAAAAs8AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled

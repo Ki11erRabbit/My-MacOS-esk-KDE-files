@@ -1,0 +1,22 @@
+2021/07/16-17:05:04.923 c64 Reusing MANIFEST /home/ki11errabbit/.config/vivaldi/Default/Sync Data/LevelDB/MANIFEST-000001
+2021/07/16-17:05:04.923 c64 Recovering log #28
+2021/07/16-17:05:04.924 c64 Reusing old log /home/ki11errabbit/.config/vivaldi/Default/Sync Data/LevelDB/000028.log 
+2021/07/16-17:05:09.348 c64 Level-0 table #32: started
+2021/07/16-17:05:09.360 c64 Level-0 table #32: 2842752 bytes OK
+2021/07/16-17:05:09.364 c64 Delete type=0 #28
+2021/07/16-17:10:08.493 f21 Level-0 table #34: started
+2021/07/16-17:10:08.505 f21 Level-0 table #34: 483691 bytes OK
+2021/07/16-17:10:08.508 f21 Delete type=0 #31
+2021/07/16-17:11:11.998 113c Level-0 table #36: started
+2021/07/16-17:11:12.010 113c Level-0 table #36: 442423 bytes OK
+2021/07/16-17:11:12.013 113c Delete type=0 #33
+2021/07/16-17:11:12.013 113c Compacting 4@0 + 1@1 files
+2021/07/16-17:11:12.020 113c Generated table #37@0: 234 keys, 2102357 bytes
+2021/07/16-17:11:12.024 113c Generated table #38@0: 187 keys, 542128 bytes
+2021/07/16-17:11:12.024 113c Compacted 4@0 + 1@1 files => 2644485 bytes
+2021/07/16-17:11:12.027 113c compacted to: files[ 0 2 1 0 0 0 0 ]
+2021/07/16-17:11:12.027 113c Delete type=2 #34
+2021/07/16-17:11:12.027 113c Delete type=2 #36
+2021/07/16-17:11:12.027 113c Delete type=2 #27
+2021/07/16-17:11:12.027 113c Delete type=2 #32
+2021/07/16-17:11:12.027 113c Delete type=2 #29

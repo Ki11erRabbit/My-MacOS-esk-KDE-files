@@ -1,0 +1,299 @@
+{
+   "AccountLabel": {
+      "message": "Akaun"
+   },
+   "AppDescription": {
+      "message": "Lihat, edit dan cipta dokumen Office dalam pelayar anda."
+   },
+   "AppDescriptionWithEditor": {
+      "message": "Lihat, edit dan cipta fail Office dalam pelayar serta serlahkan penulisan terbaik anda merentasi web."
+   },
+   "AppFolderName": {
+      "message": "Sambungan Office"
+   },
+   "AppListLabel": {
+      "message": "Web Apps"
+   },
+   "AppLongDescription": {
+      "message": "Dibina untuk Chrome – Gunakan Word, Excel, PowerPoint, OneNote dan Sway Online tanpa memerlukan Office dipasangkan.\r\n\r\nCipta dengan keyakinan – Gunakan pilihan pemformatan dan susun atur yang biasa untuk menyatakan idea anda dalam ketepatan yang penuh.\r\n\r\nKerja sambil bergerak – Dapatkan fail anda di mana saja, terima kasih kepada penyepaduan dengan OneDrive dan OneDrive for Business.\r\n\r\nDengan memasang aplikasi ini, anda bersetuju kepada terma dan syarat berikut: http://aka.ms/officechromeextensionterms\r\n\r\nDasar Privasi: http://aka.ms/privacy\r\n"
+   },
+   "AppLongDescriptionEdge": {
+      "message": "Sambungan pelayar Office meletakkan ikon pada bar alat Microsoft Edge yang memberi anda capaian terus kepada fail Office anda, sama ada fail itu disimpan dalam talian atau pada komputer anda.\r\n\r\nsambungan web Office boleh membuka fail yang disimpan dalam OneDrive dan OneDrive for Business.\r\n\r\nAnda mendapat ciri Word, Excel, PowerPoint, OneNote dan Sway terus dalam pelayar anda tanpa memerlukan Office dipasang.\r\n\r\nSambungan pelayar Office kini menyertakan pruf kandungan anda*. Ia bersambung kepada perkhidmatan dalam talian Microsoft yang menawarkan cadangan ejaan, tatabahasa dan tapisan untuk tulisan anda pada kebanyakan laman web dan tersedia dalam lebih daripada 80 bahasa.\r\n\r\n*Ciri ini mungkin tidak tersedia untuk semua pengguna.\r\n\r\nDengan memasang aplikasi, anda bersetuju dengan terma dan syarat ini:\r\n\r\n"
+   },
+   "AppLongDescriptionWithEditor": {
+      "message": "Dibina untuk Chrome – Gunakan Word, Excel, PowerPoint, OneNote dan Sway Online tanpa memerlukan pemasangan Office.\r\n\r\nCipta dengan keyakinan – Gunakan opsyen pemformatan dan tataletak biasa untuk mengungkapkan idea anda dengan ketepatan penuh.\r\n\r\nBekerja semasa dalam perjalanan – Dapatkan fail anda dari mana-mana sahaja, terima kasih kepada penyepaduan dengan OneDrive dan OneDrive for Business\r\n\r\nSambungan pelayar Office kini menyertakan pruf kandungan anda*. Ia bersambung dengan perkhidmatan dalam talian Microsoft yang menawarkan cadangan ejaan, tatabahasa dan tapisan untuk tulisan anda pada kebanyakan laman web dan tersedia dalam lebih daripada 80 bahasa.\r\n\r\n*Ciri ini mungkin tidak tersedia untuk semua pengguna.\r\n\r\nDengan memasang aplikasi, anda bersetuju dengan terma dan syarat: http://aka.ms/officechromeextensionterms\r\n\r\nDasar Privasi: http://aka.ms/privacy\r\n"
+   },
+   "AppName": {
+      "message": "Office"
+   },
+   "AppNameEdge": {
+      "message": "Sambungan pelayar Office"
+   },
+   "AppShortName": {
+      "message": "Office"
+   },
+   "AppTermsOfServiceLCA": {
+      "message": "PLEASE NOTE: Refer to your license terms for Microsoft Office browser extension software (the \"software\") to identify the entity licensing this supplement to you and for support information. You may use a copy of this supplement with each validly licensed copy of the software. You may not use the supplement if you do not have a license for the software. The license terms for the software apply to your use of this supplement."
+   },
+   "BrowseToOpenLabel": {
+      "message": "Muat Naik dan Buka..."
+   },
+   "CopyrightLabel": {
+      "message": "Microsoft Corporation 2015"
+   },
+   "CreateAccountLabel": {
+      "message": "Cipta akaun"
+   },
+   "CreateDocsMessageLabel": {
+      "message": "Tiada dokumen yang dilihat baru-baru ini."
+   },
+   "CreateNewLabel": {
+      "message": "Baru"
+   },
+   "DisableEditorOnThisSiteLabel": {
+      "message": "Nyahdayakan Editor di $host$",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "DocumentsNotFoundMessageLabel": {
+      "message": "Kami tidak boleh mendapatkan senarai dokumen terbaru anda sekarang."
+   },
+   "EditorBrandText": {
+      "message": "Editor"
+   },
+   "EditorGrammarToggleLabel": {
+      "message": "Tatabahasa"
+   },
+   "EditorIsBlockedOnThisSiteLabel": {
+      "message": "Editor tidak disokong di $host$ pada masa ini",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "EditorIsDisabledOnThisSiteLabel": {
+      "message": "Editor dinyahdayakan di $host$ pada masa ini",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "EditorIsOffLabel": {
+      "message": "Editor dimatikan."
+   },
+   "EditorNativeSupportOnThisSiteLabel": {
+      "message": "Editor disertakan dengan $host$",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "outlook.com"
+         }
+      }
+   },
+   "EditorPreviewLabel": {
+      "message": "(Pratonton)"
+   },
+   "EditorPriorityShutdownLabel": {
+      "message": "Perkhidmatan Editor disediakan oleh sambungan Microsoft Editor."
+   },
+   "EditorRefinementsGoPremiumTooltip": {
+      "message": "Dapatkan idea penulisan lanjutan dan 1 TB storan apabila anda bertukar kepada premium."
+   },
+   "EditorRefinementsToggleLabel": {
+      "message": "Penghalusan"
+   },
+   "EditorRefinementsTooltip": {
+      "message": "Penghalusan adalah cadangan penulisan lanjutan untuk membantu menjadikan penulisan anda lebih jelas, lebih pendek atau lebih formal."
+   },
+   "EditorSpellingToggleLabel": {
+      "message": "Ejaan"
+   },
+   "EnableEditorOnThisSiteLabel": {
+      "message": "Dayakan Editor di $host$",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "ExcelAppName": {
+      "message": "Excel"
+   },
+   "ExcelOnlineAppName": {
+      "message": "Excel"
+   },
+   "FileTypeErrorMessage": {
+      "message": "Jenis fail tidak disokong. Sila pilih dokumen Word, Excel atau PowerPoint."
+   },
+   "LoadingRecentsLabel": {
+      "message": "Memuatkan..."
+   },
+   "MoreFilesLabel": {
+      "message": "Lagi dokumen"
+   },
+   "MyAccountLabel": {
+      "message": "Lihat Akaun Saya"
+   },
+   "NextLabel": {
+      "message": "Daftar masuk"
+   },
+   "NotificationAutoSaveButton": {
+      "message": "Jangan tunjukkan ini lagi"
+   },
+   "NotificationAutoSaveToOneDrive": {
+      "message": "Kami menyimpan fail anda dalam folder \"sambungan Office\" pada OneDrive anda."
+   },
+   "NotificationAutoSaveToSharePoint": {
+      "message": "Kami menyimpan fail anda dalam folder \"sambungan Office\" pada OneDrive for Business anda."
+   },
+   "NotificationFileAccess": {
+      "message": "Dalam tetapan lanjutan, pilih kotak semak \"Benarkan akses ke URL fail\" jika anda ingin menyeret dan melepaskan fail pada pelayar."
+   },
+   "NotificationFileMaxSizeByteLimitReached": {
+      "message": "Sambungan pelayar Office tidak dapat membuka dokumen anda kerana saiznya.  Sila muat naik terus ke OneDrive untuk membuka dokumen tersebut."
+   },
+   "NotificationFileUploadFailureGeneric": {
+      "message": "Maaf, kami tidak dapat membuka fail anda."
+   },
+   "NotificationFileUploadFailureServer": {
+      "message": "Maaf, kami tidak dapat membuka fail anda.  Sila cuba lagi kemudian."
+   },
+   "NotificationFileUploadFailureUnsupportedMedia": {
+      "message": "Maaf, kami tidak dapat membuka fail anda.  Sila pilih satu fail yang dicipta dengan Word, Excel atau PowerPoint"
+   },
+   "NotificationFileUploadInProgress": {
+      "message": "Kami sedang memuat naik dokumen(-dokumen) anda."
+   },
+   "NotificationInvalidSubscription": {
+      "message": "Langganan Office 365 anda mungkin tamat tempoh atau mungkin tidak menyertakan OneDrive for Business. Semak langganan anda atau log masuk dengan Account Microsoft pula."
+   },
+   "NotificationNotSignedIn": {
+      "message": "Daftar masuk ke sambungan untuk melihat dan mengedit fail Office dalam web."
+   },
+   "NotificationSetDefault": {
+      "message": "Dalam aplikasi Fail, ketik dokumen dengan kedua-dua jari untuk membuka dengan Office."
+   },
+   "NotificationUnsupportedFileType": {
+      "message": "Pilih satu fail yang dicipta dengan Word, Excel atau PowerPoint."
+   },
+   "NotificationWebDocRedirect": {
+      "message": "Sambungan Office sedang membuka dokumen anda dalam pelayar"
+   },
+   "NotificationWebDocRedirectButton": {
+      "message": "Jangan tunjukkan ini lagi"
+   },
+   "O365FilesLabel": {
+      "message": "Daripada OneDrive for Business"
+   },
+   "OfficeOnlineAppName": {
+      "message": "Office"
+   },
+   "OfflineLabel": {
+      "message": "Anda di luar talian. Sila sambung semula untuk menggunakan sambungan pelayar Office."
+   },
+   "OneDriveAppName": {
+      "message": "OneDrive"
+   },
+   "OneDriveFilesLabel": {
+      "message": "Daripada OneDrive"
+   },
+   "OneNoteAppName": {
+      "message": "OneNote"
+   },
+   "OneNoteOnlineAppName": {
+      "message": "OneNote"
+   },
+   "OpenDocumentLabel": {
+      "message": "Buka"
+   },
+   "OutlookAppName": {
+      "message": "Outlook"
+   },
+   "PowerPointAppName": {
+      "message": "PowerPoint"
+   },
+   "PowerPointOnlineAppName": {
+      "message": "PowerPoint"
+   },
+   "RecentDocsLabel": {
+      "message": "Terbaru"
+   },
+   "SettingsLabel": {
+      "message": "Seting"
+   },
+   "ShareMessage": {
+      "message": "Kongsi"
+   },
+   "SharePermissionsErrorMessage": {
+      "message": "Kebenaran diperlukan"
+   },
+   "SharePermissionsTooltip": {
+      "message": "Anda tidak mempunyai kebenaran untuk berkongsi"
+   },
+   "SharePointAppName": {
+      "message": "SharePoint"
+   },
+   "SharePointSiteAppName": {
+      "message": "SharePoint"
+   },
+   "SignInHeaderLabel": {
+      "message": "Di mana anda hendak menyimpan fail anda?"
+   },
+   "SignInLabel": {
+      "message": "Daftar masuk"
+   },
+   "SignInMSALabel": {
+      "message": "Daftar masuk dengan akaun Microsoft"
+   },
+   "SignInO365Label": {
+      "message": "Daftar masuk dengan akaun kerja atau sekolah"
+   },
+   "SignOutLabel": {
+      "message": "Daftar keluar"
+   },
+   "StandaloneExtensionInstalledLabel": {
+      "message": "Perkhidmatan Editor disediakan oleh sambungan Microsoft Editor."
+   },
+   "SupportPageLabel": {
+      "message": "Perlukan Bantuan Log Masuk?"
+   },
+   "SwayAppName": {
+      "message": "Sway"
+   },
+   "TeamsAppName": {
+      "message": "Teams"
+   },
+   "TelemetrySettingLabel": {
+      "message": "Hantar data secara automatik untuk membantu kami mempertingkatkan produk-produk kami."
+   },
+   "TurnOnEditorLabel": {
+      "message": "Hidupkan Editor"
+   },
+   "UploadToOneDriveBusinessLabel": {
+      "message": "Muat naik ke OneDrive for Business"
+   },
+   "UploadToOneDriveLabel": {
+      "message": "Muat naik ke OneDrive"
+   },
+   "UsernameLabel": {
+      "message": "Tidak mendaftar masuk"
+   },
+   "WebRedirectSettingLabel": {
+      "message": "Buka fail Office terus dalam pelayar dengan Office."
+   },
+   "WordAppName": {
+      "message": "Word"
+   },
+   "WordOnlineAppName": {
+      "message": "Word"
+   }
+}

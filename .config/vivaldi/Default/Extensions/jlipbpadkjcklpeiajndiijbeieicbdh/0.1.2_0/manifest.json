@@ -1,0 +1,48 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "js/db.js", "js/storage.js", "js/tabStates.js", "js/eventPage.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/icon19.png",
+      "default_popup": "html/popup.html",
+      "default_title": "The Great Discarder"
+   },
+   "commands": {
+      "1-discard-tab": {
+         "description": "Discard active tab",
+         "suggested_key": {
+            "default": "Ctrl+Shift+S"
+         }
+      },
+      "3-discard-active-window": {
+         "description": "Discard all tabs in active window"
+      },
+      "4-reload-active-window": {
+         "description": "Reload all tabs in active window"
+      },
+      "5-discard-all-windows": {
+         "description": "Discard all tabs in all windows"
+      },
+      "6-reload-all-windows": {
+         "description": "Reload all tabs in all windows"
+      }
+   },
+   "content_scripts": [  ],
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "description": "Automatically discards unused tabs to free up system resources",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqpbCm1ZJAkyrzwoby0MSLiC53UlisQCejlucMHxlkSa9WYbYuaSQJlScSYRiCD4Iu1aj0SU3hOjICMiYHvA9vb95L+uFvhJs7alm2dIxpvEaRnBW2szQkrJjqXUcTilu35/pMZHj6WUTBAz2Wcql6mpAsDS1xaBb/CExJgv6EGllOgMk4kbwmF+pLxwc9xvZiy4wK3A5n1cMi89D7DyEXimZq/r87VtD/WD3rbOfjbU27lYF+pathBIgnoFFwojb8tW256lerz6D1fpn5Kd16qgR0+rdBd+MG4Pg3MUUzPEVrO6m2mev5v6ZsaOIAWR6in+BtihPC3n5KaJidsAdpQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "54",
+   "name": "The Great Discarder",
+   "options_page": "html/options.html",
+   "permissions": [ "tabs", "storage", "unlimitedStorage", "contextMenus", "alarms", "system.memory" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.2"
+}

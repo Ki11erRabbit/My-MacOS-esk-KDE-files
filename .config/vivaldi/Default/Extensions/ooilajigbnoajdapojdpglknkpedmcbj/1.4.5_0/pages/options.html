@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouTube Time Options</title>
+	<script src="../js/ga.js"></script>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/options.css">
+</head>
+<body>
+	<div id="container">
+		<h1 id="title">YouTube Time Options</h1>
+		<label for="minutes"><h4>Minutes allowed per day: </h4></label>
+		<div id="minuterow" class="row mb-3">
+			<input id="minutes" class="form-control" type="number" min="0" max="1439">
+			<input type="submit" id="saveMinutes" value="Save Limit" class="btn btn-info">
+		</div>
+
+		<div class="row justify-content-center">
+			<label for="customizeLimits"><h4>Customize limit for each day of the week: </h4></label>
+			<input id="customizeLimits" class="big-checkbox ml-2" type="checkbox">
+		</div>
+
+		<div id="customLimitsDiv" style="display: none;">
+			<div data-day="sunday" class="day-row form-row align-items-center justify-content-center">
+				<div class="col-auto">
+					<label for="sundayMinutes" class="day-label">Sunday</label>
+				</div>
+				<div class="col-auto mb-2">
+					<input id="sundayMinutes" class="form-control day-minute-input" type="number" min="0" max="1439">
+				</div>
+				<div class="col-auto mr-4 mb-2">
+					<input type="submit" id="saveSundayMinutes" value="Save Limit" class="btn btn-info save-day-limit">
+				</div>
+				<div class="form-check mb-2">
+					<input class="medium-checkbox form-check-input no-limit-input" type="checkbox" id="sundayNoLimit">
+					<label class="form-check-label" for="sundayNoLimit">No limit</label>
+				</div>
+			</div>
+			<div data-day="monday" class="day-row form-row align-items-center justify-content-center">
+				<div class="col-auto">
+					<label for="mondayMinutes" class="day-label">Monday</label>
+				</div>
+				<div class="col-auto mb-2">
+					<input id="mondayMinutes" class="form-control day-minute-input" type="number" min="0" max="1439">
+				</div>
+				<div class="col-auto mr-4 mb-2">
+					<input type="submit" id="saveMondayMinutes" value="Save Limit" class="btn btn-info save-day-limit">
+				</div>
+				<div class="form-check mb-2">
+					<input class="medium-checkbox form-check-input no-limit-input" type="checkbox" id="mondayNoLimit">
+					<label class="form-check-label" for="mondayNoLimit">No limit</label>
+				</div>
+			</div>
+			<div data-day="tuesday" class="day-row form-row align-items-center justify-content-center">
+				<div class="col-auto">
+					<label for="tuesdayMinutes" class="day-label">Tuesday</label>
+				</div>
+				<div class="col-auto mb-2">
+					<input id="tuesdayMinutes" class="form-control day-minute-input" type="number" min="0" max="1439">
+				</div>
+				<div class="col-auto mr-4 mb-2">
+					<input type="submit" id="saveTuesdayMinutes" value="Save Limit" class="btn btn-info save-day-limit">
+				</div>
+				<div class="form-check mb-2">
+					<input class="medium-checkbox form-check-input no-limit-input" type="checkbox" id="tuesdayNoLimit">
+					<label class="form-check-label" for="tuesdayNoLimit">No limit</label>
+				</div>
+			</div>
+			<div data-day="wednesday" class="day-row form-row align-items-center justify-content-center">
+				<div class="col-auto">
+					<label for="wednesdayMinutes" class="day-label">Wednesday</label>
+				</div>
+				<div class="col-auto mb-2">
+					<input id="wednesdayMinutes" class="form-control day-minute-input" type="number" min="0" max="1439">
+				</div>
+				<div class="col-auto mr-4 mb-2">
+					<input type="submit" id="saveWednesdayMinutes" value="Save Limit" class="btn btn-info save-day-limit">
+				</div>
+				<div class="form-check mb-2">
+					<input class="medium-checkbox form-check-input no-limit-input" type="checkbox" id="wednesdayNoLimit">
+					<label class="form-check-label" for="wednesdayNoLimit">No limit</label>
+				</div>
+			</div>
+			<div data-day="thursday" class="day-row form-row align-items-center justify-content-center">
+				<div class="col-auto">
+					<label for="thursdayMinutes" class="day-label">Thursday</label>
+				</div>
+				<div class="col-auto mb-2">
+					<input id="thursdayMinutes" class="form-control day-minute-input" type="number" min="0" max="1439">
+				</div>
+				<div class="col-auto mr-4 mb-2">
+					<input type="submit" id="saveThursdayMinutes" value="Save Limit" class="btn btn-info save-day-limit">
+				</div>
+				<div class="form-check mb-2">
+					<input class="medium-checkbox form-check-input no-limit-input" type="checkbox" id="thursdayNoLimit">
+					<label class="form-check-label" for="thursdayNoLimit">No limit</label>
+				</div>
+			</div>
+			<div data-day="friday" class="day-row form-row align-items-center justify-content-center">
+				<div class="col-auto">
+					<label for="fridayMinutes" class="day-label">Friday</label>
+				</div>
+				<div class="col-auto mb-2">
+					<input id="fridayMinutes" class="form-control day-minute-input" type="number" min="0" max="1439">
+				</div>
+				<div class="col-auto mr-4 mb-2">
+					<input type="submit" id="saveFridayMinutes" value="Save Limit" class="btn btn-info save-day-limit">
+				</div>
+				<div class="form-check mb-2">
+					<input class="medium-checkbox form-check-input no-limit-input" type="checkbox" id="fridayNoLimit">
+					<label class="form-check-label" for="fridayNoLimit">No limit</label>
+				</div>
+			</div>
+			<div data-day="saturday" class="day-row form-row align-items-center justify-content-center">
+				<div class="col-auto">
+					<label for="saturdayMinutes" class="day-label">Saturday</label>
+				</div>
+				<div class="col-auto mb-2">
+					<input id="saturdayMinutes" class="form-control day-minute-input" type="number" min="0" max="1439">
+				</div>
+				<div class="col-auto mr-4 mb-2">
+					<input type="submit" id="saveSaturdayMinutes" value="Save Limit" class="btn btn-info save-day-limit">
+				</div>
+				<div class="form-check mb-2">
+					<input class="medium-checkbox form-check-input no-limit-input" type="checkbox" id="saturdayNoLimit">
+					<label class="form-check-label" for="saturdayNoLimit">No limit</label>
+				</div>
+			</div>
+		</div>
+
+		<label for="time"><h4>When to reset the timer each day:</h4></label>
+		<div class="row justify-content-center mb-3">
+			<input id="time" class="form-control" type="time">
+			<input type="submit" id="saveTime" value="Save Time" class="btn btn-info">
+		</div>
+
+		<div class="row justify-content-center">
+			<label for="limitOverrides"><h4>Limit the number of overrides allowed per day:</h4></label>
+			<input id="limitOverrides" class="big-checkbox ml-2" type="checkbox">
+		</div>
+		<div id="overrideLimitRow" class="row mb-3" style="visibility: hidden;">
+			<input id="overrideLimit" class="form-control" type="number" min="0" max="1000">
+			<input type="submit" id="saveOverrideLimit" value="Save Override Limit" class="btn btn-info">
+		</div>
+
+		<div class="row justify-content-center">
+			<label for="pauseOutOfFocus"><h4>Pause timer when YouTube is minimized/out of focus: </h4></label>
+			<input id="pauseOutOfFocus" class="big-checkbox ml-2" type="checkbox">
+		</div>
+
+		<div class="row justify-content-center">
+			<label for="youtubekidsEnabled"><h4>Enable timer on youtubekids.com: </h4></label>
+			<input id="youtubekidsEnabled" class="big-checkbox ml-2" type="checkbox">
+		</div>
+	</div>
+
+	<div id="donateContainer">
+		<p class="text-muted mb-2">Find this extension useful? <br> Consider donating :)</p>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick" />
+			<input type="hidden" name="hosted_button_id" value="B8LLSY8WDQ6VL" />
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+			<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+		</form>
+	</div>
+
+	<script type="text/javascript" src="../js/options.js"></script>
+</body>
+</html>

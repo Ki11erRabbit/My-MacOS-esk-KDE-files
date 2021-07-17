@@ -1,0 +1,6 @@
+[General]
+HDMI-A-0 DisplayPort-1 Height 1920x1080=426
+HDMI-A-0 DisplayPort-1 Width 1920x1080=757
+
+[SystemInformation]
+CompiledSources=false

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <title>Timeline Support</title>
+    <!-- CSS for this page -->
+    <link rel="stylesheet" href="styles/menu.css" />
+    <!-- Javascript for this page -->
+    <script type="text/javascript" src="scripts/menu.js"></script>
+  </head>
+  <body>
+    <section id="section-main">
+        <!-- Header -->
+        <header>
+            <h1>Timeline Support</h1>
+        </header> 
+        
+        <hr style="margin-top:0; margin-bottom:10px;" />
+
+        <section id="section-login-pending">
+            <!-- Login -->
+            <a id="login" href="#" class="inline-button">
+                <p>Sign in with your Microsoft Account</p>
+                <i class="fas fa-sign-in-alt"></i>
+            </a>
+    
+            <!-- Login Info -->
+            <p style="margin: 10px 15px;">
+                Sign in with the same Microsoft Account as you use on Windows 10. 
+            </p>
+
+            <p style="margin: 10px 15px;">
+                After you sign in, your browsing history will be sent to the Windows Timeline and synced across devices.
+            </p>
+                
+            <!-- View Microsoft privacy statement -->
+            <a href="https://privacy.microsoft.com/en-us/windows-10-activity-history-and-privacy" target="_blank" class="inline-button">
+                <p>Activity history and your privacy</p>
+                <i class="fas fa-info"></i>
+            </a>
+        </section>
+    
+        <section id="section-login-completed"> 
+            <!-- Project Rome -->
+            <a id="view-devices" href="#" class="inline-button">
+                <p>Open this page on another device</p>
+                <i class="fas fa-chevron-circle-right"></i>
+            </a>
+
+            <!-- View Activities -->
+            <a id="view-activities" href="#" class="inline-button">
+                <p>View recent activities</p>
+                <i class="fas fa-chevron-circle-right"></i>
+            </a>
+                
+            <hr />
+
+            <!-- View Microsoft Account Activity History Dashboard -->
+            <a href="https://account.microsoft.com/privacy/activity-history" target="_blank"  class="inline-button">
+                <p>Microsoft activity history dashboard</p>
+                <i class="fas fa-heartbeat"></i>
+            </a>
+
+            <!-- Logout -->
+            <a id="logout" href="#" class="inline-button">
+                <p>Sign out of your Microsoft Account</p>
+                <i class="fas fa-sign-out-alt"></i>
+            </a>     
+                
+            <hr />
+
+            <!-- Settings -->
+            <a id="settings" href="#" class="inline-button">
+                <p>Settings</p>
+                <i class="fas fa-cogs"></i>
+            </a>
+                
+            <!-- About -->
+            <a id="about" href="#" class="inline-button">
+                <p>About</p>
+                <i class="fas fa-info"></i>
+            </a>
+        </section>
+    </section>
+
+    <!-- Used to display the users devices -->
+    <section id="section-remote">
+        <!-- Area heading -->
+        <header>
+            <nav>
+                <a href="#" id="exit-remote" class="header-button">
+                    <i class="fas fa-chevron-left fa-lg"></i>
+                </a>
+            </nav>
+            <h1>Your Devices</h1>
+        </header>
+
+        <hr style="margin-top:0; margin-bottom:10px;" />
+
+        <!-- Status -->
+        <p id="remote-status"></p>
+
+        <!-- Hold a list of user devices -->
+        <div id="devices-holder"></div>
+    </section>
+  
+    <!-- Used to display activities -->
+    <section id="section-activities">
+        <!-- Area heading -->
+        <header>
+            <nav>
+                <a href="#" id="exit-activities" class="header-button">
+                    <i class="fas fa-chevron-left fa-lg"></i>                
+                </a>
+            </nav>
+            <h1>Recent Activities</h1>
+        </header>
+
+        <hr style="margin-top:0; margin-bottom:10px;" />
+    
+        <!-- Status -->
+        <p id="activity-status"></p>
+    
+        <!-- Hold a list of activities -->
+        <div id="activities-holder"></div>
+    </section>
+
+    <!-- Extension settings -->
+    <section id="section-settings">
+        <!-- Area heading -->
+        <header>
+            <nav>
+                <a href="#" id="exit-settings" class="header-button">
+                    <i class="fas fa-chevron-left fa-lg"></i>
+                </a>
+            </nav>
+            <h1>Settings</h1>
+        </header>
+
+        <hr style="margin-top:0; margin-bottom:10px;" />
+
+        <div class="wrapper">
+            <section id="section-timeout">
+                <h3>Minimum time on page</h3>
+                <p>The number of seconds a page must remain open before its included in Windows Timeline.</p>
+                <input id="setting-timeout" type="number" value="0" />
+            </section>
+        </div>
+    </section>
+
+    <!-- About extension -->
+    <section id="section-about">
+        <!-- Area heading -->
+        <header>
+            <nav>
+                <a href="#" id="exit-about" class="header-button">
+                    <i class="fas fa-chevron-left fa-lg"></i>
+                </a>
+            </nav>
+            <h1>About</h1>
+        </header>
+
+        <hr style="margin-top:0; margin-bottom:10px;" />
+
+        <div class="wrapper">
+            <p>
+                Please Note: Timeline Support is still in development. 
+            </p>
+            
+            <p>
+                If you encounter any issues or have any future requests, either tweet (<a href="https://twitter.com/dominicjmaas">@dominicjmaas</a>) or leave an issue on <a href="https://github.com/DominicMaas/TimelineExtension">GitHub</a>.
+            </p>
+
+            <p>
+                Timeline Support provides deeper Windows 10 integration features into browsers such as Windows Timeline activities 
+                and Project Rome.
+            </p>
+
+            <ul>
+                <li>Sync your browsing history to Windows Timeline, access it at a later date or on another device with the same Microsoft Account.</li>
+                <li>Adjust how many seconds you have to be on a page before it's stored in Windows Timeline (by default, 8 seconds).</li>
+                <li>Continue browsing on another device quickly by 'pushing' your current active tab to other devices sharing the same Microsoft Account.</li>
+            </ul>
+        </div>
+
+    </section>
+
+</body>
+</html>

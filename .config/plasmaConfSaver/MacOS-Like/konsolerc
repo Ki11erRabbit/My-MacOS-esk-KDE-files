@@ -1,0 +1,21 @@
+[Desktop Entry]
+DefaultProfile=arcolinux.profile
+
+[Favorite Profiles]
+Favorites=
+
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+
+[MainWindow]
+HDMI-A-0 DisplayPort-1 Height 1920x1080=574
+HDMI-A-0 DisplayPort-1 Width 1920x1080=821
+HDMI-A-0 DisplayPort-1 XPosition 1920x1080=2210
+HDMI-A-0 DisplayPort-1 YPosition 1920x1080=119
+Height 1080=574
+MenuBar=Disabled
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAAAzUAAAIUAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAAB5f////8AAAAAAAAAAA==
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+Width 1920=821

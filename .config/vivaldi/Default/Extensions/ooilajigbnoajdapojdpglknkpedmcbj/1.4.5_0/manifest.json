@@ -1,0 +1,25 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "/images/icon.png",
+      "default_popup": "/pages/popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "saveVideo.js" ],
+      "matches": [ "*://*.youtube.com/*", "*://*.youtubekids.com/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "description": "Prevent procrastination by setting a daily time limit for your YouTube usage.",
+   "icons": {
+      "128": "images/icon - 128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqERosVC+r3sLbvo6nq2g4RG1RNcIB5ZJmPbcXpKFdXInxDLLCFj9hKe8E8NS27lhASZqU84omdRn+ISzOsi1HYRgyJyesAJEM1RkWoeYLxknR0ioSqVLbq8QzTThLkYTftJhofLpGnQ/adYdEQJnLycQ7oGTuzfatpung5krSZJ10IhaMmPC/KI5e+/77qfLkpojmvLlr9V8ndm/VaJDXjsXpNoj2FyJzKa1RzHG3fdVMhtcGyOpmLEnRlr+0bJ3fSadg2QFDzbFtDfYklCrCR9KNPCntd6Fcmy7xqIG9hbmYCWPkpcMgMfvjE48Xw4vW0+V/YGgr0HK5Vt0YR7EBQIDAQAB",
+   "manifest_version": 2,
+   "name": "YouTube Time",
+   "options_page": "/pages/options.html",
+   "permissions": [ "tabs", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.5"
+}

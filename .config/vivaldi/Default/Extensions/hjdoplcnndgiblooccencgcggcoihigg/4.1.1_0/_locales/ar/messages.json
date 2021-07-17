@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "Description of the extension.",
+      "message": "تقوم هذه الإضافة بتلخيص الشروط و الأحكام الخاصة بأي موقع و إعطاء تقييم لتوفير الوقت علي المستخدمين بدلاً من قراءة اتفاقية الاستخدام و الخصوصية بالكامل، مزيد من التفاصيل علي موقع tosdr.org"
+   },
+   "extensionName": {
+      "description": "Name of the extension.",
+      "message": "Terms of Service; Didn’t Read"
+   }
+}

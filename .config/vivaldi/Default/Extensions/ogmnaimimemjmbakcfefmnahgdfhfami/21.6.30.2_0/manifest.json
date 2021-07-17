@@ -1,0 +1,77 @@
+{
+   "author": "Alex Yatskov",
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/icon128.png",
+         "16": "images/icon16.png",
+         "19": "images/icon19.png",
+         "32": "images/icon32.png",
+         "38": "images/icon38.png",
+         "48": "images/icon48.png",
+         "64": "images/icon64.png"
+      },
+      "default_popup": "action-popup.html",
+      "default_title": "Yomichan"
+   },
+   "commands": {
+      "openInfoPage": {
+         "description": "Open the info page"
+      },
+      "openPopupWindow": {
+         "description": "Open the popup window"
+      },
+      "openSearchPage": {
+         "description": "Open the search page",
+         "suggested_key": {
+            "default": "Alt+Insert"
+         }
+      },
+      "openSettingsPage": {
+         "description": "Open the settings page"
+      },
+      "toggleTextScanning": {
+         "description": "Toggle text scanning on/off",
+         "suggested_key": {
+            "default": "Alt+Delete"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/core.js", "js/yomichan.js", "js/app/frontend.js", "js/app/popup.js", "js/app/popup-factory.js", "js/app/popup-proxy.js", "js/app/popup-window.js", "js/comm/api.js", "js/comm/cross-frame-api.js", "js/comm/frame-ancestry-handler.js", "js/comm/frame-client.js", "js/comm/frame-offset-forwarder.js", "js/dom/dom-text-scanner.js", "js/dom/document-util.js", "js/dom/text-source-element.js", "js/dom/text-source-range.js", "js/input/hotkey-handler.js", "js/language/text-scanner.js", "js/script/dynamic-loader.js", "js/app/content-script-main.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*", "file://*/*" ]
+   } ],
+   "content_security_policy": "default-src 'self'; img-src blob: 'self'; style-src 'self' 'unsafe-inline'; media-src *; connect-src *",
+   "description": "Japanese dictionary with Anki integration",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "19": "images/icon19.png",
+      "32": "images/icon32.png",
+      "38": "images/icon38.png",
+      "48": "images/icon48.png",
+      "64": "images/icon64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAug/0Wtc35jGyy+Jkf4Kt9DUAzvziCJbhwlwzdro0cPnN+2K6Y2rCBVgAJln7SffCKVWa0k6BM3D7m7yydAECgSo8VUn2zUgInXpfQAuI2dG+6OEi0SOu2SkXJFvvAMjM/JAXY0zQRofnxeDRqvT7EtHW9lLwtgLTBuJObuq5zCHAPFa3PZ5ZORvUEmQZ2HDxUxaUZzsFW4kZ/rxPaNXTWe+qM30wqvlk79DBUJVq9zlzsDGM6G5qWcCk3vT5MEGuZVK7IPi6w9dPfOA3myicuywhDxumteg6wFraarMMAR2Stc80Yb9pCZT5Jav9e7eG97DuBAh97IOKrfI6mU8CkwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "57.0.0.0",
+   "name": "Yomichan",
+   "optional_permissions": [ "clipboardRead", "nativeMessaging" ],
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "settings.html"
+   },
+   "permissions": [ "\u003Call_urls>", "storage", "clipboardWrite", "unlimitedStorage", "webRequest", "webRequestBlocking" ],
+   "sandbox": {
+      "content_security_policy": "sandbox allow-scripts; default-src 'self'; script-src 'self' 'unsafe-eval'",
+      "pages": [ "template-renderer.html" ]
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "21.6.30.2",
+   "web_accessible_resources": [ "popup.html", "template-renderer.html" ]
+}

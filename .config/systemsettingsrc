@@ -1,0 +1,11 @@
+[MainWindow]
+DisplayPort-1 HDMI-A-0 XPosition 1920x1080=1920
+DisplayPort-1 HDMI-A-0 YPosition 1920x1080=29
+HDMI-A-0 DisplayPort-1 Height 1920x1080=709
+HDMI-A-0 DisplayPort-1 Width 1920x1080=1028
+HDMI-A-0 DisplayPort-1 XPosition 1920x1080=2543
+HDMI-A-0 DisplayPort-1 YPosition 1920x1080=92
+MenuBar=Disabled
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAABAQAAALFAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled

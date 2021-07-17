@@ -1,0 +1,16 @@
+{
+   "browser_action": {
+      "default_icon": "icon_128.png",
+      "default_popup": "index.html"
+   },
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoKyH7fxVe1JkURBYRnnntNaaHdCxA53DKrkKkr786Lm3ZaMcufxz+pL+kA4CtfeKaBxPzUHSopheEqvb+bF4wvPXMC4CUOKjHF5IPD8iTBChQBUr6Lo3EXKPtzZD2Spr/hfdzC/a/0VjaY+fUGPWilAJHtYJKvddeKbn8TrCJfVICS6pRPMvI/XRfeiSaFhsDRGxMGr0pPouFQcd9Kp/8kvY35VPfqTWMWfwVlv3muGRKGFeIwIZA9WQ0do39pC0sL3sNglYXrjj0YU1/Ykc4yPAfma7aSYmbtU1er7LNmNrMDY77pZsSAasqJ7ml1/DRnqiBad6Gp5ak2KzPFqY/QIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "87",
+   "name": "Steam : Game Finder",
+   "permissions": [ "storage", "https://steamcommunity.com/", "https://steamcdn-a.akamaihd.net/", "https://nebukam.github.io/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.0.2"
+}

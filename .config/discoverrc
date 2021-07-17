@@ -1,0 +1,6 @@
+[FlatpakSources]
+Sources=flathub
+
+[Window]
+geometry=958,255,900,600
+visibility=2

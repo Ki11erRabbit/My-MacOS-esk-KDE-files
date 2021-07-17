@@ -1,0 +1,299 @@
+{
+   "AccountLabel": {
+      "message": "Tài khoản"
+   },
+   "AppDescription": {
+      "message": "Xem, chỉnh sửa và tạo các tài liệu Office trong trình duyệt của bạn."
+   },
+   "AppDescriptionWithEditor": {
+      "message": "Xem, chỉnh sửa và tạo tệp Office trong trình duyệt và viết bài tốt nhất có thể trên web."
+   },
+   "AppFolderName": {
+      "message": "Tiện ích mở rộng Office"
+   },
+   "AppListLabel": {
+      "message": "Web Apps"
+   },
+   "AppLongDescription": {
+      "message": "Được xây dựng cho Chrome – Sử dụng Word, Excel, PowerPoint, OneNote và Sway Online mà không cần cài đặt Office.\r\n\r\nTự tin sáng tạo – Thông qua các lựa chọn quen thuộc về định dạng và bố trí, bạn có thể thể hiện ý tưởng của mình với độ trung thực cao nhất.\r\n\r\nLàm việc trong khi di chuyển – Nhờ tích hợp OneDrive và OneDrive for Business, bạn có thể truy cập tệp từ bất cứ đâu.\r\n\r\nCài đặt ứng dụng nghĩa là bạn đồng ý với các điều khoản và điều kiện: http://aka.ms/officechromeextensionterms\r\n\r\nChính sách về Quyền riêng tư: http://aka.ms/privacy\r\n"
+   },
+   "AppLongDescriptionEdge": {
+      "message": "Phần mở rộng trình duyệt Office đặt biểu tượng trên thanh công cụ Microsoft Edge cho phép bạn truy nhập trực tiếp vào các tệp Office của mình, cho dù chúng được lưu trữ trực tuyến hay trên máy tính. Phần mở rộng trên web của \r\n\r\nOffice có thể mở các tệp được lưu trữ trong OneDrive và OneDrive cho Doanh nghiệp.\r\n\r\nBạn sẽ nhận được các tính năng của Word, Excel, PowerPoint, OneNote và Sway ngay trong trình duyệt mà không cần cài đặt Office.\r\n\r\nPhần mở rộng trình duyệt Office giờ đây bao gồm tính năng soát lỗi nội dung của bạn*. Nó kết nối với một dịch vụ trực tuyến của Microsoft cung cấp các đề xuất chính tả, ngữ pháp và tinh chỉnh cho bài viết của bạn trên hầu hết các trang web và có sẵn ở hơn 80 ngôn ngữ.\r\n\r\n*Tính năng này có thể không có sẵn cho tất cả người dùng.\r\n\r\nBằng cách cài đặt ứng dụng, bạn đồng ý với các điều khoản và điều kiện sau: \r\n\r\n"
+   },
+   "AppLongDescriptionWithEditor": {
+      "message": "Được xây dựng cho Chrome – Sử dụng Word, Excel, PowerPoint, OneNote và Sway Online mà không cần cài đặt Office.\r\n\r\nSáng tạo một cách tự tin – Sử dụng các tùy chọn định dạng và bố trí quen thuộc để thể hiện ý tưởng của bạn một cách chân thực.\r\n\r\nLàm việc mọi lúc, mọi nơi – Truy nhập vào tệp của bạn từ mọi nơi, nhờ tích hợp với OneDrive và OneDrive cho Doanh nghiệp.\r\n\r\nPhần mở rộng trình duyệt Office giờ đây bao gồm tính năng soát lỗi nội dung của bạn*. Nó kết nối với một dịch vụ trực tuyến của Microsoft cung cấp các đề xuất chính tả, ngữ pháp và tinh chỉnh cho bài viết của bạn trên hầu hết các trang web và có sẵn ở hơn 80 ngôn ngữ.\r\n\r\n*Tính năng này có thể không có sẵn cho tất cả người dùng.\r\n\r\nBằng cách cài đặt ứng dụng, bạn đồng ý với các điều khoản và điều kiện sau: http://aka.ms/officechromeextensionterms\r\n\r\nChính sách về quyền riêng tư: http://aka.ms/privacy\r\n"
+   },
+   "AppName": {
+      "message": "Office"
+   },
+   "AppNameEdge": {
+      "message": "Tiện ích mở rộng trình duyệt Office"
+   },
+   "AppShortName": {
+      "message": "Office"
+   },
+   "AppTermsOfServiceLCA": {
+      "message": "PLEASE NOTE: Refer to your license terms for Microsoft Office browser extension software (the \"software\") to identify the entity licensing this supplement to you and for support information. You may use a copy of this supplement with each validly licensed copy of the software. You may not use the supplement if you do not have a license for the software. The license terms for the software apply to your use of this supplement."
+   },
+   "BrowseToOpenLabel": {
+      "message": "Tải lên và mở..."
+   },
+   "CopyrightLabel": {
+      "message": "Microsoft Corporation 2015"
+   },
+   "CreateAccountLabel": {
+      "message": "Tạo một tài khoản"
+   },
+   "CreateDocsMessageLabel": {
+      "message": "Không có tài liệu được xem gần đây."
+   },
+   "CreateNewLabel": {
+      "message": "Mới"
+   },
+   "DisableEditorOnThisSiteLabel": {
+      "message": "Tắt Trình soạn thảo trên $host$",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "DocumentsNotFoundMessageLabel": {
+      "message": "Chúng tôi không thể lấy danh sách tài liệu gần đây của bạn vào lúc này."
+   },
+   "EditorBrandText": {
+      "message": "Trình soạn thảo"
+   },
+   "EditorGrammarToggleLabel": {
+      "message": "Ngữ pháp"
+   },
+   "EditorIsBlockedOnThisSiteLabel": {
+      "message": "Trình soạn thảo hiện không được hỗ trợ trên $host$",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "EditorIsDisabledOnThisSiteLabel": {
+      "message": "Trình soạn thảo hiện đang bị tắt trên $host$",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "EditorIsOffLabel": {
+      "message": "Trình soạn thảo đã tắt."
+   },
+   "EditorNativeSupportOnThisSiteLabel": {
+      "message": "Trình soạn thảo có trong $host$",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "outlook.com"
+         }
+      }
+   },
+   "EditorPreviewLabel": {
+      "message": "(Bản xem trước)"
+   },
+   "EditorPriorityShutdownLabel": {
+      "message": "Dịch vụ Trình soạn thảo được phần mở rộng Trình soạn thảo Microsoft cung cấp."
+   },
+   "EditorRefinementsGoPremiumTooltip": {
+      "message": "Nhận ý tưởng viết nâng cao và dung lượng lưu trữ 1 TB khi bạn chuyển sang phiên bản cao cấp."
+   },
+   "EditorRefinementsToggleLabel": {
+      "message": "Tinh chỉnh"
+   },
+   "EditorRefinementsTooltip": {
+      "message": "Tinh chỉnh là những đề xuất viết nâng cao giúp bài viết của bạn trở nên rõ ràng, bớt dài dòng hoặc thêm phần trịnh trọng."
+   },
+   "EditorSpellingToggleLabel": {
+      "message": "Chính tả"
+   },
+   "EnableEditorOnThisSiteLabel": {
+      "message": "Bật Trình soạn thảo trên $host$",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "ExcelAppName": {
+      "message": "Excel"
+   },
+   "ExcelOnlineAppName": {
+      "message": "Excel"
+   },
+   "FileTypeErrorMessage": {
+      "message": "Loại tệp này không được hỗ trợ. Hãy chọn một tài liệu Word, Excel hay PowerPoint."
+   },
+   "LoadingRecentsLabel": {
+      "message": "Đang tải..."
+   },
+   "MoreFilesLabel": {
+      "message": "Xem thêm tài liệu"
+   },
+   "MyAccountLabel": {
+      "message": "Xem tài khoản của tôi"
+   },
+   "NextLabel": {
+      "message": "Đăng nhập"
+   },
+   "NotificationAutoSaveButton": {
+      "message": "Không hiển thị điều này nữa"
+   },
+   "NotificationAutoSaveToOneDrive": {
+      "message": "Chúng tôi đã lưu tệp vào thư mục \"Tiện ích mở rộng Office\" trên OneDrive của bạn."
+   },
+   "NotificationAutoSaveToSharePoint": {
+      "message": "Chúng tôi đã lưu tệp vào thư mục \"Tiện ích mở rộng Office\" trên OneDrive for Business của bạn."
+   },
+   "NotificationFileAccess": {
+      "message": "Trong thiết đặt tiện ích mở rộng, hãy chọn hộp kiểm \"Cho phép truy nhập vào các URL tệp\" nếu bạn muốn kéo và thả tệp vào trình duyệt."
+   },
+   "NotificationFileMaxSizeByteLimitReached": {
+      "message": "Tiện ích mở rộng trình duyệt của Office không thể mở tài liệu của bạn vì kích cỡ tài liệu.  Vui lòng tải trực tiếp lên OneDrive để mở tài liệu."
+   },
+   "NotificationFileUploadFailureGeneric": {
+      "message": "Xin lỗi, chúng tôi không thể mở tệp của bạn."
+   },
+   "NotificationFileUploadFailureServer": {
+      "message": "Xin lỗi, chúng tôi không thể mở tệp của bạn.  Vui lòng thử lại sau."
+   },
+   "NotificationFileUploadFailureUnsupportedMedia": {
+      "message": "Xin lỗi, chúng tôi không thể mở tệp của bạn.  Hãy chọn một tệp được tạo bằng Word, Excel hay PowerPoint"
+   },
+   "NotificationFileUploadInProgress": {
+      "message": "Chúng tôi hiện đang tải lên (các) tài liệu của bạn."
+   },
+   "NotificationInvalidSubscription": {
+      "message": "Đăng ký Office 365 của bạn có thể đã hết hạn hoặc có thể không bao gồm OneDrive for Business. Kiểm tra đăng ký của bạn hoặc đăng nhập bằng một Tài khoản Microsoft thay vào đó."
+   },
+   "NotificationNotSignedIn": {
+      "message": "Đăng nhập vào tiện ích mở rộng để xem và chỉnh sửa các tệp trong Office trên web."
+   },
+   "NotificationSetDefault": {
+      "message": "Trong ứng dụng Tệp, nhấn hai ngón tay vào tài liệu để mở bằng Office."
+   },
+   "NotificationUnsupportedFileType": {
+      "message": "Chọn một tệp được tạo bằng Word, Excel hay PowerPoint."
+   },
+   "NotificationWebDocRedirect": {
+      "message": "Tiện ích mở rộng Office đang mở tài liệu của bạn trong trình duyệt"
+   },
+   "NotificationWebDocRedirectButton": {
+      "message": "Không hiển thị lại nội dung này"
+   },
+   "O365FilesLabel": {
+      "message": "Từ OneDrive for Business"
+   },
+   "OfficeOnlineAppName": {
+      "message": "Office"
+   },
+   "OfflineLabel": {
+      "message": "Bạn đang ngoại tuyến. Vui lòng kết nối lại để sử dụng tiện ích bổ sung của trình duyệt Office."
+   },
+   "OneDriveAppName": {
+      "message": "OneDrive"
+   },
+   "OneDriveFilesLabel": {
+      "message": "Từ OneDrive"
+   },
+   "OneNoteAppName": {
+      "message": "OneNote"
+   },
+   "OneNoteOnlineAppName": {
+      "message": "OneNote"
+   },
+   "OpenDocumentLabel": {
+      "message": "Mở"
+   },
+   "OutlookAppName": {
+      "message": "Outlook"
+   },
+   "PowerPointAppName": {
+      "message": "PowerPoint"
+   },
+   "PowerPointOnlineAppName": {
+      "message": "PowerPoint"
+   },
+   "RecentDocsLabel": {
+      "message": "Gần đây"
+   },
+   "SettingsLabel": {
+      "message": "Thiết đặt"
+   },
+   "ShareMessage": {
+      "message": "Chia sẻ"
+   },
+   "SharePermissionsErrorMessage": {
+      "message": "Yêu cầu có quyền"
+   },
+   "SharePermissionsTooltip": {
+      "message": "Bạn không có quyền để chia sẻ"
+   },
+   "SharePointAppName": {
+      "message": "SharePoint"
+   },
+   "SharePointSiteAppName": {
+      "message": "SharePoint"
+   },
+   "SignInHeaderLabel": {
+      "message": "Bạn muốn lưu các tệp của bạn ở đâu?"
+   },
+   "SignInLabel": {
+      "message": "Đăng nhập"
+   },
+   "SignInMSALabel": {
+      "message": "Đăng nhập bằng tài khoản Microsoft"
+   },
+   "SignInO365Label": {
+      "message": "Đăng nhập bằng tài khoản cơ quan hoặc trường học"
+   },
+   "SignOutLabel": {
+      "message": "Đăng xuất"
+   },
+   "StandaloneExtensionInstalledLabel": {
+      "message": "Dịch vụ Trình soạn thảo được phần mở rộng Trình soạn thảo Microsoft cung cấp."
+   },
+   "SupportPageLabel": {
+      "message": "Cần trợ giúp đăng nhập?"
+   },
+   "SwayAppName": {
+      "message": "Sway"
+   },
+   "TeamsAppName": {
+      "message": "Teams"
+   },
+   "TelemetrySettingLabel": {
+      "message": "Tự động gửi dữ liệu để giúp chúng tôi cải thiện sản phẩm."
+   },
+   "TurnOnEditorLabel": {
+      "message": "Bật Trình soạn thảo"
+   },
+   "UploadToOneDriveBusinessLabel": {
+      "message": "Tải lên OneDrive for Business"
+   },
+   "UploadToOneDriveLabel": {
+      "message": "Tải lên OneDrive"
+   },
+   "UsernameLabel": {
+      "message": "Chưa đăng nhập"
+   },
+   "WebRedirectSettingLabel": {
+      "message": "Mở tệp Office ngay trong trình duyệt bằng Office."
+   },
+   "WordAppName": {
+      "message": "Word"
+   },
+   "WordOnlineAppName": {
+      "message": "Word"
+   }
+}

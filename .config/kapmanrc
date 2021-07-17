@@ -1,0 +1,11 @@
+[General]
+Theme=themes/mummies_crypt.desktop
+
+[KgDifficulty]
+Level=Medium
+
+[MainWindow]
+HDMI-A-0 DisplayPort-1 Height 1920x1080=805
+HDMI-A-0 DisplayPort-1 Width 1920x1080=966
+HDMI-A-0 DisplayPort-1 XPosition 1920x1080=2598
+HDMI-A-0 DisplayPort-1 YPosition 1920x1080=55

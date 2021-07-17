@@ -1,0 +1,10 @@
+[$Version]
+update_info=spectacle_newConfig.upd:spectacle-new-config
+
+[GuiConfig]
+captureMode=5
+cropRegion=2282,161,1154,759
+window-position=50,26
+
+[Save]
+lastSaveLocation=file:///home/ki11errabbit/Pictures/Screenshot_20210715_113918.png

@@ -1,0 +1,29 @@
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Pictures/arco-calamares-logo.png,file:$HOME/Pictures/Arcolinux Genshin Impact.svg
+Recent URLs[$e]=file:$HOME/Pictures/,file:$HOME/
+detailViewIconSize=16
+
+[PlasmaViews][Panel 41][Defaults]
+thickness=26
+
+[PlasmaViews][Panel 41][Horizontal1920]
+thickness=26
+
+[PlasmaViews][Panel 72][Defaults]
+thickness=26
+
+[PlasmaViews][Panel 72][Horizontal1920]
+thickness=26
+
+[PlasmaViews][Panel 79][Defaults]
+thickness=50
+
+[PlasmaViews][Panel 79][Horizontal1920]
+thickness=50
+
+[ScreenConnectors]
+0=HDMI-A-0
+1=DisplayPort-1
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js

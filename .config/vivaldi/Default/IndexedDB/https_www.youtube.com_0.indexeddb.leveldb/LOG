@@ -1,0 +1,27 @@
+2021/07/14-14:16:44.201 3fe9 Reusing MANIFEST /home/ki11errabbit/.config/vivaldi/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/14-14:16:44.201 3fe9 Recovering log #37
+2021/07/14-14:16:44.210 3fe9 Reusing old log /home/ki11errabbit/.config/vivaldi/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000037.log 
+2021/07/14-14:16:44.210 3fe9 Delete type=2 #36
+2021/07/14-14:16:45.617 3ffd Level-0 table #42: started
+2021/07/14-14:16:45.629 3ffd Level-0 table #42: 794813 bytes OK
+2021/07/14-14:16:45.633 3ffd Delete type=0 #37
+2021/07/14-14:16:45.634 3ffd Manual compaction at level-0 from '\x00\x11\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x12\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/07/14-14:16:45.634 3ffd Manual compaction at level-1 from '\x00\x11\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x12\x00\x00\x00' @ 0 : 0; will stop at '\x00\x12\x02\x02\x01\x14\x00s\x00h\x00e\x00l\x00l\x00_\x00i\x00d\x00e\x00n\x00t\x00i\x00f\x00i\x00e\x00r\x00_\x00k\x00e\x00y' @ 10819 : 1
+2021/07/14-14:16:45.634 3ffd Compacting 1@1 + 1@2 files
+2021/07/14-14:16:45.638 3ffd Generated table #43@1: 456 keys, 28762 bytes
+2021/07/14-14:16:45.638 3ffd Compacted 1@1 + 1@2 files => 28762 bytes
+2021/07/14-14:16:45.643 3ffd compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/07/14-14:16:45.644 3ffd Delete type=2 #42
+2021/07/14-14:16:45.644 3ffd Manual compaction at level-1 from '\x00\x12\x02\x02\x01\x14\x00s\x00h\x00e\x00l\x00l\x00_\x00i\x00d\x00e\x00n\x00t\x00i\x00f\x00i\x00e\x00r\x00_\x00k\x00e\x00y' @ 10819 : 1 .. '\x00\x12\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/07/14-14:16:45.668 3ffc Level-0 table #45: started
+2021/07/14-14:16:45.671 3ffc Level-0 table #45: 1630 bytes OK
+2021/07/14-14:16:45.677 3ffc Delete type=0 #41
+2021/07/14-14:16:45.677 3ffc Delete type=2 #39
+2021/07/14-14:16:45.677 3ffc Manual compaction at level-0 from '\x00\x12\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x13\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/07/14-14:16:45.677 3ffc Manual compaction at level-1 from '\x00\x12\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x13\x00\x00\x00' @ 0 : 0; will stop at '\x00\x13\x00\x00\xc8\x0b\x00S\x00W\x00H\x00e\x00a\x00l\x00t\x00h\x00L\x00o\x00g' @ 15325 : 1
+2021/07/14-14:16:45.677 3ffc Compacting 1@1 + 1@2 files
+2021/07/14-14:16:45.680 3ffc Generated table #46@1: 440 keys, 22189 bytes
+2021/07/14-14:16:45.680 3ffc Compacted 1@1 + 1@2 files => 22189 bytes
+2021/07/14-14:16:45.686 3ffc compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/07/14-14:16:45.686 3ffc Delete type=2 #45
+2021/07/14-14:16:45.686 3ffc Manual compaction at level-1 from '\x00\x13\x00\x00\xc8\x0b\x00S\x00W\x00H\x00e\x00a\x00l\x00t\x00h\x00L\x00o\x00g' @ 15325 : 1 .. '\x00\x13\x00\x00\x00' @ 0 : 0; will stop at (end)

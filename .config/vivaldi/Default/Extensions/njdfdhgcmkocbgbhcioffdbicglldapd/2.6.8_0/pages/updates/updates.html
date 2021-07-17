@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Release notes | LocalCDN</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="../base.css">
+        <link rel="stylesheet" type="text/css" href="../updates/updates.css">
+        <script src="../../core/constants.js"></script>
+        <script src="../../modules/internal/rule-generator.js"></script>
+        <script defer src="../../core/resources.js"></script>
+        <script defer src="../../core/mappings.js"></script>
+        <script src="updates.js"></script>
+    </head>
+    <body>
+        <img src="../images/logo.svg" alt="LocalCDN" class="logo"/>
+        <div class="container">
+            <h1>Release notes</h1>
+            <div class="notice">
+                <div class="subtle-hint">
+                    <div class="topic-label">
+                        New in LocalCDN:
+                    </div>
+                    <ul>
+                        <li>Fixed: bootstrap.min.js replaced with bootstrap.bundle.min.js (v4.x and v5.x) (<a href="https://codeberg.org/nobody/LocalCDN/issues/470">#470</a>)</li>
+                        <li>Updated: Chart.js v3.2.1 -> v3.3.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/471">#471</a>)</li>
+                        <li>Updated: appboy-web-sdk v3.2.0 -> v3.3.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/472">#472</a>)</li>
+                        <li>Added: MathJax (minimal) v2.7.5 (<a href="https://codeberg.org/nobody/LocalCDN/issues/75">#75</a>)</li>
+                        <li>Mapping: MathJax -> mathjax.rstudio.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/469">#469</a>)</li>
+                        <li>Updated: dayjs v1.10.4 -> v1.10.5 (<a href="https://codeberg.org/nobody/LocalCDN/issues/474">#474</a>)</li>
+                        <li>Updated: findify-bundle v7.0.10 -> v7.0.18 (<a href="https://codeberg.org/nobody/LocalCDN/issues/475">#475</a>)</li>
+                        <li>Updated: Google Material Fonts v87 -> v88 (<a href="https://codeberg.org/nobody/LocalCDN/issues/476">#476</a>)</li>
+                        <li>Updated: ember.js v3.27.1 -> v3.27.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/477">#477</a>)</li>
+                        <li>Updated: element-ui v2.15.1 -> v2.15.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/479">#479</a>)</li>
+                        <li>Updated: vanilla-lazyload v17.3.1 -> v17.3.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/480">#480</a>)</li>
+                        <li>Added: videojs-seek-buttons v2.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/481">#481</a>)</li>
+                        <li>Updated: bodymovin v5.7.8 -> v5.7.11 (<a href="https://codeberg.org/nobody/LocalCDN/issues/482">#482</a>)</li>
+                        <li>Mapping: jquery.validation -> cdn.jsdelivr.net</li>
+                        <li>Updated: hls.js v1.0.2 -> v1.0.5 (<a href="https://codeberg.org/nobody/LocalCDN/issues/483">#483</a>)</li>
+                        <li>Updated: instantsearch.js v4.21.0 -> v4.23.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/450">#450</a>)</li>
+                        <li>Updated: noUiSlider v15.1.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/437">#437</a>)</li>
+                        <li>Updated: video.js v7.12.1 -> v7.12.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/484">#484</a>)</li>
+                        <li>Updated: vue v2.6.12 -> v2.6.13 (<a href="https://codeberg.org/nobody/LocalCDN/issues/485">#485</a>)</li>
+                        <li>Updated: Datatables v1.10.24 -> v1.10.25 (<a href="https://codeberg.org/nobody/LocalCDN/issues/487">#487</a>)</li>
+                    </ul>
+                    <div id="generator-section">
+                        <div class="topic-label">
+                            Generate rule sets for your adblocker
+                        </div>
+                        <div class="ruleset-generator">
+                            <label class="b-contain" for="generate-ublock-rules">uBlock
+                                <input id="generate-ublock-rules" name="rule-sets" data-ruleset="uBlock" type="radio" value="uBlock" autocomplete="off">
+                                <div class="b-input"></div>
+                            </label>
+                        </div>
+                        <div class="ruleset-generator">
+                            <label class="b-contain" for="generate-umatrix-rules">uMatrix
+                                <input id="generate-umatrix-rules" name="rule-sets" data-ruleset="uMatrix" type="radio" value="uMatrix" autocomplete="off">
+                                <div class="b-input"></div>
+                            </label>
+                        </div>
+                        <div class="ruleset-generator">
+                            <label class="b-contain" for="generate-adguard-rules">AdGuard
+                                <input id="generate-adguard-rules" name="rule-sets" data-ruleset="AdGuard" type="radio" value="AdGuard" autocomplete="off">
+                                <div class="b-input"></div>
+                            </label>
+                        </div>
+                        <div>
+                            <textarea rows="12" cols="15" id="generated-rules" readonly></textarea>
+                            <input id="button-copy-rule-set" type="button" value="Copy">
+                        </div>
+                        <hr/>
+                    </div>
+                    <div id="history"><span id="history-indicator">+</span> Previous Versions</div>
+                    <div id="history-release-notes">
+                        <p class='release-date'>2021-05-22 (v2.6.7)</p>
+                            <ul>
+                                <li>Added: Snowplow v2.17.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/419">#419</a>)</li>
+                                <li>Added: Bowser v1.9.4 and v2.11.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/427">#427</a>)</li>
+                                <li>Fixed: Default values after startup (<a href="https://codeberg.org/nobody/LocalCDN/issues/343">#343</a>, <a href="https://codeberg.org/nobody/LocalCDN/issues/428">#428</a>)</li>
+                                <li>Updated: rocket-loader (<a href="https://codeberg.org/nobody/LocalCDN/issues/429">#429</a>)</li>
+                                <li>Mapping: jquery-migrate -> code.jquery.com</li>
+                                <li>Fixed: videojs-seek-buttons without version number (<a href="https://codeberg.org/nobody/LocalCDN/issues/390">#390</a>)</li>
+                                <li>Added: Datepicker (ngx-bootstrap) v6.2.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/430">#430</a>)</li>
+                                <li>Added: embedly player v0.1.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/431">#431</a>)</li>
+                                <li>Mapping: bluebird -> cdn.jsdelivr.net</li>
+                                <li>Mapping: bootstrap -> cdn.bootcss.com</li>
+                                <li>Added: DataTables (Bundle) v1.10.24 (<a href="https://codeberg.org/nobody/LocalCDN/issues/432">#432</a>)</li>
+                                <li>Updated: Swiper v6.5.8 -> v6.6.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/433">#433</a>)</li>
+                                <li>Updated: Chart.js v3.2.0 -> v3.2.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/434">#434</a>)</li>
+                                <li>Updated: algoliasearch v4.9.0 -> v4.9.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/435">#435</a>)</li>
+                                <li>Added: leaflet.markercluster v1.5.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/438">#438</a>)</li>
+                                <li>Improved: HTML filter inside frames (<a href="https://codeberg.org/nobody/LocalCDN/issues/439">#439</a>)</li>
+                                <li>Added: leaflet.featuregroup.subgroup v1.0.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/440">#440</a>)</li>
+                                <li>Added: Leaflet.EasyButton v2.4.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/441">#441</a>)</li>
+                                <li>Fixed: [Chromium] extraHeaders permission for sanitization (<a href="https://codeberg.org/nobody/LocalCDN/issues/442">#442</a>)</li>
+                                <li>Added: bxslider v4.2.15 (<a href="https://codeberg.org/nobody/LocalCDN/issues/446">#446</a>)</li>
+                                <li>Fixed: RocketLoader does not load (<a href="https://codeberg.org/nobody/LocalCDN/issues/446">#446</a>)</li>
+                                <li>Updated: Bootstrap v5.0.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/447">#447</a>)</li>
+                                <li>Added: bodymovin v4.13.0 and v5.7.8 (<a href="https://codeberg.org/nobody/LocalCDN/issues/452">#452</a>)</li>
+                                <li>Mapping: materialize -> cdn.jsdelivr.net/gh/ (<a href="https://codeberg.org/nobody/LocalCDN/issues/458">#458</a>)</li>
+                                <li>Mapping: jQuery -> cdn.jsdelivr.net/gh/ (<a href="https://codeberg.org/nobody/LocalCDN/issues/458">#458</a>)</li>
+                                <li>Updated: findify-bundle v7.0.10 (<a href="https://codeberg.org/nobody/LocalCDN/issues/464">#464</a>)</li>
+                                <li>Updated: plyr v3.6.7 -> v3.6.8 (<a href="https://codeberg.org/nobody/LocalCDN/issues/465">#465</a>)</li>
+                                <li>Updated: ember.js v3.26.1 -> v3.27.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/466">#466</a>)</li>
+                                <li>Updated: Google Material Fonts v85 -> v87 (<a href="https://codeberg.org/nobody/LocalCDN/issues/467">#467</a>)</li>
+                            </ul>
+                        <p class='release-date'>2021-04-25 (v2.6.6)</p>
+                            <ul>
+                                <li>Improved: i18n help page (<a href="https://codeberg.org/nobody/LocalCDN/issues/352">#352</a>)</li>
+                                <li>Updated: Google Material Icons v83 -> v85 (<a href="https://codeberg.org/nobody/LocalCDN/issues/371">#371</a>)</li>
+                                <li>Updated: instantsearch.js v4.20.0 -> v4.21.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/373">#373</a>)</li>
+                                <li>Update: hls.js v1.0.0 -> v1.0.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/374">#374</a>)</li>
+                                <li>Update: d3 v6.6.2 -> v6.7.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/375">#375</a>)</li>
+                                <li>Update: jeditable.js v2.0.18 -> 2.0.19 (<a href="https://codeberg.org/nobody/LocalCDN/issues/376">#376</a>)</li>
+                                <li>Update: markdown-it v12.0.2 -> 12.0.6 (<a href="https://codeberg.org/nobody/LocalCDN/issues/377">#377</a>)</li>
+                                <li>Update: video.js v7.12.0 -> v7.12.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/378">#378</a>)</li>
+                                <li>Update: plyr v3.6.4 -> v3.6.7 (<a href="https://codeberg.org/nobody/LocalCDN/issues/379">#379</a>)</li>
+                                <li>Update: Chart.js v3.1.0 -> v3.2.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/380">#380</a>)</li>
+                                <li>Update: anchor-js v4.3.0 -> v4.3.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/381">#381</a>)</li>
+                                <li>Update: Swiper v6.5.6 -> v6.5.8 (<a href="https://codeberg.org/nobody/LocalCDN/issues/382">#382</a>)</li>
+                                <li>Update: mdb-ui-kit v3.4.0 -> v3.5.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/386">#386</a>)</li>
+                                <li>Added i18n: Ukrainian</li>
+                                <li>Update: underscore.js v1.12.0 -> v1.13.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/387">#387</a>)</li>
+                                <li>Added: video.js to vjs.zencdn.net (<a href="https://codeberg.org/nobody/LocalCDN/issues/391">#391</a>)</li>
+                                <li>Updated: algoliasearch v4.8.6 -> v4.9.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/392">#392</a>)</li>
+                                <li>Added: angular-ui-bootstrap v2.5.6 (<a href="https://codeberg.org/nobody/LocalCDN/issues/393">#393</a>)</li>
+                                <li>Update: angular-ui-select v0.20.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/394">#394</a>)</li>
+                                <li>Update: gsap v3.5.1 -> v3.6.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/395">#395</a>)</li>
+                                <li>Update: highlight.js v9.18.3 -> v9.18.5 (<a href="https://codeberg.org/nobody/LocalCDN/issues/396">#396</a>)</li>
+                                <li>Update: dojo v1.16.3 -> v1.16.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/397">#397</a>)</li>
+                                <li>Update: ethjs v0.3.4 -> v0.4.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/398">#398</a>)</li>
+                                <li>Update: fancybox v2.1.5 -> v2.1.7 (<a href="https://codeberg.org/nobody/LocalCDN/issues/399">#399</a>)</li>
+                                <li>Update: jquery-validation-unobtrusive v3.2.11 -> v3.2.12 (<a href="https://codeberg.org/nobody/LocalCDN/issues/400">#400</a>)</li>
+                                <li>Update: lazysizes v5.3.1 -> v5.3.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/401">#401</a>)</li>
+                                <li>Update: libphonenumber-js v1.9.4 -> v1.9.16 (<a href="https://codeberg.org/nobody/LocalCDN/issues/402">#402</a>)</li>
+                                <li>Added: appboy.min.js to cdn.jsdelivr.net and js.appboycdn.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/403">#403</a>)</li>
+                                <li>Update: lodash.js v4.17.20 -> v4.17.21 (<a href="https://codeberg.org/nobody/LocalCDN/issues/406">#406</a>)</li>
+                                <li>Update: mdbootstrap v4.18.0 -> v4.19.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/407">#407</a>)</li>
+                                <li>Update: react v16.13.1 -> v16.14.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/408">#408</a>)</li>
+                                <li>Update: react-dom v16.13.1 -> v16.14.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/409">#409</a>)</li>
+                                <li>Update: react-dom v17.0.1 -> v17.0.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/409">#409</a>)</li>
+                                <li>Update: slick-carousel v1.8.1 -> v1.9.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/410">#410</a>)</li>
+                                <li>Update: socket.io v3.1.2 -> v3.1.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/411">#411</a>)</li>
+                                <li>Update: store.js v2.0.4 -> v2.0.12 (<a href="https://codeberg.org/nobody/LocalCDN/issues/412">#412</a>)</li>
+                                <li>Update: vanilla-lazyload v17.3.0 -> v17.3.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/413">#413</a>)</li>
+                                <li>Update: vue v3.0.6 -> v3.0.11 (<a href="https://codeberg.org/nobody/LocalCDN/issues/414">#414</a>)</li>
+                                <li>Update: vue-i18n v9.1.3 -> v9.1.6 (<a href="https://codeberg.org/nobody/LocalCDN/issues/415">#415</a>)</li>
+                                <li>Fixed: (Chromium) Missing option to block/allow Google Fonts (<a href="https://codeberg.org/nobody/LocalCDN/issues/416">#416</a>)</li>
+                                <li>Update: react-redux v7.2.3 -> v7.2.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/417">#417</a>)</li>
+                                <li>Update: redux v4.0.5 -> v4.1.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/418">#418</a>)</li>
+                            </ul>
+                        <p class='release-date'>2021-03-28 (v2.6.5)</p>
+                            <ul>
+                                <li>Improved: Welcome page</li>
+                                <li>Improved: Note for Non-Firefox users (Help and Options page)</li>
+                                <li>Improved: URL of Google Fonts (<a href="https://codeberg.org/nobody/LocalCDN/issues/333">#333</a>)</li>
+                                <li>Updated: bootstrap-table v1.18.2 -> v1.18.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/334">#334</a>)</li>
+                                <li>Updated: d3 v6.6.1 -> v6.6.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/335">#335</a>)</li>
+                                <li>Updated: p5.js v1.3.0 -> v1.3.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/336">#336</a>)</li>
+                                <li>Added: jasny-bootstrap v3.1.3 and v4.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/332">#332</a>)</li>
+                                <li>Added: semantic-ui v2.4.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/332">#332</a>)</li>
+                                <li>Updated: instantsearch.js v4.18.0 -> v4.20.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/339">#339</a>)</li>
+                                <li>Added: lightcase v2.5.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/338">#338</a>)</li>
+                                <li>Improved mapping: Font Awesome (cdn.jsdelivr.net) (<a href="https://codeberg.org/nobody/LocalCDN/issues/338">#338</a>)</li>
+                                <li>Added: animejs v3.2.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/338">#338</a>)</li>
+                                <li>Improved: Google Font detection (<a href="https://codeberg.org/nobody/LocalCDN/issues/332">#332</a>)</li>
+                                <li>Added: babel-standalone v6.26.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/332">#332</a>)</li>
+                                <li>Fixed: HTML filter (If website does not deliver any charset) (<a href="https://codeberg.org/nobody/LocalCDN/issues/340">#340</a>)</li>
+                                <li>Updated: socket.io v4.0.0 -> v4.0.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/341">#341</a>)</li>
+                                <li>Added: feather-icons v4.28.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/332">#332</a>)</li>
+                                <li>Added: bluebird.js v3.7.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/342">#342</a>)</li>
+                                <li>Added: hls.js v1.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/344">#344</a>)</li>
+                                <li>Updated: popper.js v2.9.1 -> v2.9.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/345">#345</a>)</li>
+                                <li>Updated: Google Material Icons v82 -> v83 (<a href="https://codeberg.org/nobody/LocalCDN/issues/346">#346</a>)</li>
+                                <li>Added: Chart.js v3.1.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/347">#347</a>)</li>
+                                <li>Updated: highlight.js v10.7.1 -> v10.7.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/351">#351</a>)</li>
+                                <li>Added: Bootstrap (only CSS) v2.3.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/350">#350</a>)</li>
+                                <li>Updated: Swiper v6.4.15 -> v6.5.6 (<a href="https://codeberg.org/nobody/LocalCDN/issues/355">#355</a>)</li>
+                                <li>Fixed: Missing libraries (<a href="https://codeberg.org/nobody/LocalCDN/issues/357">#357</a>)</li>
+                                <li>Updated: noUiSlider v14.6.4 -> v14.7.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/358">#358</a>)</li>
+                                <li>Updated: mdb-ui-kit v3.1.0 -> v3.4.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/359">#359</a>)</li>
+                                <li>Updated: video.js v7.10.2 -> v7.12.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/360">#360</a>)</li>
+                                <li>Updated: vue-i18n v9.0.0 -> v9.1.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/361">#361</a>)</li>
+                                <li>Updated: angular-material v1.2.1 -> v1.2.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/363">#363</a>)</li>
+                                <li>Updated: vue-i18n v8.24.2 -> v8.24.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/366">#366</a>)</li>
+                                <li>Updated: angular-ui-select v0.19.8 (<a href="https://codeberg.org/nobody/LocalCDN/issues/367">#367</a>)</li>
+                                <li>Updated: Internal module "Color Picker" v2.1.4 -> v2.2.1</li>
+                                <li>Added: leaflet v0.7.7 and v1.7.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/368">#368</a>)</li>
+                            </ul>
+                        <p class='release-date'>2021-03-28 (v2.6.4)</p>
+                            <ul>
+                                <li>Fixed: "angular.js" separated into single components (<a href="https://codeberg.org/nobody/LocalCDN/issues/310">#310</a>)</li>
+                                <li>Added mapping: highlight v7.x + v8.x -> v9.18.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/311">#311</a>)</li>
+                                <li>Fixed: Empty ruleset generator in update.html (<a href="https://codeberg.org/nobody/LocalCDN/issues/312">#312</a>)</li>
+                                <li>Updated: plyr v3.6.3 -> v3.6.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/313">#313</a>)</li>
+                                <li>Added: Cycle2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/314">#314</a>)</li>
+                                <li>Updated: Font Awesome v5.12.2 -> v5.12.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/315">#315</a>)</li>
+                                <li>Added: Bootstrap v3.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/311">#311</a>)</li>
+                                <li>Fixed: Google Material Icons cannot be loaded (<a href="https://codeberg.org/nobody/LocalCDN/issues/316">#316</a>)</li>
+                                <li>Updated: noUiSlider v14.6.3 -> v14.6.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/317">#317</a>)</li>
+                                <li>Updated: highlight.js v10.6.0 -> v10.7.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/319">#319</a>)</li>
+                                <li>Fixed: Counter doesn't work (Chromium only) (<a href="https://codeberg.org/nobody/LocalCDN/issues/320">#320</a>)</li>
+                                <li>Updated: Google Material Icons v81 -> v82 (<a href="https://codeberg.org/nobody/LocalCDN/issues/321">#321</a>)</li>
+                                <li>Updated: react-redux v7.2.2 -> v7.2.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/322">#322</a>)</li>
+                                <li>Updated: react v17.0.1 -> v17.0.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/323">#323</a>)</li>
+                                <li>Updated: ember.js v3.25.3 -> v3.26.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/324">#324</a>)</li>
+                                <li>Updated: vue-i18n v8.24.1 -> v8.24.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/325">#325</a>)</li>
+                                <li>Added: jQueryUI v1.10.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/327">#327</a>)</li>
+                                <li>Updated: d3 v6.6.0 -> v6.6.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/329">#329</a>)</li>
+                                <li>Updated: instantsearch.js v4.16.1 -> v4.18.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/330">#330</a>)</li>
+                                <li>Updated: lazysizes v5.3.0 -> v5.3.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/331">#331</a>)</li>
+                            </ul>
+                        </p>
+                        <p class='release-date'>2021-03-15 (v2.6.3)</p>
+                            <ul>
+                                <li>Fixed: Check status code in HTML filter (<a href="https://codeberg.org/nobody/LocalCDN/issues/277">#277</a>)</li>
+                                <li>Improved: "Website broken?" Link in popup menu (<a href="https://codeberg.org/nobody/LocalCDN/issues/278">#278</a>)</li>
+                                <li>Implemented: Simple logging page (<a href="https://codeberg.org/nobody/LocalCDN/issues/279">#279</a>)</li>
+                                <li>Implemented: Hide donation button</li>
+                                <li>Updated: popper.js v2.8.0 -> v2.9.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/280">#280</a>)</li>
+                                <li>Updated: Google Material Icons v77 -> v81 (<a href="https://codeberg.org/nobody/LocalCDN/issues/281">#281</a>)</li>
+                                <li>Updated: element-ui v2.15.0 -> v2.15.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/282">#282</a>)</li>
+                                <li>Updated: instantsearch.js v4.14.2 -> v4.16.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/283">#283</a>)</li>
+                                <li>Updated: vue-i18n v8.22.4 -> v8.24.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/284">#284</a>)</li>
+                                <li>Added: jQuery v3.2.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/287">#287</a>)</li>
+                                <li>Updated: socket.io v3.1.1 -> v3.1.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/288">#288</a>)</li>
+                                <li>Updated: Swiper v6.4.10 -> v6.4.15 (<a href="https://codeberg.org/nobody/LocalCDN/issues/289">#289</a>)</li>
+                                <li>Updated: Vue v3.0.5 -> v3.0.6 (<a href="https://codeberg.org/nobody/LocalCDN/issues/290">#290</a>)</li>
+                                <li>Added: vue-i18n v9.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/291">#291</a>)</li>
+                                <li>Updated: angular.js v1.7.9 -> v1.8.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/292">#292</a>)</li>
+                                <li>Fixed: Charset detection in HTML filter improved and check if supported (<a href="https://codeberg.org/nobody/LocalCDN/issues/293">#293</a>)</li>
+                                <li>Added: Findify v6.17.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/294">#294</a>)</li>
+                                <li>i18n: Singhalese added</li>
+                                <li>Updated: vue-resource v1.5.1 -> v1.5.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/296">#296</a>)</li>
+                                <li>Added: jQuery v3.6.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/297">#297</a>)</li>
+                                <li>Updated: angular-translate v2.7.2 -> v2.18.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/298">#298</a>)</li>
+                                <li>Added: Bulma v0.9.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/299">#299</a>)</li>
+                                <li>Implemented: "Week" as the default in statistics. Save last period. (<a href="https://codeberg.org/nobody/LocalCDN/issues/300">#300</a>)</li>
+                                <li>Updated: ember.js v3.25.1 -> v3.25.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/302">#302</a>)</li>
+                                <li>Updated: algoliasearch v4.8.5 -> v4.8.6 (<a href="https://codeberg.org/nobody/LocalCDN/issues/303">#303</a>)</li>
+                                <li>Updated: p5.js v1.2.0 -> v1.3.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/304">#304</a>)</li>
+                                <li>Added: socket.io v4.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/305">#305</a>)</li>
+                                <li>Updated: clipboard.js v2.0.6 -> v2.0.8 (<a href="https://codeberg.org/nobody/LocalCDN/issues/306">#306</a>)</li>
+                                <li>Updated: d3 v6.5.0 -> v6.6.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/307">#307</a>)</li>
+                                <li>Implemented: Indicate missing resources on the icon (<a href="https://codeberg.org/nobody/LocalCDN/issues/301">#301</a>)</li>
+                                <li>Includes also the following changes because v2.6.2 was rejected by Mozilla:
+                                    <ul>
+                                        <li>Improved: i18n for "Website broken?" in Popup</li>
+                                        <li>Improved: Small improvements in UI</li>
+                                        <li>Updated: highlight.js v10.5.0 -> v10.6.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/265">#265</a>)</li>
+                                        <li>Updated: algoliasearch v4.8.4 -> v4.8.5 (<a href="https://codeberg.org/nobody/LocalCDN/issues/266">#266</a>)</li>
+                                        <li>Updated: Google Material Icons v76 -> v77 (<a href="https://codeberg.org/nobody/LocalCDN/issues/267">#267</a>)</li>
+                                        <li>Updated: ember.js v3.24.1 -> v3.25.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/268">#268</a>)</li>
+                                        <li>Updated: instantsearch.js v4.13.2 -> v4.14.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/270">#270</a>)</li>
+                                        <li>Added CDN: fonts.gstatic.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/269">#269</a>)</li>
+                                        <li>Updated: popper.js v2.6.0 -> v2.8.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/273">#273</a>)</li>
+                                        <li>Added: hogan.js v3.0.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/276">#276</a>)</li>
+                                        <li>Updated: underscore.js v1.11.0 -> v1.12.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/276">#276</a>)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </p>
+                        <p class='release-date'>2021-02-20 (v2.6.2)</p>
+                            <ul>
+                                <li>Rejected by Mozilla</li>
+                            </ul>
+                        <p class='release-date'>2021-02-07 (v2.6.1)</p>
+                            <ul>
+                                <li>Updated: bootstrap-table v1.18.1 -> v1.18.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/247">#247</a>)</li>
+                                <li>Updated: Google Material Icons (<a href="https://codeberg.org/nobody/LocalCDN/issues/248">#248</a>)</li>
+                                <li>Updated: d3 v6.4.0 -> v6.5.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/249">#249</a>)</li>
+                                <li>Added: slider-pro v1.5.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/250">#250</a>)</li>
+                                <li>Updated: ember.js v3.24.0 -> v3.24.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/251">#251</a>)</li>
+                                <li>Updated: instantsearch.js v4.12.0 -> v4.13.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/252">#252</a>)</li>
+                                <li>Added: Missing resources for Highlight.js (<a href="https://codeberg.org/nobody/LocalCDN/issues/253">#253</a>)</li>
+                                <li>Improved: HTML filter (<a href="https://codeberg.org/nobody/LocalCDN/issues/257">#257</a>)</li>
+                                <li>Added: jquery-validation-unobtrusive v3.2.11 (<a href="https://codeberg.org/nobody/LocalCDN/issues/258">#258</a>)</li>
+                                <li>Added: Day.js v1.10.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/258">#258</a>)</li>
+                                <li>Added: jQuery Scrollbar v0.2.11 (<a href="https://codeberg.org/nobody/LocalCDN/issues/258">#258</a>)</li>
+                                <li>Added: jquery.cookie v1.4.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/258">#258</a>)</li>
+                                <li>Added: angularjs-toaster v1.2.0, v3.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/259">#259</a>)</li>
+                                <li>Updated: angularjs-slider v7.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/260">#260</a>)</li>
+                                <li>Updated: Vue v3.0.5 (<a href="https://codeberg.org/nobody/LocalCDN/issues/261">#261</a>)</li>
+                                <li>Removed: Google Charts (<a href="https://codeberg.org/nobody/LocalCDN/issues/167">#167</a>)</li>
+                                <li>Removed CDN: www.gstatic.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/167">#167</a>)</li>
+                                <li>Updated: Swiper v6.3.5 -> v6.4.10 (<a href="https://codeberg.org/nobody/LocalCDN/issues/262">#262</a>)</li>
+                                <li>Updated: Google Material Icons v75 -> v76 (<a href="https://codeberg.org/nobody/LocalCDN/issues/263">#263</a>)</li>
+                                <li>Updated: socket.io v3.1.0 -> v3.1.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/264">#264</a>)</li>
+                            </ul>
+                        <p class='release-date'>2021-01-23 (v2.6.0)</p>
+                            <ul>
+                                <li>Added: noUiSlider v14.6.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/219">#219</a>)</li>
+                                <li>Added: chosen v1.8.7 (<a href="https://codeberg.org/nobody/LocalCDN/issues/219">#219</a>)</li>
+                                <li>Updated: axios v0.21.0 -> v0.21.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/221">#221</a>)</li>
+                                <li>Updated: Socket.IO v2.3.0 -> v2.4.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/222">#222</a>)</li>
+                                <li>Updated: Socket.IO v3.0.4 -> v3.1.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/224">#224</a>)</li>
+                                <li>Updated: instantsearch.js v4.9.2 -> v4.11.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/225">#225</a>)</li>
+                                <li>Fixed: Delete old keys (<a href="https://codeberg.org/nobody/LocalCDN/issues/226">#226</a>)</li>
+                                <li>Updated: vue-i18n v8.22.2 -> v8.22.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/227">#227</a>)</li>
+                                <li>i18n: Slovak added (<a href="https://codeberg.org/nobody/LocalCDN/issues/228">#228</a>)</li>
+                                <li>Updated: MDB UI Kit v3.1.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/230">#230</a>)</li>
+                                <li>Updated: jquery-validate v1.19.2 -> v1.19.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/231">#231</a>)</li>
+                                <li>Updated: Font Awesome v5.15.1 -> v5.15.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/232">#232</a>)</li>
+                                <li>Implemented: Wildcard support for allowlist (<a href="https://codeberg.org/nobody/LocalCDN/issues/233">#233</a>)</li>
+                                <li>Updated: element-ui v2.14.1 -> v2.15.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/235">#235</a>)</li>
+                                <li>Improved: List of domains line by line (<a href="https://codeberg.org/nobody/LocalCDN/issues/236">#236</a>)</li>
+                                <li>Updated: Bootstrap v4.5.3 -> v4.6.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/237">#237</a>)</li>
+                                <li>Updated: instantsearch.js v4.11.0 -> v4.12.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/238">#238</a>)</li>
+                                <li>Updated: algoliasearch v4.8.3 -> v4.8.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/239">#239</a>)</li>
+                                <li>Added: bootstrap-vue v2.21.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/240">#240</a>)</li>
+                                <li>Added: ajax-bootstrap-select v1.4.5 (<a href="https://codeberg.org/nobody/LocalCDN/issues/241">#241</a>)</li>
+                                <li>Added: bootstrap-multiselect v0.9.16 (<a href="https://codeberg.org/nobody/LocalCDN/issues/242">#242</a>)</li>
+                                <li>Added: knockout v3.5.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/243">#243</a>)</li>
+                                <li>Added: js-cookie v3.0.0-beta.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/244">#244</a>)</li>
+                                <li>Updated: d3 v6.3.1 -> v6.4.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/245">#245</a>)</li>
+                            </ul>
+                        <p class='release-date'>2021-01-03 (v2.5.13)</p>
+                            <ul>
+                                <li>Updated: angular-ui-router v1.0.28 -> v1.0.29 (<a href="https://codeberg.org/nobody/LocalCDN/issues/208">#208</a>)</li>
+                                <li>Updated: jeditable.js v2.0.17 -> v2.0.18 (<a href="https://codeberg.org/nobody/LocalCDN/issues/209">#209</a>)</li>
+                                <li>Added: blazy v1.8.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/211">#211</a>)</li>
+                                <li>Updated: highlight.js v10.4.1 -> v10.5.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/212">#212</a>)</li>
+                                <li>Added: docsearch.js v2.6.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/213">#213</a>)</li>
+                                <li>Added CDN: cdn.ravenjs.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/214">#214</a>)</li>
+                                <li>Updated: ember.js v3.23.0 -> v3.24.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/215">#215</a>)</li>
+                                <li>Added: MDB UI Kit v3.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/216">#216</a>)</li>
+                                <li>Fixed: Version expression (<a href="https://codeberg.org/nobody/LocalCDN/issues/217">#217</a>)</li>
+                                <li>Updated: lazysizes v5.2.2 -> v5.3.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/218">#218</a>)</li>
+                                <li>Change date of last mapping update</li>
+                            </ul>
+                        <p class='release-date'>2021-01-03 (v2.5.12)</p>
+                            <ul>
+                                <li>Version revoked</li>
+                            </ul>
+                        <p class='release-date'>2020-12-21 (v2.5.11)</p>
+                            <ul>
+                                <li>Fixed: HTML filter (<a href="https://codeberg.org/nobody/LocalCDN/issues/192">#192</a>)</li>
+                                <li>Updated: bootstrap-table v1.18.0 -> v1.18.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/193">#193</a>)</li>
+                                <li>Improved: Backup and restore validation (<a href="https://codeberg.org/nobody/LocalCDN/issues/174">#174</a>)</li>
+                                <li>Added: p5.js v1.1.9 (<a href="https://codeberg.org/nobody/LocalCDN/issues/194">#194</a>)</li>
+                                <li>Added: dexie.js v3.0.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/194">#194</a>)</li>
+                                <li>Added: slick-theme v1.8.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/196">#196</a>)</li>
+                                <li>Updated: socket.io v3.0.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/197">#197</a>)</li>
+                                <li>Added: MaterialDesign v2.8.94, v3.9.97, v4.9.95, v5.8.55 (<a href="https://codeberg.org/nobody/LocalCDN/issues/198">#198</a>)</li>
+                                <li>Added CDN: cdn.materialdesignicons.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/198">#198</a>)</li>
+                                <li>Added: p5.js v0.10.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/194">#194</a>)</li>
+                                <li>Updated: instantsearch.js v4.9.0 -> v4.9.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/199">#199</a>)</li>
+                                <li>Updated: hls.js v0.14.6 -> v0.14.17 (<a href="https://codeberg.org/nobody/LocalCDN/issues/200">#200</a>)</li>
+                                <li>Updated: d3 v6.3.0 -> v6.3.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/201">#201</a>)</li>
+                                <li>Added: Bootstrap v3.3.7 (<a href="https://codeberg.org/nobody/LocalCDN/issues/203">#203</a>)</li>
+                                <li>Added: Font Awesome to cdn.bootcss.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/204">#204</a>)</li>
+                                <li>Updated: popper.js v2.5.4 -> v2.6.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/205">#205</a>)</li>
+                                <li>Updated: instantsearch.js v4.9.1 -> v4.9.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/206">#206</a>)</li>
+                                <li>Updated: p5.js v1.1.9 -> v1.2.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/207">#207</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-12-05 (v2.5.10)</p>
+                            <ul>
+                                <li>Updated: jQuery Migrate v3.3.1 -> v3.3.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/182">#182</a>)</li>
+                                <li>Updated: raven.js v3.26.2 -> v3.27.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/183">#183</a>)</li>
+                                <li>Updated: vanilla-lazyload v17.1.3 -> v17.3.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/185">#185</a>)</li>
+                                <li>Updated: algoliasearch v4.8.0 -> v4.8.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/186">#186</a>)</li>
+                                <li>Fixed: Data type of update notification (<a href="https://codeberg.org/nobody/LocalCDN/issues/174">#174</a>)</li>
+                                <li>Added: jQuery v1.11.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/187">#187</a>)</li>
+                                <li>Updated: bootbox.js v5.4.1 -> v5.5.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/188">#188</a>)</li>
+                                <li>Updated: instantsearch.js v4.8.7 -> v4.9.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/189">#189</a>)</li>
+                                <li>Updated: d3 v6.2.0 -> v6.3.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/190">#190</a>)</li>
+                                <li>Updated: highlight.js v10.4.0 -> v10.4.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/191">#191</a>)</li>
+                                <li>Added: highlight.js CSS v9.18.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/144">#144</a>)</li>
+                                <li>Added: highlight.js CSS v10.4.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/191">#191</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-11-22 (v2.5.9)</p>
+                            <ul>
+                                <li>Fixed: Exported settings have old values (<a href="https://codeberg.org/nobody/LocalCDN/issues/177">#177</a>)</li>
+                                <li>Updated: algoliasearch v4.7.0 -> v4.8.0 (<a href="https://codeberg.org/nobody/LocalCDN/commit/db3d0447bf">db3d0447bf</a>, <a href="https://codeberg.org/nobody/LocalCDN/commit/4fe79b6362">4fe79b6362</a>)</li>
+                                <li>Updated: Ember.js v3.12.3 -> v3.23.0 (<a href="https://codeberg.org/nobody/LocalCDN/commit/c0272e9e05">c0272e9e05</a>)</li>
+                                <li>Updated: instantsearch.js v4.8.6 -> v4.8.7 (<a href="https://codeberg.org/nobody/LocalCDN/commit/b2d25fef63">b2d25fef63</a>)</li>
+                                <li>Updated: Socket.io v3.0.1 -> v3.0.3 (<a href="https://codeberg.org/nobody/LocalCDN/commit/3df3b5f3a9">3df3b5f3a9</a>, <a href="https://codeberg.org/nobody/LocalCDN/commit/15b5c0d9db">15b5c0d9db</a>)</li>
+                                <li>Added: jQuery v1.11.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/178">#178</a>)</li>
+                                <li>Updated: vue-i18n v8.22.1 -> v8.22.2 (<a href="https://codeberg.org/nobody/LocalCDN/commit/a392f6b724">a392f6b724</a>)</li>
+                                <li>Updated: highlight.js v10.3.2 -> v10.4.0 (<a href="https://codeberg.org/nobody/LocalCDN/commit/5a10b0258f">5a10b0258f</a>)</li>
+                                <li>Updated: Bootstrap v3.3.7 -> v3.4.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/f6efcc0ff8">f6efcc0ff8</a>)</li>
+                                <li>Added: Bootstrap (fonts only) (<a href="https://codeberg.org/nobody/LocalCDN/commit/495efcb23f">495efcb23f</a>)</li>
+                                <li>Improved: Only remove metadata if origin is not on allowed list (<a href="https://codeberg.org/nobody/LocalCDN/issues/179">#179</a>)</li>
+                                <li>Added: Swiper v6.3.5 (<a href="https://codeberg.org/nobody/LocalCDN/commit/c51c72da99">c51c72da99</a>)</li>
+                                <li>Added: Swiper to cdn.jsdelivr.net (<a href="https://codeberg.org/nobody/LocalCDN/commit/039d4767f5">039d4767f5</a>)</li>
+                                <li>Updated: jQuery Validation v1.19.1 -> v1.19.2 (<a href="https://codeberg.org/nobody/LocalCDN/commit/9aac5a1ab8">9aac5a1ab8</a>)</li>
+                                <li>Added: jQuery Validation to cdn.jsdelivr.net (<a href="https://codeberg.org/nobody/LocalCDN/commit/c3e9ad9fb5">c3e9ad9fb5</a>)</li>
+                                <li>Hotfix: Only remove metadata if origin is not on allowed list (<a href="https://codeberg.org/nobody/LocalCDN/issues/179">#179</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-11-22 (v2.5.8)</p>
+                            <ul>
+                                <li>Version revoked</li>
+                            </ul>
+                        <p class='release-date'>2020-11-15 (v2.5.7)</p>
+                            <ul>
+                                <li>Updated: plyr v3.5.10 -> v3.6.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/165">#165</a>)</li>
+                                <li>Added: algoliasearch v4.6.0</li>
+                                <li>Updated: AnchorJS v4.2.2 -> v4.3.0</li>
+                                <li>Added: AnchorJS by cdn.jsdelivr.net</li>
+                                <li>Added: plyr SVG (<a href="https://codeberg.org/nobody/LocalCDN/issues/165">#165</a>)</li>
+                                <li>Added CDN: cdn.plyr.io (<a href="https://codeberg.org/nobody/LocalCDN/issues/165">#165</a>)</li>
+                                <li>Fixed: Twitter Bootstrap (<a href="https://codeberg.org/nobody/LocalCDN/issues/166">#166</a>)</li>
+                                <li>Fixed: Rule generator</li>
+                                <li>Added CDN: www.gstatic.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/167">#167</a>)</li>
+                                <li>Added: Google Charts (<a href="https://codeberg.org/nobody/LocalCDN/issues/167">#167</a>)</li>
+                                <li>Fixed: slick v1.9.0 -> v1.8.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/168">#168</a>)</li>
+                                <li>Added: Bootstrap Bundle JS to maxcdn.bootstrapcdn.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/157">#157</a>)</li>
+                                <li>Added: Pagination.js v2.1.5 (<a href="https://codeberg.org/nobody/LocalCDN/issues/157">#157</a>)</li>
+                                <li>Added: magnific-popup.js (<a href="https://codeberg.org/nobody/LocalCDN/issues/169">#169</a>)</li>
+                                <li>Added: Font Awesome (Fonts only) (<a href="https://codeberg.org/nobody/LocalCDN/issues/170">#170</a>)</li>
+                                <li>Added: GSAP Bundle (<a href="https://codeberg.org/nobody/LocalCDN/issues/171">#171</a>)</li>
+                                <li>Added: Modaal v0.4.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/172">#172</a>)</li>
+                                <li>Added: inview (Protonet) v1.1.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/172">#172</a>)</li>
+                                <li>Fixed: Import settings (<a href="https://codeberg.org/nobody/LocalCDN/issues/138">#138</a>)</li>
+                                <li>Fixed: Unknown frameworks in statistics page (<a href="https://codeberg.org/nobody/LocalCDN/issues/151">#151</a>)</li>
+                                <li>Added: axios to cdnjs.cloudflare.com (<a href="https://codeberg.org/nobody/LocalCDN/commit/a99293a121">a99293a121</a>)</li>
+                                <li>Updated: Plyr v3.6.2 -> v3.6.3(<a href="https://codeberg.org/nobody/LocalCDN/commit/4138996cc4">4138996cc4</a>)</li>
+                                <li>Updated: Angular Material v1.1.21 -> v1.2.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/81aa60a714">81aa60a714</a>)</li>
+                                <li>Updated: AngularUI Router v1.0.25 -> v1.0.28 (<a href="https://codeberg.org/nobody/LocalCDN/commit/be202a7775">be202a7775</a>)</li>
+                                <li>Added: Animate.CSS v4.1.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/732293bb92">732293bb92</a>)</li>
+                                <li>Updated: autocomplete.js v0.37.1 -> v0.38.0 (<a href="https://codeberg.org/nobody/LocalCDN/commit/20ea603f86">20ea603f86</a>)</li>
+                                <li>Updated: axios v0.20.0 -> v0.21.0 (<a href="https://codeberg.org/nobody/LocalCDN/commit/fa09b3ac9b">fa09b3ac9b</a>)</li>
+                                <li>Added: Bootbox.js v5.4.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/6d4b52d31b">6d4b52d31b</a>)</li>
+                                <li>Added: Bootstrap Date Range Picker v3.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/5de5756709">5de5756709</a>)</li>
+                                <li>Updated: Bootstrap Select v1.13.17 -> v1.13.18 (<a href="https://codeberg.org/nobody/LocalCDN/commit/648f9edcca">648f9edcca</a>)</li>
+                                <li>Added: Bootstrap Slider v11.0.2 (<a href="https://codeberg.org/nobody/LocalCDN/commit/ed395f2594">ed395f2594</a>)</li>
+                                <li>Added: D3.js v4.13.0, v5.16.0, v6.2.0 (<a href="https://codeberg.org/nobody/LocalCDN/commit/b38e6256dd">b38e6256dd</a>)</li>
+                                <li>Updated: Dojo v1.14.1 -> v1.16.3 (<a href="https://codeberg.org/nobody/LocalCDN/commit/132ec44602">132ec44602</a>)</li>
+                                <li>Updated: ElementUI v2.13.2 -> v2.14.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/84274f56a2">84274f56a2</a>)</li>
+                                <li>Added: history v5.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/commit/ec00d42ada">ec00d42ada</a>)</li>
+                                <li>Updated: hls.js v0.13.2 -> v0.14.6 (<a href="https://codeberg.org/nobody/LocalCDN/commit/e11a089766">e11a089766</a>)</li>
+                                <li>Updated: InstantSearch.js v4.8.1 -> v4.8.5 (<a href="https://codeberg.org/nobody/LocalCDN/commit/6e354d5b3c">6e354d5b3c</a>)</li>
+                                <li>Updated: jQuery-csv v1.0.9 -> v1.0.11 (<a href="https://codeberg.org/nobody/LocalCDN/commit/5abcbb67a7">5abcbb67a7</a>)</li>
+                                <li>Added: jquery-jeditable v2.0.17 (<a href="https://codeberg.org/nobody/LocalCDN/commit/65122b9532">65122b9532</a>)</li>
+                                <li>Updated: jQuery Migrate v3.1.0 -> v3.3.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/bd302e38a1">bd302e38a1</a>)</li>
+                                <li>Updated: jQuery-Autocomplete v1.4.10 -> v1.4.11 (<a href="https://codeberg.org/nobody/LocalCDN/commit/91594ac85e">91594ac85e</a>)</li>
+                                <li>Added: Lazysizes v5.2.2 (<a href="https://codeberg.org/nobody/LocalCDN/commit/99b0b0525c">99b0b0525c</a>)</li>
+                                <li>Updated: libphonenumber-js v1.7.53 -> v1.9.4 (<a href="https://codeberg.org/nobody/LocalCDN/commit/3667db0741">3667db0741</a>)</li>
+                                <li>Updated: lightgallery.js v1.9.0 -> v1.10.0 (<a href="https://codeberg.org/nobody/LocalCDN/commit/9578358dd6">9578358dd6</a>)</li>
+                                <li>Updated: Lodash v4.17.10 -> v4.17.20 (<a href="https://codeberg.org/nobody/LocalCDN/commit/289d150455">289d150455</a>)</li>
+                                <li>Updated: Lozad.js v1.14.0 -> v1.16.0 (<a href="https://codeberg.org/nobody/LocalCDN/commit/14f349deba">14f349deba</a>)</li>
+                                <li>Updated: Page.js v1.7.1 -> v1.11.6 (<a href="https://codeberg.org/nobody/LocalCDN/commit/2b4394cd5d">2b4394cd5d</a>)</li>
+                                <li>Added: ReactDOM v17.0.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/a19c2251ca">a19c2251ca</a>)</li>
+                                <li>Updated: React Redux v7.2.1 -> v7.2.2 (<a href="https://codeberg.org/nobody/LocalCDN/commit/fed222f16d">fed222f16d</a>)</li>
+                                <li>Updated: React Side Effect v2.1.0 -> v2.1.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/ca785bdd57">ca785bdd57</a>)</li>
+                                <li>Added: React v17.0.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/966558f4fc">966558f4fc</a>)</li>
+                                <li>Updated: Rickshaw v1.6.6 -> v1.7.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/fa8fe69e66">fa8fe69e66</a>)</li>
+                                <li>Added: Socket.IO v3.0.1 (<a href="https://codeberg.org/nobody/LocalCDN/commit/c8a1965d34">c8a1965d34</a>)</li>
+                                <li>Added: spin.js v3.1.0, v4.1.0 (<a href="https://codeberg.org/nobody/LocalCDN/commit/b4daf8a2fb">b4daf8a2fb</a>)</li>
+                                <li>Added: Tooltipster v4.2.8 (<a href="https://codeberg.org/nobody/LocalCDN/commit/4c671c61fa">4c671c61fa</a>)</li>
+                                <li>Updated: vanilla-lazyload v17.1.0 -> v17.1.3 (<a href="https://codeberg.org/nobody/LocalCDN/commit/0dd182345e">0dd182345e</a>)</li>
+                                <li>Updated: video.js v7.10.1 -> v7.10.2 (<a href="https://codeberg.org/nobody/LocalCDN/commit/44864aff61">44864aff61</a>)</li>
+                                <li>Added: WebRTC Adapter v7.4.0 (<a href="https://codeberg.org/nobody/LocalCDN/commit/b852ca6a7f">b852ca6a7f</a>)</li>
+                                <li>Added: lozad to cdnjs.cloudflare.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/175">#175</a>)</li>
+                                <li>Improved: Settings for update notification (<a href="https://codeberg.org/nobody/LocalCDN/issues/176">#176</a>)</li>
+                                <li>Added: magnific-popup.js (CSS) (<a href="https://codeberg.org/nobody/LocalCDN/issues/169">#169</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-11-08 (v2.5.6)</p>
+                            <ul>
+                                <li>Added: Babel-Polyfill v7.12.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/157">#157</a>)</li>
+                                <li>Added: libsodium.js v0.5.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/158">#158</a>)</li>
+                                <li>Added: Swiper v3.4.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/160">#160</a>)</li>
+                                <li>Updated: Swiper v5.4.2 -> v5.4.5 (<a href="https://codeberg.org/nobody/LocalCDN/issues/160">#160</a>)</li>
+                                <li>Added: lightGallery v1.9.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/161">#161</a>)</li>
+                                <li>Added: Drawer v3.2.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/162">#162</a>)</li>
+                                <li>Added: iScroll v5.2.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/162">#162</a>)</li>
+                                <li>Added: jquery.matchHeight v0.7.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/162">#162</a>)</li>
+                                <li>Added: Bootstrap Table v1.18.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/163">#163</a>)</li>
+                                <li>Hotfix: Statistics page (<a href="https://codeberg.org/nobody/LocalCDN/issues/164">#164</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-11-08 (v2.5.5)</p>
+                            <ul>
+                                <li>Version revoked (<a href="https://codeberg.org/nobody/LocalCDN/issues/164">#164</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-11-01 (v2.5.4)</p>
+                            <ul>
+                                <li>Updated: Chart.js v2.9.3 -> v2.9.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/140">#140</a>)</li>
+                                <li>Updated: Underscore.js v1.9.1 -> v1.11.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/141">#141</a>)</li>
+                                <li>Updated: Popper.js v2.4.4 -> v2.5.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/142">#142</a>)</li>
+                                <li>Updated: Moment.js v2.24.0 -> v2.29.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/143">#143</a>)</li>
+                                <li>Added: highlight.js v9.18.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/144">#144</a>)</li>
+                                <li>Added: highlight.js v10.3.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/144">#144</a>)</li>
+                                <li>Added: ElementUI v2.13.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/147">#147</a>)</li>
+                                <li>Added: vue-i18n v8.22.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/147">#147</a>)</li>
+                                <li>Added: ElementUI in cdn.bootcss.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/147">#147</a>)</li>
+                                <li>Added: OwlCarousel v2.3.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/148">#148</a>)</li>
+                                <li>Added: OwlCarousel v2.0.0-beta.2.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/148">#148</a>)</li>
+                                <li>Added: markdown-it v12.0.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/149">#149</a>)</li>
+                                <li>Fixed: Unknown frameworks in statistics page (<a href="https://codeberg.org/nobody/LocalCDN/issues/151">#151</a>)</li>
+                                <li>Fixed: Statistics cannot be deleted (<a href="https://codeberg.org/nobody/LocalCDN/issues/152">#152</a>)</li>
+                                <li>Added: Cookie Consent v3.1.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/153">#153</a>)</li>
+                                <li>Updated: Select2 v4.0.12 -> v4.0.13 (<a href="https://codeberg.org/nobody/LocalCDN/issues/155">#155</a>)</li>
+                                <li>New CDN: 'vjs.zencdn.net' (<a href="https://codeberg.org/nobody/LocalCDN/issues/155">#155</a>)</li>
+                                <li>Added: Video.js v5.20.5, v6.13.0, v7.10.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/155">#155</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-10-18 (v2.5.3)</p>
+                            <ul>
+                                <li>Fixed: Only open release notes in case of new CDNs (<a href="https://codeberg.org/nobody/LocalCDN/issues/132">#132</a>)</li>
+                                <li>Updated: Internal module "Color Picker" v2.1.3 -> v2.1.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/134">#134</a>)</li>
+                                <li>Updated: Bootstrap v4.5.0 -> v4.5.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/135">#135</a>)</li>
+                                <li>Updated: Terminology (<a href="https://codeberg.org/nobody/LocalCDN/issues/138">#138</a>)</li>
+                                <li>Added: Font Awesome 'v4-shims.css' v5.15.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/137">#137</a>)</li>
+                                <li>Fixed: WebFontLoader (<a href="https://codeberg.org/nobody/LocalCDN/issues/139">#139</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-10-11 (v2.5.2)</p>
+                            <ul>
+                                <li>Updated: Font Awesome v5.15.0 -> v5.15.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/125">#125</a>)</li>
+                                <li>Fixed: Typo in Chart.js (<a href="https://codeberg.org/nobody/LocalCDN/issues/127">#127</a>)</li>
+                                <li>Added: clipboard.js in cdn.jsdelivr.net (<a href="https://codeberg.org/nobody/LocalCDN/issues/128">#128</a>)</li>
+                                <li>Improved: Handling of single version number (<a href="https://codeberg.org/nobody/LocalCDN/issues/129">#129</a>)</li>
+                                <li>Added: Font Awesome in cdn.jsdelivr.net (<a href="https://codeberg.org/nobody/LocalCDN/issues/130">#130</a>)</li>
+                                <li>Added: Font Awesome in netdna.bootstrapcdn.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/131">#131</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-10-01 (v2.5.1)</p>
+                            <ul>
+                                <li>Updated: Internal module "Color Picker" v2.1.2 -> v2.1.3</li>
+                                <li>Fixed: Icons disabled for mobile devices and browsers without support for extension icons</li>
+                                <li>Improved: Text color setting for counter hidden (only for Chromium) (<a href="https://codeberg.org/nobody/LocalCDN/issues/122">#122</a>)</li>
+                                <li>Updated: Font Awesome v5.14.0 -> v5.15.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/123">#123</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-09-26 (v2.5.0)</p>
+                            <ul>
+                                <li>Added: Object-Assign v4.1.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/114">#114</a>)</li>
+                                <li>Added: Axios v0.20.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/114">#114</a>)</li>
+                                <li>Added: history v4.10.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/114">#114</a>)</li>
+                                <li>Added: prop-types v15.7.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/114">#114</a>)</li>
+                                <li>Added: react-lifecycles-compat v3.0.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/114">#114</a>)</li>
+                                <li>Added: react-redux v7.2.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/114">#114</a>)</li>
+                                <li>Added: react-router v5.2.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/114">#114</a>)</li>
+                                <li>Added: react-side-effect v2.1.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/114">#114</a>)</li>
+                                <li>Added: Redux v4.0.5 (<a href="https://codeberg.org/nobody/LocalCDN/issues/114">#114</a>)</li>
+                                <li>Added: react to jsDelivr/unpkg (<a href="https://codeberg.org/nobody/LocalCDN/issues/114">#114</a>)</li>
+                                <li>Added: react-dom to jsDelivr/unpkg (<a href="https://codeberg.org/nobody/LocalCDN/issues/114">#114</a>)</li>
+                                <li>Added: InstantSearch.js v3.7.0 and v4.8.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/117">#117</a>)</li>
+                                <li>Added: algoliasearch v3 in cdn.jsdelivr.net (<a href="https://codeberg.org/nobody/LocalCDN/issues/117">#117</a>)</li>
+                                <li>Added: autocomplete.js in cdn.jsdelivr.net (<a href="https://codeberg.org/nobody/LocalCDN/issues/117">#117</a>)</li>
+                                <li>Implemented: Customize badge colors (<a href="https://codeberg.org/nobody/LocalCDN/issues/109">#109</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-09-19 (v2.4.0)</p>
+                            <ul>
+                                <li>Added CDN: gitcdn.github.io (<a href="https://codeberg.org/nobody/LocalCDN/issues/90">#90</a>)</li>
+                                <li>Added: Bootstrap Toggle v2.2.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/90">#90</a>)</li>
+                                <li>Implemented: Open options in new tab (<a href="https://codeberg.org/nobody/LocalCDN/issues/91">#91</a>)</li>
+                                <li>Implemented: Storage handler (<a href="https://codeberg.org/nobody/LocalCDN/issues/92">#92</a>)</li>
+                                <li>Updated: Options page (<a href="https://codeberg.org/nobody/LocalCDN/issues/93">#93</a>)</li>
+                                <li>Updated: Google Material Icons (<a href="https://codeberg.org/nobody/LocalCDN/issues/94">#94</a>)</li>
+                                <li>Added: P2P Media Loader Hls.js (v0.6.2) (<a href="https://codeberg.org/nobody/LocalCDN/issues/95">#95</a>)</li>
+                                <li>Fixed: Rocket Loader (<a href="https://codeberg.org/nobody/LocalCDN/issues/99">#99</a>)</li>
+                                <li>Added: videojs-seek-buttons v1.6.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/99">#99</a>)</li>
+                                <li>Added: baguetteBox.js v1.11.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/100">#100</a>)</li>
+                                <li>Added: jQuery Easing Plugin v1.4.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/101">#101</a>)</li>
+                                <li>Updated: popper.js v2.4.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/103">#103</a>)</li>
+                                <li>Added: AnchorJS v3.2.2 & v4.2.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/104">#104</a>)</li>
+                                <li>Fixed: Import user settings (<a href="https://codeberg.org/nobody/LocalCDN/issues/102">#102</a>)</li>
+                                <li>Implemented: Rules for AdGuard (<a href="https://codeberg.org/nobody/LocalCDN/issues/105">#105</a>)</li>
+                                <li>Updated: AngularJS v1.3.15 -> v1.3.20 (<a href="https://codeberg.org/nobody/LocalCDN/issues/107">#107</a>)</li>
+                                <li>Added: AngularJS Translate v2.7.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/107">#107</a>)</li>
+                                <li>Added: Lodash v3.10.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/107">#107</a>)</li>
+                                <li>Updated: Angular Material v0.x -> v1.1.21 (<a href="https://codeberg.org/nobody/LocalCDN/issues/107">#107</a>)</li>
+                                <li>Added: Angular Material in cdnjs.cloudflare.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/107">#107</a>)</li>
+                                <li>Fixed: File name conversion (FontAwesomeJS, SwiperJS)</li>
+                                <li>Added: Slick in cdn.jsdelivr.net (<a href="https://codeberg.org/nobody/LocalCDN/issues/108">#108</a>)</li>
+                                <li>Added: Slick Lightbox v0.2.12 (<a href="https://codeberg.org/nobody/LocalCDN/issues/108">#108</a>)</li>
+                                <li>Updated: Waypoints v4.0.0 -> v4.0.1 (and used the whole package) (<a href="https://codeberg.org/nobody/LocalCDN/issues/108">#108</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-08-23 (v2.3.1)</p>
+                            <ul>
+                                <li>Fixed: Blocked Google Fonts in Chromium (<a href="https://codeberg.org/nobody/LocalCDN/issues/80">#80</a>)</li>
+                                <li>Fixed: Font Awesome loaded by Web Font Loader (<a href="https://codeberg.org/nobody/LocalCDN/issues/82">#82</a>)</li>
+                                <li>Updated: jQueryUI v1.8.18 to v1.8.24 (<a href="https://codeberg.org/nobody/LocalCDN/issues/83">#83</a>)</li>
+                                <li>Updated: jQuery Fancybox v3.5.7 (<a href="https://codeberg.org/nobody/LocalCDN/issues/86">#86</a>)</li>
+                                <li>Added: Fancybox to cdn.jsdelivr.net (<a href="https://codeberg.org/nobody/LocalCDN/issues/86">#86</a>)</li>
+                                <li>Added: Mapping of Google Material Icons (<a href="https://codeberg.org/nobody/LocalCDN/issues/87">#87</a>)</li>
+                                <li>Updated: Handling of Google Fonts (<a href="https://codeberg.org/nobody/LocalCDN/issues/85">#85</a>)</li>
+                                <li>Added: jQuery Lazy (with Plugins) v1.7.11 (<a href="https://codeberg.org/nobody/LocalCDN/issues/88">#88</a>)</li>
+                                <li>Updated: Vue.js v2.6.11 to v2.6.12 (<a href="https://codeberg.org/nobody/LocalCDN/issues/89">#89</a>)</li>
+                                <li>Added: vue-resource v1.5.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/89">#89</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-08-13 (v2.3.0)</p>
+                            <ul>
+                                <li>Fixed: Character encoding problem in popup (<a href="https://codeberg.org/nobody/LocalCDN/issues/71">#71</a>)</li>
+                                <li>Fixed: Block Google Fonts if enabled</li>
+                                <li>Added: Font Awesome v4.7.0 loaded by WebFontLoader (<a href="https://codeberg.org/nobody/LocalCDN/issues/73">#73</a>)</li>
+                                <li>Added: jQuery Mousewheel v3.1.13 (<a href="https://codeberg.org/nobody/LocalCDN/issues/73">#73</a>)</li>
+                                <li>Added: Stickyfill v1.1.4 and v2.1.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/73">#73</a>)</li>
+                                <li>Added: jScrollPane v2.2.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/73">#73</a>)</li>
+                                <li>Added: Tooltipster v3.3.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/73">#73</a>)</li>
+                                <li>Added: Materialize (JS & CSS) v0.97.8</li>
+                                <li>Fixed: Undefined version number in the popup</li>
+                                <li>Fixed: Filename of Bootstrap JS v4.5.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/76">#76</a>)</li>
+                                <li>Implemented: Internal statistics (<a href="https://codeberg.org/nobody/LocalCDN/issues/74">#74</a>)</li>
+                                <li>Added CDN: loli.net (cdnjs.loli.net, fonts.loli.net, cdn.css.net, ajax.loli.net) (<a href="https://codeberg.org/nobody/LocalCDN/issues/77">#77</a>)</li>
+                                <li>Added CDN: cdn.bootcss.net (<a href="https://codeberg.org/nobody/LocalCDN/issues/77">#77</a>)</li>
+                                <li>Added: 'Monero' (Donations page)</li>
+                                <li>Added: Statistics icon in popup</li>
+                                <li>Improved: Small visual things in popup, statistics and options page</li>
+                            </ul>
+                        <p class='release-date'>2020-08-02 (v2.2.17)</p>
+                            <ul>
+                                <li>Improved: Handling with blocked resources (reported by email)</li>
+                                <li>Updated: Bootstrap JS & CSS to v4.5.0</li>
+                                <li>Removed: Unused jQuery v3.4.1</li>
+                                <li>Updated: Welcome page</li>
+                                <li>Improved: Detection of Google Fonts</li>
+                                <li>Implemented: Show upgrades of frameworks in popup (<a href="https://codeberg.org/nobody/LocalCDN/issues/68">#68</a>)</li>
+                                <li>Improved: Version selection</li>
+                                <li>Updated: README.md (<a href="https://codeberg.org/nobody/LocalCDN/issues/65#issuecomment-72825">#65</a>)</li>
+                                <li>Updated: Font Awesome v5.14.0</li>
+                                <li>Added: Waypoints (jQuery) v4.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/69">#69</a>)</li>
+                                <li>Added: OwlCarousel v1.3.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/69">#69</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-07-27 (v2.2.16)</p>
+                            <ul>
+                                <li>Hotfix: Version selection (<a href="https://codeberg.org/nobody/LocalCDN/issues/64">#64</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-07-26 (v2.2.15)</p>
+                            <ul>
+                                <li>Implemented: Hide icon setting if not supported</li>
+                                <li>Implemented: Show the rule set generator only when there are new CDNs (reported by <a href="https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/reviews/1572952/">review</a>)</li>
+                                <li>Fixed: Selection of 'jQuery latest' (<a href="https://codeberg.org/nobody/LocalCDN/issues/64">#64</a>)</li>
+                                <li>Fixed: Disable LocalCDN if website is 'yandex.com' and CDN is 'yastatic.net', because website and CDN are the same. (reported by email)</li>
+                            </ul>
+                        <p class='release-date'>2020-07-19 (v2.2.14)</p>
+                            <ul>
+                                <li>Fixed: Open changelog after an update (reported by email)</li>
+                                <li>Fixed: Selection of Bootstrap-Datepicker (<a href="https://codeberg.org/nobody/LocalCDN/issues/54">#54</a>)</li>
+                                <li>Fixed: Bootstrap (JS & CSS) added to JSDelivr (<a href="https://codeberg.org/nobody/LocalCDN/issues/60">#60</a>)</li>
+                                <li>Improved: Blue/Grey icon theme (<a href="https://codeberg.org/nobody/LocalCDN/issues/52">#52</a>)</li>
+                                <li>Updated: i18n</li>
+                                <li>Implemented: Link to Wiki page for rule generator</li>
+                            </ul>
+                        <p class='release-date'>2020-07-12 (v2.2.13)</p>
+                            <ul>
+                                <li>URLs updated (localcdn.de -> localcdn.org)</li>
+                                <li>Fixed: Popup scrollbar of dark mode (reported by email)</li>
+                                <li>Fixed: Wrong version selection of AngularUI Bootstrap (<a href="https://codeberg.org/nobody/LocalCDN/issues/50">#50</a>)</li>
+                                <li>Implemented: Different styles for extension icons (<a href="https://codeberg.org/nobody/LocalCDN/issues/52">#52</a>)</li>
+                                <li>Fixed: Bootstrap JS v4.4.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/54">#54</a>)</li>
+                                <li>Implemented: Collapsible changelog for previous versions(reported by email)</li>
+                                <li>Added: Jets.js v0.14.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/56">#56</a>)</li>
+                                <li>Added: Vanilla-Lazyload v17.1.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/56">#56</a>)</li>
+                                <li>Fixed: Blocking handling of "Google Fonts" improved</li>
+                                <li>Removed: Support for "Google Material Icons" in Chromium (known Chromium bug, same with "Font Awesome")</li>
+                                <li>Removed: Option item in Chromium to block "Google Fonts" (known Chromium bug, same with "Font Awesome")</li>
+                            </ul>
+                        <p class='release-date'>2020-07-05 (v2.2.12)</p>
+                            <ul>
+                                <li>Fixed bug in toggle of HTML filter (<a href="https://codeberg.org/nobody/LocalCDN/issues/33">#33</a>)</li>
+                                <li>Updated i18n</li>
+                                <li>Implemented: Instant update of domain lists on the options page (reported by email)</li>
+                                <li>Small cosmetic improvements in the popup</li>
+                                <li>Added: slick-carousel/slick v1.9.0 (<a href="https://addons.mozilla.org/de/firefox/addon/localcdn-fork-of-decentraleyes/reviews/1563434/">review</a>)</li>
+                                <li>Added: Materialize (JS & CSS) v100.2 and v1.0.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/47">#47</a>)</li>
+                                <li>Implemented: Option to block unhandled Google Fonts requests</li>
+                                <li>"Show more Injections"-Button removed. All injections in the popup now.</li>
+                            </ul>
+                        <p class='release-date'>2020-06-28 (v2.2.10)</p>
+                            <ul>
+                                <li>Added: AngularJS v1.2.32 (<a href="https://codeberg.org/nobody/LocalCDN/issues/34">#34</a>)</li>
+                                <li>Added: jQuery tablesorter v2.31.3 (<a href="https://codeberg.org/nobody/LocalCDN/issues/36">#36</a>)</li>
+                                <li>Added: jQuery modal v0.9.2 (JS & CSS) (<a href="https://codeberg.org/nobody/LocalCDN/issues/36">#36</a>)</li>
+                                <li>Added: simplemde v1.11.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/36">#36</a>)</li>
+                                <li>Added: NVD3 v1.8.6 (<a href="https://codeberg.org/nobody/LocalCDN/issues/36">#36</a>)</li>
+                                <li>Added: clipboard.js v1.7.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/36">#36</a>)</li>
+                                <li>Implemented: Option to enable HTML-Filter by default (<a href="https://codeberg.org/nobody/LocalCDN/issues/33">#33</a>)</li>
+                                <li>Added: Angular Bootstrap Colorpicker v3.0.32 (JS & CSS) (<a href="https://codeberg.org/nobody/LocalCDN/issues/37">#37</a>)</li>
+                                <li>Added: Angular UI Bootstrap v0.10.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/37">#37</a>)</li>
+                                <li>Added: Angular UI Utils v0.1.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/37">#37</a>)</li>
+                                <li>Added: AngularJS v1.2.19 (<a href="https://codeberg.org/nobody/LocalCDN/issues/37">#37</a>)</li>
+                                <li>Added: Showdown v0.5.1 and v1.9.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/37">#37</a>)</li>
+                                <li>Added: ethjs v0.3.4 (<a href="https://codeberg.org/nobody/LocalCDN/issues/37">#37</a>)</li>
+                                <li>Added: Locales for Bootstrap Datepicker v1.9.0 (reported by email)</li>
+                                <li>Added: BootboxJS v4.4.0 (reported by email)</li>
+                                <li>Added: libphonenumber-js v1.7.53 (reported by email)</li>
+                                <li>Added: Bootstrap 3 Typeahead v4.0.2 (reported by email)</li>
+                                <li>Added: Chart.js (JS-Bundle & CSS) v2.9.3 (reported by email)</li>
+                                <li>Improved: Option to enable HTML-Filter by default (<a href="https://codeberg.org/nobody/LocalCDN/issues/33">#33</a>)</li>
+                                <li>Added: Google Material Icons v3.0.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/41">#41</a>)</li>
+                                <li>Improved: UI (reported by email)</li>
+                            </ul>
+                        <p class='release-date'>2020-06-21 (v2.2.9)</p>
+                            <ul>
+                                <li>Updated: jQueryUI to v1.12.1</li>
+                                <li>Added: MooTools v1.4.5 (<a href="https://codeberg.org/nobody/LocalCDN/issues/32">#32</a>)</li>
+                                <li>Release notes: Open new tab in background (<a href="https://addons.mozilla.org/addon/localcdn-fork-of-decentraleyes/reviews/1554950/">Review</a>)</li>
+                                <li>Improved: Dark Mode</li>
+                                <li>Updated: Font Awesome v5.13.1</li>
+                                <li>Updated: jQuery v3.5.1</li>
+                                <li>Updated: Translations</li>
+                            </ul>
+                        <p class='release-date'>2020-06-12 (v2.2.8)</p>
+                            <ul>
+                                <li>Fixed: Norwegian language package in Chromium (<a href="https://codeberg.org/nobody/LocalCDN/issues/21">#21</a>)</li>
+                                <li>Added: Algoliasearch to cdnjs.cloudflare.com (<a href="https://codeberg.org/nobody/LocalCDN/issues/22">#22</a>)</li>
+                                <li>Added: Swiper JS+CSS v4.5.1 and v5.4.2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/22">#22</a>)</li>
+                                <li>Added: Cloudflare Mirage2 (<a href="https://codeberg.org/nobody/LocalCDN/issues/22">#22</a>)</li>
+                                <li>Improved: Help page (<a href="https://codeberg.org/nobody/LocalCDN/issues/22">#22</a>)</li>
+                                <li>Improved: uMatrix Rule Generator (<a href="https://codeberg.org/nobody/LocalCDN/issues/23">#23</a>)</li>
+                                <li>Replaced: Twitter-Bootstrap CSS v2.3.2 with Twitter-Bootstrap CSS Combined v2.3.2</li>
+                                <li>Added: D3 Legend v2.25.6</li>
+                                <li>Implemented: Sync extension settings with Firefox Sync or own server (experimental)</li>
+                                <li>Updated: French translation (<a href="https://codeberg.org/nobody/LocalCDN/issues/27">#27</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-06-06 (v2.2.7)</p>
+                            <ul>
+                                <li>Optimised version selection</li>
+                                <li>Translations updated</li>
+                                <li>Improved font color for dark mode</li>
+                                <li>Updated welcome page</li>
+                                <li>Updated URL for missing translation in option page</li>
+                                <li>Added note about missing translation in popup</li>
+                                <li>Toggle for manipulate DOM removed for Chromium (not supported by Chromium)</li>
+                                <li>Donation methods updated (+Bitcoin, +Ether)</li>
+                                <li>Fixed: Keep 'Tweak HTML source code' enabled after browser restart (<a href="https://codeberg.org/nobody/LocalCDN/issues/15">#15</a>)</li>
+                                <li>Translations updated (Spanish)</li>
+                                <li>Added: AngularJS Material Design v1.1.21</li>
+                                <li>Added Bootstrap to cdn.jsdelivr.net</li>
+                                <li>Added new CDN: PageCDN</li>
+                                <li>Translations updated (Norwegian)</li>
+                            </ul>
+                        <p class='release-date'>2020-06-02 (v2.2.6)</p>
+                            <ul>
+                                <li>Improved dark mode of popup</li>
+                                <li>Improved missing translation in popup</li>
+                                <li>Added: autocomplete.js v0.37.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/11">#11</a>)</li>
+                                <li>Added: algoliasearch to cdn.jsdelivr.net (<a href="https://codeberg.org/nobody/LocalCDN/issues/11">#11</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-05-30 (v2.2.5)</p>
+                            <ul>
+                                <li>Typo fixed, so that list for DOM manipulation can be read out again (<a href="https://codeberg.org/nobody/LocalCDN/issues/8">#8</a>)</li>
+                                <li>Fixed hide injection panel (http/https/file)</li>
+                            </ul>
+                        <p class='release-date'>2020-05-30 (v2.2.4)</p>
+                            <ul>
+                                <li>Improved charset detection in HTML source code</li>
+                                <li>Implemented second domainlist to enable/disable DOM manipulation</li>
+                                <li>Improved the height of the popup: Outsourced when there are too many injections.</li>
+                            </ul>
+                        <p class='release-date'>2020-05-23 (v2.2.3)</p>
+                            <ul>
+                                <li>Fixed: Identify correct charset if its in quotation marks</li>
+                                <li>Mapping: Removed duplicates</li>
+                                <li>DOM manipulation: Check if charset is supported by TextDecoder()</li>
+                                <li>Added: jQuery Mobile v1.4.5</li>
+                                <li>Added: Twitter-Bootstrap JS and CSS v2.3.2</li>
+                                <li>Updated: Bootstrap-Select CSS to v1.13.17</li>
+                                <li>Added: Bootstrap-Select JS v1.13.17</li>
+                                <li>Added: Angular Sanitize v1.7.9</li>
+                                <li>Added: Bootstrap Datepicker JS and CSS v1.9.0</li>
+                            </ul>
+                        <p class='release-date'>2020-05-21 (v2.2.2)</p>
+                            <ul>
+                                <li>Addition to the encoding problem (<a href="https://gitlab.com/nobody42/localcdn/-/issues/75">#75</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-05-16 (v2.2.1)</p>
+                            <ul>
+                                <li>Fixed: Encoding problem with some websites (maybe only temporary, because at the moment only 9 websites are affected) (<a href="https://gitlab.com/nobody42/localcdn/-/issues/75">#75</a>)</li>
+                                <li>Added: Twitter Bootstrap JS and CSS v4.5.0 (<a href="https://gitlab.com/nobody42/localcdn/-/issues/77">#77</a>)</li>
+                                <li>Added: Donation button</li>
+                                <li>Added: Material Design for Bootstrap (MDB) v4.18.0 (<a href="https://gitlab.com/nobody42/localcdn/-/issues/77">#77</a>)</li>
+                                <li>Added: Tether v1.4.7 (<a href="https://gitlab.com/nobody42/localcdn/-/issues/77">#77</a>)</li>
+                                <li>Addition to the encoding problem (<a href="https://gitlab.com/nobody42/localcdn/-/issues/75">#75</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-05-10 (v2.2.0)</p>
+                            <ul>
+                                <li>Fixed typo in urlize</li>
+                                <li>Remove crossorigin and integrity attributes (<a href="https://gitlab.com/nobody42/localcdn/-/issues/66">#66</a>) <s>[experimental]</s> <em>It should be working without problems</em></li>
+                                <li>Added React and ReactDOM v16.13.1 (Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/70">#70</a>)</li>
+                                <li>Added jQuery-csv v1.0.9, jQuery Ajax AutoComplete (Devbridge) v1.4.10 and Popper.js v1.16.1 (Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/68">#68</a>)</li>
+                                <li>Font Awesome injections in Chromium deactivated (Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/67">#67</a>)</li>
+                                <li>French translation updated</li>
+                                <li>Error in encoding fixed (<a href="https://gitlab.com/nobody42/localcdn/-/issues/66#note_334647377">#66 comment: 334647377</a>)</li>
+                                <li>Added fancyBox v2.1.5</li>
+                                <li>Added AngularUI Bootstrap v0.14.3</li>
+                                <li>Added AngularJS Toaster v0.4.18 and v2.2.0</li>
+                                <li>Added AngularUI Router v0.4.3 (Fixed  <a href="https://gitlab.com/nobody42/localcdn/-/issues/71">#71</a>)</li>
+                                <li>Added AngularJS upgraded to v1.6.10 (Fixed  <a href="https://gitlab.com/nobody42/localcdn/-/issues/72">#72</a>)</li>
+                                <li>Added AngularJS v1.4.14 (<a href="https://gitlab.com/nobody42/localcdn/-/issues/71">#71</a>)</li>
+                                <li>Fixed typo in AngularUI Bootstrap (<a href="https://gitlab.com/nobody42/localcdn/-/issues/71">#71</a>)</li>
+                                <li>Added Angular Payments v1.0.7 (<a href="https://gitlab.com/nobody42/localcdn/-/issues/71">#71</a>)</li>
+                                <li>Added Angular Stripe Checkout v5.1.0 (<a href="https://gitlab.com/nobody42/localcdn/-/issues/71">#71</a>)</li>
+                                <li>Fixed error in AngularJS Toaster v0.4.18 (<a href="https://gitlab.com/nobody42/localcdn/-/issues/71">#71</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-04-26 (v2.1.14)</p>
+                            <ul>
+                                <li>Added Bootstrap-select v1.13.14</li>
+                                <li>Added AngularJS v1.5.11 (Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/63">#63</a>)</li>
+                                <li>AngularJS v1.3.13, v1.5.11, v1.6.1, v1.7.9 filled up (Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/64">#64</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-04-19 (v2.1.13)</p>
+                            <ul>
+                                <li>Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/55">#55</a></li>
+                                <li>Added WebComponents.js and urlize <a href="https://gitlab.com/nobody42/localcdn/-/issues/56">#56</a></li>
+                                <li>Added jQuery URLive v1.1.1</li>
+                                <li>Added AngularJS v1.3.13 (Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/59">#59</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-04-13 (v2.1.12)</p>
+                            <ul>
+                                <li>Added: AlgoliaSearch v3.35.1</li>
+                                <li>Added: Angular UI Bootstrap v1.3.3</li>
+                                <li>Added: AngularJS Slider v6.7.0</li>
+                                <li>Added: AnguComplete v3.0.0</li>
+                                <li>Added: Angular UI Router v1.0.25</li>
+                                <li>Added: AngularJS ui-select v0.20.0</li>
+                                <li>Added: Bootstrap Daterangepicker v2.1.27</li>
+                                <li>Added: Lodash.js v4.17.10</li>
+                                <li>Added: ocLazyLoad v1.1.0</li>
+                                <li>Added: Raven.js v3.26.2</li>
+                                <li>Added: Socket.IO v2.3.0</li>
+                                <li>Subdirectories for Angular Animate added</li>
+                                <li>Added angular-resource.min.js of AngularJS v1.7.9</li>
+                                <li>Added: jQuery Lazy Load v1.9.1</li>
+                                <li>Added: AngularJS v1.6.1 (angular.min.js and angular-resource.min.js)</li>
+                                <li>Added: jQuery UI and jQuery UI Themes v1.8.18</li>
+                            </ul>
+                        <p class='release-date'>2020-04-08 (v2.1.11)</p>
+                            <ul>
+                                <li>Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/28">#28</a> and <a href="https://gitlab.com/nobody42/localcdn/-/issues/44">#44</a></li>
+                                <li>Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/49">#49</a> (partly)</li>
+                                <li>Fixed storage mechanism of lastMappingUpdate and added option to hide release notes</li>
+                                <li>Updated: Translations</li>
+                                <li>Fixed: Use default language if translation isn't available.</li>
+                            </ul>
+                        <p class='release-date'>2020-04-05 (v2.1.10)</p>
+                            <ul>
+                                <li>Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/38">"#38"</a></li>
+                                <li>Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/26">"#26"</a> (bitchute.com)</li>
+                                <li>Added: Select2 v4.0.12 (<a href="https://gitlab.com/nobody42/localcdn/-/issues/44">"Fixed #44"</a>)</li>
+                                <li>Added: jQuery Migrate v3.1.0 and v1.4.1 (<a href="https://gitlab.com/nobody42/localcdn/-/issues/42">"Fixed #42"</a>)</li>
+                                <li>Fixed: jsDelivr combined file (jQuery v2.2.4, Hogan.js v3.0.2, AlgoliaSearch v3.30.0 and Autocomplete.js v0.31.0) <a href="https://gitlab.com/nobody42/localcdn/-/issues/45">"Issue#45"</a> <strong>(Just a workaround!)</strong></li>
+                            </ul>
+                        <p class='release-date'>2020-03-29 (v2.1.9)</p>
+                            <ul>
+                                <li>Added animate.css v3.7.2</li>
+                                <li>Fixed bootstrap-slider</li>
+                                <li>Fixed Twitter Bootstrap CSS & JS v3.4.1</li>
+                                <li>Added toastr.js v2.1.4</li>
+                                <li>Added WOW v1.1.2</li>
+                                <li>Added lazysizes v4.1.8</li>
+                                <li>Added jQuery Validation Plugin v1.19.1</li>
+                                <li>Added rickshaw v1.6.6</li>
+                                <li>Added jQuery jeditable v1.8.0</li>
+                                <li>Added D3.js v3.5.17</li>
+                                <li>Added P2P Media Loader Core v0.6.2</li>
+                                <li>Added JavaScript Cookie v2.2.1</li>
+                                <li>Added clipboard.js v2.0.6</li>
+                                <li>Added WebRTC adapter v6.4.8</li>
+                                <li>Added spin.js v2.3.2</li>
+                                <li>Added jQuery BlockUI v2.70</li>
+                                <li>Added plyr CSS v3.5.10</li>
+                                <li>Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/31">"#31"</a> and Store.js v2.0.4 added</li>
+                                <li>Added Vue.js v2.6.11</li>
+                                <li>Fixed <a href="https://gitlab.com/nobody42/localcdn/-/issues/28">"#28"</a></li>
+                                <li>Added flv.js v1.5.0 and hls.js v0.13.2</li>
+                                <li>Logging implemented (Wiki page: <a href="https://gitlab.com/nobody42/localcdn/-/wikis/How-to-logging">How to logging</a>)</li>
+                            </ul>
+                        <p class='release-date'>2020-03-25 (v2.1.7)</p>
+                            <ul>
+                                <li>New CDN: "akamai-webcdn.kgstatic.net" (Akamai WebCDN)</li>
+                                <li>Fixed issue with lozad.js in v2.1.7</li>
+                            </ul>
+                        <p class='release-date'>2020-03-25 (v2.1.7)</p>
+                            <ul>
+                                <li>Added lozad v1.14.0</li>
+                                <li>Added Findify v6.9.15</li>
+                                <li>Added detection of framework-bundles (e.g. Findify)</li>
+                                <li>Fixed Moment.js (File extension and detection of resource name)</li>
+                                <li>Added Vue.js v1.0.28 and page.js v1.7.1</li>
+                                <li>Fixed file extensions to prevent warnigns of Mozillas validation tests</li>
+                                <li>Added new endpoint for webfont</li>
+                                <li>Added new endpoint for bootstrap-slider</li>
+                                <li>Added "ajax.cloudflare.com" and "Rocket Loader" (<a href="https://gitlab.com/nobody42/localcdn/-/issues/24">"#24"</a>)</li>
+                                <li>Added Font Awesome v3.2.1</li>
+                            </ul>
+                        <p class='release-date'>2020-03-22 (v2.1.6)</p>
+                            <ul>
+                                <li>URL of testing utility updated</li>
+                                <li>Fixed: <a href="https://gitlab.com/nobody42/localcdn/-/issues/21">"Search on serienjunkies.org not working"</a></li>
+                            </ul>
+                        <p class='release-date'>2020-03-17 (v2.1.5)</p>
+                            <ul>
+                                <li>Simple enable/disable button replaced with toggle switch</li>
+                                <li>Added: Moment.js (v2.24.0)</li>
+                                <li>Added: bootstrap-slider (v10.6.2)</li>
+                                <li>Size reduced: For each request the latest framework (depends on major release) is selected</li>
+                                <li>Updated: cdn.jsdelivr.net (UNPKG)</li>
+                                <li>Updated: Backbone.js (v1.4.0)</li>
+                                <li>Updated: Dojo Toolkit (v1.14.1)</li>
+                                <li>Updated: Ember.js (v1.13.13, v2.18.2, v3.12.3)</li>
+                                <li>Updated: MooTools (v1.6.0)</li>
+                                <li>Updated: Web Font Loader (v1.6.28)</li>
+                            </ul>
+                        <p class='release-date'>2020-03-13 (v2.1.4)</p>
+                            <ul>
+                                <li>Fixed: <a href="https://gitlab.com/nobody42/localcdn/-/issues/16">"Weird behavior of signed extension"</a></li>
+                                <li>New CDN: use.fontawesome.com</li>
+                                <li>New framework: Font Awesome v5.7.2</li>
+                            </ul>
+                        <p class='release-date'>2020-03-12 (v2.1.3)</p>
+                            <ul>
+                                <li>Fixed file extensions misstakes in mappings.js</li>
+                            </ul>
+                        <p class='release-date'>2020-03-12 (v2.1.2)</p>
+                            <ul>
+                                <li>Added Domain name for maxcdn.bootstrapcdn.com</li>
+                                <li>Fixed wrong file extensions in BootstrapJS and BootstrapCSS</li>
+                                <li>Fixed wrong file extension #11</li>
+                                <li>Implemented: Font Awesome v4.7.0 by stackpath.bootstrapcdn.com</li>
+                                <li>jQuery unified</li>
+                                <li>Fixed dark mode issue</li>
+                                <li>Replaced innerHTML with textContent to remove warning of Mozillas add-on validation</li>
+                            </ul>
+                        <p class='release-date'>2020-03-08 (v2.1.1)</p>
+                            <ul>
+                                <li>CDN: Bootstrap JavaScript to ajax.aspnetcdn.com</li>
+                            </ul>
+                        <p class='release-date'>2020-03-03 (v2.0.24)</p>
+                            <ul>
+                                <li>Framework: Bootstrap CSS v3.3.6, v3.1.1</li>
+                                <li>Framework: Bootstrap JavaScript v3.3.6, v3.1.1</li>
+                            </ul>
+                        <p class='release-date'>2020-03-01 (v2.0.22)</p>
+                            <ul>
+                                <li>Framework: Bootstrap CSS v4.1.0</li>
+                                <li>Framework: Bootstrap JavaScript v4.1.0</li>
+                            </ul>
+                        <p class='release-date'>2020-02-29 (v2.0.20)</p>
+                            <ul>
+                                <li>CDN: Baidu CDN, Staticfile CDN, BootCDN, Tencent Public Libraries, Qihoo 360 CDN</li>
+                                <li>CDN: Added endpoint for jsDelivr</li>
+                                <li>CDN: Baidu CDN</li>
+                                <li>CDN: Baidu CDN</li>
+                                <li>CDN: Added endpoints for Bootstrap (NetDNA Bootstrap, MaxCDN Bootstrap</li>
+                                <li>Framework: AngularJS (Standard, Animated, Sanitize, Cookies, Touch) v1.6.9, v1.7.0, v1.7.1, v1.7.2, v1.7.3, v1.7.4, v1.7.5, v1.7.6, v1.7.7, v1.7.8, v1.7.9</li>
+                            </ul>
+                        <p class='release-date'>2020-02-28 (v2.0.19)</p>
+                            <ul>
+                                <li>Framework: Bootstrap CSS v4.0.0, v3.3.7, v3.2.0, v2.3.2</li>
+                                <li>Framework: Bootstrap JavaScript v4.0.0, v3.3.7, v3.2.0, v2.3.2</li>
+                            </ul>
+                        <p class='release-date'>2020-02-28 (v2.0.17)</p>
+                            <ul>
+                                <li>CDN: stackpath.bootstrapcdn.com</li>
+                                <li>Framework: Bootstrap CSS v4.4.1</li>
+                                <li>Framework: Bootstrap CSS v4.3.1</li>
+                                <li>Framework: Bootstrap JavaScript v4.4.1</li>
+                                <li>Framework: Bootstrap JavaScript v4.3.1</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

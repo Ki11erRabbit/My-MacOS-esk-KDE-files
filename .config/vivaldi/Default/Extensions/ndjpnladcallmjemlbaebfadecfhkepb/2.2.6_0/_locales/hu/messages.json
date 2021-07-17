@@ -1,0 +1,299 @@
+{
+   "AccountLabel": {
+      "message": "Fiók"
+   },
+   "AppDescription": {
+      "message": "Office-dokumentumokat nézhet meg, szerkeszthet és készíthet böngészőben."
+   },
+   "AppDescriptionWithEditor": {
+      "message": "Office-fájlokat nézhet meg, szerkeszthet és hozhat létre böngészőben, és a legjobb tudása szerint írhat bármely webhelyen."
+   },
+   "AppFolderName": {
+      "message": "Office-bővítmény"
+   },
+   "AppListLabel": {
+      "message": "Webappok"
+   },
+   "AppLongDescription": {
+      "message": "Készült a Chrome-hoz – A Wordöt, az Excelt, a PowerPointot, a OneNote-ot és a Sway Online-t az Office telepítése nélkül használhatja.\r\n\r\nTartalomkészítés magabiztosan – Ötleteit hűen kifejezheti a megszokott formázási és elrendezési lehetőségekkel.\r\n\r\nMunka útközben – Fájljait a OneDrive és a OneDrive Vállalati verzió integrációjának köszönhetően bárhonnan elérheti.\r\n\r\nAz alkalmazás telepítésével Ön elfogadja a következő internetcímen olvasható feltételeket és kikötéseket: http://aka.ms/officechromeextensionterms\r\n\r\nAdatvédelmi irányelvek: http://aka.ms/privacy\r\n"
+   },
+   "AppLongDescriptionEdge": {
+      "message": "Az Office böngészőbővítmény ikonjával a Microsoft Edge eszköztárból közvetlenül hozzáférhet az Office-fájlokhoz, függetlenül attól, hogy azok online vagy a helyi gépen vannak.\r\n\r\nAz Office webes kiterjesztése meg tudja nyitni a OneDrive és a OneDrive Vállalati verzióban tárolt fájlokat.\r\n\r\nA Word, Excel, PowerPoint, OneNote, és Sway szolgáltatásait is közvetlenül a böngészőből használhatja, nincs szükség az Office telepítésére.\r\n\r\nAz Office böngésző-bővítménye mostantól a tartalmát és tudja ellenőrizni.*. Egy olyan Microsoft Online szolgáltatáshoz kapcsolódik, amely helyesírási, nyelvtani és finomítási javaslatokat nyújt a legtöbb webhelyhez, és több mint nyolcvan nyelven működik.\r\n\r\n*Ezt a funkciót nem használhatja mindenki.\r\n\r\nAz alkalmazás telepítésével Ön elfogadja a következő feltételeket: \r\n\r\n"
+   },
+   "AppLongDescriptionWithEditor": {
+      "message": "Ideális a Chrome-hoz: a Word, az Excel, a PowerPoint és a OneNote appot, valamint a Sway Online-t anélkül is használhatja, hogy telepítve lenne az Office.\r\n\r\nMagabiztos tartalomkészítés: a már ismert formázási és elrendezési funkciókkal a lehető legpontosabban fejezheti ki elképzeléseit.\r\n\r\nÚtközben is dolgozhat: a OneDrive-val és a OneDrive Vállalati verzióval történő integrációnak köszönhetően bárhonnan hozzáférhet a fájljaihoz.\r\n\r\nAz Office böngésző-bővítménye mostantól a tartalmát is tudja ellenőrizni.*. Egy olyan Microsoft Online szolgáltatáshoz kapcsolódik, amely helyesírási, nyelvhelyességi és stilisztikai javaslatokkal szolgál a webhelyek zömén, és több mint nyolcvan nyelven működik.\r\n\r\n*Ezt a funkciót nem használhatja mindenki.\r\n\r\nAz app telepítésével elfogadja a http://aka.ms/officechromeextensionterms oldalon ismertetett feltételeket és kikötéseket.\r\n\r\nAdatvédelmi szabályzat: http://aka.ms/privacy\r\n"
+   },
+   "AppName": {
+      "message": "Office"
+   },
+   "AppNameEdge": {
+      "message": "Office böngészőbővítmény"
+   },
+   "AppShortName": {
+      "message": "Office"
+   },
+   "AppTermsOfServiceLCA": {
+      "message": "PLEASE NOTE: Refer to your license terms for Microsoft Office browser extension software (the \"software\") to identify the entity licensing this supplement to you and for support information. You may use a copy of this supplement with each validly licensed copy of the software. You may not use the supplement if you do not have a license for the software. The license terms for the software apply to your use of this supplement."
+   },
+   "BrowseToOpenLabel": {
+      "message": "Feltöltés és megnyitás..."
+   },
+   "CopyrightLabel": {
+      "message": "Microsoft Corporation 2015"
+   },
+   "CreateAccountLabel": {
+      "message": "Hozzon létre egy fiókot"
+   },
+   "CreateDocsMessageLabel": {
+      "message": "Nem találtunk mostanában megnézett dokumentumokat."
+   },
+   "CreateNewLabel": {
+      "message": "Új"
+   },
+   "DisableEditorOnThisSiteLabel": {
+      "message": "A Szerkesztő letiltása $host$-os oldalakon",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "DocumentsNotFoundMessageLabel": {
+      "message": "Nem sikerült beolvasni a legutóbbi dokumentumok listáját."
+   },
+   "EditorBrandText": {
+      "message": "Szerkesztő"
+   },
+   "EditorGrammarToggleLabel": {
+      "message": "Nyelvhelyesség"
+   },
+   "EditorIsBlockedOnThisSiteLabel": {
+      "message": "A Szerkesztő egyelőre nem működik $host$-os oldalakon.",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "EditorIsDisabledOnThisSiteLabel": {
+      "message": "$host$-os oldalakon nem használhatja a Szerkesztőt.",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "EditorIsOffLabel": {
+      "message": "Ki van kapcsolva a Szerkesztő."
+   },
+   "EditorNativeSupportOnThisSiteLabel": {
+      "message": "A(z) $host$ tartalmaz szerkesztőt.",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "outlook.com"
+         }
+      }
+   },
+   "EditorPreviewLabel": {
+      "message": "(előzetes verzió)"
+   },
+   "EditorPriorityShutdownLabel": {
+      "message": "A Szerkesztő szolgáltatást a Microsoft Szerkesztő bővítmény biztosítja."
+   },
+   "EditorRefinementsGoPremiumTooltip": {
+      "message": "A prémium verzióra váltva bővített stilisztikai javaslatokat kaphat és 1 TB tárterületet vehet igénybe."
+   },
+   "EditorRefinementsToggleLabel": {
+      "message": "Finomítások"
+   },
+   "EditorRefinementsTooltip": {
+      "message": "A finomítások olyan bővített stilisztikai javaslatok, amelyekkel érthetőbbé, tömörebbé és formálisabbá teheti írásait."
+   },
+   "EditorSpellingToggleLabel": {
+      "message": "Helyesírás"
+   },
+   "EnableEditorOnThisSiteLabel": {
+      "message": "A Szerkesztő engedélyezése $host$-os oldalakon",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "ExcelAppName": {
+      "message": "Excel"
+   },
+   "ExcelOnlineAppName": {
+      "message": "Excel"
+   },
+   "FileTypeErrorMessage": {
+      "message": "Ez a fájltípus nem támogatott. Kérjük, válasszon egy Word-, Excel- vagy PowerPoint-dokumentumot."
+   },
+   "LoadingRecentsLabel": {
+      "message": "Betöltés..."
+   },
+   "MoreFilesLabel": {
+      "message": "További dokumentumok"
+   },
+   "MyAccountLabel": {
+      "message": "Saját fiók megtekintése"
+   },
+   "NextLabel": {
+      "message": "Bejelentkezés"
+   },
+   "NotificationAutoSaveButton": {
+      "message": "Ne jelenjen meg újra"
+   },
+   "NotificationAutoSaveToOneDrive": {
+      "message": "Mentettük a fájlt a OneDrive Office-bővítmény mappájába."
+   },
+   "NotificationAutoSaveToSharePoint": {
+      "message": "Mentettük a fájlt a OneDrive Vállalati verzió Office-bővítmény mappájába."
+   },
+   "NotificationFileAccess": {
+      "message": "A bővítménybeállításokban jelölje be a „Fájl URL-ekhez való hozzáférés engedélyezése” jelölőnégyzetet, ha fájlokat szeretne húzni a böngészőbe."
+   },
+   "NotificationFileMaxSizeByteLimitReached": {
+      "message": "Böngészőbővítmény Office nem tudja megnyitni a dokumentum mérete miatt.  Közvetlenül a dokumentum megnyitásához OneDrive való feltöltése."
+   },
+   "NotificationFileUploadFailureGeneric": {
+      "message": "Sajnáljuk, nem tudtuk megnyitni a fájlt."
+   },
+   "NotificationFileUploadFailureServer": {
+      "message": "Sajnáljuk, nem tudtuk megnyitni a fájlt. Kérjük, később próbálkozzon újra."
+   },
+   "NotificationFileUploadFailureUnsupportedMedia": {
+      "message": "Sajnáljuk, nem tudtuk megnyitni a fájlt. Kérjük, válasszon egy Worddel, Excellel vagy PowerPointtal készült fájlt"
+   },
+   "NotificationFileUploadInProgress": {
+      "message": "Folyamatban van a dokumentum(ok) feltöltése."
+   },
+   "NotificationInvalidSubscription": {
+      "message": "Lehet, hogy Office 365-előfizetése lejárt, vagy nem tartalmazza a OneDrive Vállalati verziót. Ellenőrizze az előfizetését, vagy jelentkezzen be Microsoft-fiókkal."
+   },
+   "NotificationNotSignedIn": {
+      "message": "Ha fájlokat szeretne megnézni és szerkeszteni a webes Office-ban, jelentkezzen be a bővítménybe."
+   },
+   "NotificationSetDefault": {
+      "message": "Ha a Fájlok appban két ujjal rákoppint a dokumentumokra, megnyílnak az Office-ban."
+   },
+   "NotificationUnsupportedFileType": {
+      "message": "Válasszon egy Worddel, Excellel vagy PowerPointtal készült fájlt."
+   },
+   "NotificationWebDocRedirect": {
+      "message": "Az Office-bővítmény most megnyitja a dokumentumot a böngészőben"
+   },
+   "NotificationWebDocRedirectButton": {
+      "message": "Ne jelenjen meg többé"
+   },
+   "O365FilesLabel": {
+      "message": "A OneDrive Vállalati verzióról"
+   },
+   "OfficeOnlineAppName": {
+      "message": "Office"
+   },
+   "OfflineLabel": {
+      "message": "Nincs hálózati kapcsolat. Kérjük, hogy az Office-böngészőbővítmény használatához csatlakozzon újra az internethez."
+   },
+   "OneDriveAppName": {
+      "message": "OneDrive"
+   },
+   "OneDriveFilesLabel": {
+      "message": "A OneDrive-ról"
+   },
+   "OneNoteAppName": {
+      "message": "OneNote"
+   },
+   "OneNoteOnlineAppName": {
+      "message": "OneNote"
+   },
+   "OpenDocumentLabel": {
+      "message": "Megnyitás"
+   },
+   "OutlookAppName": {
+      "message": "Outlook"
+   },
+   "PowerPointAppName": {
+      "message": "PowerPoint"
+   },
+   "PowerPointOnlineAppName": {
+      "message": "PowerPoint"
+   },
+   "RecentDocsLabel": {
+      "message": "Legutóbbiak"
+   },
+   "SettingsLabel": {
+      "message": "Beállítások"
+   },
+   "ShareMessage": {
+      "message": "Megosztás"
+   },
+   "SharePermissionsErrorMessage": {
+      "message": "Engedély szükséges"
+   },
+   "SharePermissionsTooltip": {
+      "message": "Nincs megosztási engedélye"
+   },
+   "SharePointAppName": {
+      "message": "SharePoint"
+   },
+   "SharePointSiteAppName": {
+      "message": "SharePoint"
+   },
+   "SignInHeaderLabel": {
+      "message": "Hová szeretné menteni a fájlokat?"
+   },
+   "SignInLabel": {
+      "message": "Bejelentkezés"
+   },
+   "SignInMSALabel": {
+      "message": "Bejelentkezés Microsoft-fiókkal"
+   },
+   "SignInO365Label": {
+      "message": "Bejelentkezés munkahelyi vagy iskolai fiókkal"
+   },
+   "SignOutLabel": {
+      "message": "Kijelentkezés"
+   },
+   "StandaloneExtensionInstalledLabel": {
+      "message": "A Szerkesztő szolgáltatást a Microsoft Szerkesztő bővítmény biztosítja."
+   },
+   "SupportPageLabel": {
+      "message": "Segítségre van szüksége a bejelentkezéshez?"
+   },
+   "SwayAppName": {
+      "message": "Sway"
+   },
+   "TeamsAppName": {
+      "message": "Teams"
+   },
+   "TelemetrySettingLabel": {
+      "message": "Adatok automatikus küldése a termékeink fejlesztése érdekében."
+   },
+   "TurnOnEditorLabel": {
+      "message": "A Szerkesztő bekapcsolása"
+   },
+   "UploadToOneDriveBusinessLabel": {
+      "message": "Feltöltés a OneDrive Vállalati verzióba"
+   },
+   "UploadToOneDriveLabel": {
+      "message": "Feltöltés a OneDrive-ra"
+   },
+   "UsernameLabel": {
+      "message": "Nincs bejelentkezve"
+   },
+   "WebRedirectSettingLabel": {
+      "message": "Office-fájlok megnyitása az Office-szal közvetlenül a böngészőben"
+   },
+   "WordAppName": {
+      "message": "Word"
+   },
+   "WordOnlineAppName": {
+      "message": "Word"
+   }
+}

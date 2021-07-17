@@ -1,0 +1,9 @@
+game:
+  arch: win32
+  exe: /home/ki11errabbit/Games/touhou-06-embodiment-of-scarlet-devil/pfx/drive_c/Program
+    Files/touhou6/Touhou06.exe
+  prefix: /home/ki11errabbit/Games/touhou-06-embodiment-of-scarlet-devil/pfx
+system: {}
+wine:
+  dxvk: false
+  version: lutris-6.10-7-x86_64

@@ -1,0 +1,57 @@
+{
+   "author": "Dominic Maas",
+   "background": {
+      "persistent": false,
+      "scripts": [ "scripts/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "images/icon_16.png",
+         "19": "images/icon_19.png",
+         "24": "images/icon_24.png",
+         "32": "images/icon_32.png",
+         "38": "images/icon_38.png"
+      },
+      "default_popup": "menu.html",
+      "default_title": "Timeline Support",
+      "theme_icons": [ {
+         "dark": "images/icon_dark_16.png",
+         "light": "images/icon_light_16.png",
+         "size": 16
+      }, {
+         "dark": "images/icon_dark_32.png",
+         "light": "images/icon_light_32.png",
+         "size": 32
+      } ]
+   },
+   "content_scripts": [ {
+      "js": [ "scripts/timeline.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "scripts/fallback-auth.js" ],
+      "matches": [ "https://timeline.dominicmaas.co.nz/auth-callback/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Automatically sync your browsing history to your Windows 10 PC with Windows Timeline. Push active websites to any of your devices.",
+   "homepage_url": "https://github.com/DominicMaas/TimelineExtension#readme",
+   "icons": {
+      "128": "images/icon_128.png",
+      "16": "images/icon_16.png",
+      "19": "images/icon_19.png",
+      "24": "images/icon_24.png",
+      "256": "images/icon_256.png",
+      "32": "images/icon_32.png",
+      "38": "images/icon_38.png",
+      "64": "images/icon_64.png",
+      "96": "images/icon_96.png"
+   },
+   "incognito": "not_allowed",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0Lvq6kJ/jA7CkrEFgidLbeNBlQaxroAML5quwXDy7uqZeK8/K1GYSu6fn9hYEq+75OQi8SXRYSe69KAzbtIGO2AyCj044FcHO6a3gXQN8sKhCGCGhPuSBLMXIlOFr26xp7oyvCubS5bvlRSlaIAvdWhkU6mQOTC1ewKYFy4BpIy7WoPSh9oiu2DUoZ2SVthNjZzF8quKrukmD6v6qMVo5AUdkrSijQYy4mjNmSrkaipf/tNQzvnoD4Ac4iQ0GC8yNAhR1mHXUEQuDgUgyxxQYXikzL/61yXk5gINA7QxRbgg9n3J8CfNM9oDtRp2YMavUxXBcxoa6g6PLFrHl3yFPwIDAQAB",
+   "manifest_version": 2,
+   "name": "Timeline Support",
+   "permissions": [ "identity", "storage", "tabs", "notifications", "https://graph.microsoft.com/v1.0/me/activities/*", "https://graph.microsoft.com/beta/me/devices/*", "https://graph.microsoft.com/beta/me/activities/*", "https://ge-functions.azurewebsites.net/api/get-token", "https://ge-functions.azurewebsites.net/api/refresh-token" ],
+   "short_name": "Timeline",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.4"
+}

@@ -1,0 +1,27 @@
+2021/07/14-23:14:44.833 3 Reusing MANIFEST /home/ki11errabbit/.config/vivaldi/Default/Local Storage/leveldb/MANIFEST-000001
+2021/07/14-23:14:44.833 3 Recovering log #245
+2021/07/14-23:14:44.833 3 Reusing old log /home/ki11errabbit/.config/vivaldi/Default/Local Storage/leveldb/000245.log 
+2021/07/14-23:15:25.456 3 Level-0 table #249: started
+2021/07/14-23:15:25.466 3 Level-0 table #249: 463814 bytes OK
+2021/07/14-23:15:25.470 3 Delete type=0 #245
+2021/07/14-23:19:54.832 9 Level-0 table #251: started
+2021/07/14-23:19:54.842 9 Level-0 table #251: 64000 bytes OK
+2021/07/14-23:19:54.846 9 Delete type=0 #248
+2021/07/14-23:19:54.846 9 Compacting 4@0 + 1@1 files
+2021/07/14-23:19:54.863 9 Generated table #252@0: 137 keys, 830859 bytes
+2021/07/14-23:19:54.863 9 Compacted 4@0 + 1@1 files => 830859 bytes
+2021/07/14-23:19:54.866 9 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/07/14-23:19:54.866 9 Delete type=2 #242
+2021/07/14-23:19:54.866 9 Delete type=2 #251
+2021/07/14-23:19:54.866 9 Delete type=2 #244
+2021/07/14-23:19:54.866 9 Delete type=2 #246
+2021/07/14-23:19:54.866 9 Delete type=2 #249
+2021/07/14-23:21:03.046 9 Level-0 table #254: started
+2021/07/14-23:21:03.056 9 Level-0 table #254: 74842 bytes OK
+2021/07/14-23:21:03.060 9 Delete type=0 #250
+2021/07/14-23:27:11.201 c Level-0 table #256: started
+2021/07/14-23:27:11.211 c Level-0 table #256: 73779 bytes OK
+2021/07/14-23:27:11.215 c Delete type=0 #253
+2021/07/15-07:35:19.486 1f Level-0 table #258: started
+2021/07/15-07:35:19.498 1f Level-0 table #258: 50284 bytes OK
+2021/07/15-07:35:19.502 1f Delete type=0 #255

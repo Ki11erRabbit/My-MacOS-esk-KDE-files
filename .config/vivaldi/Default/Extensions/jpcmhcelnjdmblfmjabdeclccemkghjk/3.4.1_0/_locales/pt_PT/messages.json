@@ -1,0 +1,50 @@
+{
+   "appDesc": {
+      "description": "A descrição da extensão, como apresentada na web store.",
+      "message": "Reintroduz o botão \"Ver imagem\" e o link \"Pesquisar por imagem\" do Google Imagens."
+   },
+   "appName": {
+      "description": "Nome da extensão, como apresentado na web store.",
+      "message": "Ver Imagem"
+   },
+   "optionsButton": {
+      "description": "Texto apresentado no link para o botão de opções.",
+      "message": "Opções"
+   },
+   "resetButton": {
+      "description": "Texto apresentado no botão para reiniciar as prédefinições.",
+      "message": "Restaurar"
+   },
+   "searchImage": {
+      "description": "Botão leva à página \"Pesquisar por imagem\" do Google.",
+      "message": "Pesquisar por imagem"
+   },
+   "settingsToggle_NewTab_searchByImage": {
+      "description": "Opção que permite que a página \"Pesquisar por imagem\" seja aberta num novo separador.",
+      "message": "Abrir \"Pesquisar por imagem\" num novo separador:"
+   },
+   "settingsToggle_NewTab_viewImage": {
+      "description": "Opção que permite que as imagens sejam abertas num novo separador.",
+      "message": "Abrir \"Ver imagem\" num novo separador:"
+   },
+   "settingsToggle_buttonText": {
+      "description": "Opção que permite definir manualmente o texto dos botões em vez da tradução.",
+      "message": "Definir texto do botão manualmente:"
+   },
+   "settingsToggle_globeIcon": {
+      "description": "Opção que permite que o ícone do globo seja apresentado no botão \"Ver imagem\".",
+      "message": "Ver ícone do Globo no botão \"Ver imagem\":"
+   },
+   "settingsToggle_noReferrer": {
+      "description": "Opção que alterna a inclusão de rel='noreferrer' no botão \"Ver imagem\".",
+      "message": "Ocultar referenciador do site ao clicar em \"Ver imagem\":"
+   },
+   "settingsToggle_subjectCopyright": {
+      "description": "Opção que permite ocultar o aviso de direitos de autor na página de resultados de imagens.",
+      "message": "Ocultar aviso \"As imagens podem estar sujeitas a direitos de autor\":"
+   },
+   "viewImage": {
+      "description": "Botão para visualizar a imagem.",
+      "message": "Ver imagem"
+   }
+}

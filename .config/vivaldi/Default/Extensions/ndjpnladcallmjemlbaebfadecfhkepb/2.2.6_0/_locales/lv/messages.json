@@ -1,0 +1,299 @@
+{
+   "AccountLabel": {
+      "message": "Konts"
+   },
+   "AppDescription": {
+      "message": "Skatiet, rediģējiet un veidojiet Office dokumentus savā pārlūkprogrammā."
+   },
+   "AppDescriptionWithEditor": {
+      "message": "Skatiet, rediģējiet un veidojiet Office failus pārlūkprogrammā un parādiet tīmeklī savu lielisko rakstītprasmi."
+   },
+   "AppFolderName": {
+      "message": "Office paplašinājums"
+   },
+   "AppListLabel": {
+      "message": "Web Apps"
+   },
+   "AppLongDescription": {
+      "message": "Veidots pārlūkprogrammai Chrome – izmantojiet Word, Excel, PowerPoint, OneNote un Sway Online bez nepieciešamības instalēt Office.\r\n\r\nVeidojiet ar paļāvību – izmantojiet pazīstamās formatēšanas un izkārtojuma opcijas, lai precīzi paustu savas idejas.\r\n\r\nDarbs ceļā – pateicoties integrācijai ar OneDrive un OneDrive darbam, piekļūstiet saviem failiem no jebkuras vietas.\r\n\r\nInstalējot lietojumprogrammu, jūs piekrītat šiem noteikumiem un nosacījumiem: http://aka.ms/officechromeextensionterms\r\n\r\nKonfidencialitātes politika: http://aka.ms/privacy\r\n"
+   },
+   "AppLongDescriptionEdge": {
+      "message": "Office pārlūkprogrammas paplašinājums Microsoft Edge rīkjoslā ievieto ikonu, kas sniedz iespēju tieši piekļūt saviem Office failiem neatkarīgi no tā, vai tie ir saglabāti tiešsaistē vai datorā.\r\n\r\nOffice tīmekļa paplašinājums var atvērt failus, kas saglabāti pakalpojumā OneDrive un OneDrive darbam.\r\n\r\nJūs iegūstat Word, Excel, PowerPoint, OneNote un Sway līdzekļus tieši savā pārlūkprogrammā, neinstalējot Office.\r\n\r\nOffice pārlūkprogrammas paplašinājums tagad ietver jūsu satura korektūru*. Tas izveido savienojumu ar Microsoft tiešsaistes pakalpojumu, kas nodrošina pareizrakstības, gramatikas un precizējumu ieteikumus rakstīšanai vairākumā tīmekļa vietņu, un ir pieejams vairāk nekā 80 valodās.\r\n\r\n*Šis līdzeklis var nebūt pieejams visiem lietotājiem.\r\n\r\nInstalējot šo programmu, jūs piekrītat šiem noteikumiem un nosacījumiem: \r\n\r\n"
+   },
+   "AppLongDescriptionWithEditor": {
+      "message": "Veidots pārlūkprogrammai Chrome – izmantojiet Word, Excel, PowerPoint, OneNote un Sway Online bez nepieciešamības instalēt Office.\r\n\r\nVeidojiet ar pārliecību – izmantojiet pazīstamās formatēšanas un izkārtojuma opcijas, lai precīzi paustu savas idejas.\r\n\r\nStrādājiet, atrodoties ceļā – iegūstiet failus no jebkuras vietas, pateicoties integrācijai ar OneDrive un OneDrive darbam.\r\n\r\nOffice pārlūkprogrammu paplašinājums tagad ietver jūsu satura korektūru*. Tas veido savienojumu ar Microsoft tiešsaistes pakalpojumu, kurš piedāvā pareizrakstības, gramatikas un precizējumu ieteikumus jūsu rakstītajam vairākumā tīmekļa vietņu, un ir pieejams vairāk nekā 80 valodās.\r\n\r\n*Šis līdzeklis var nebūt pieejams visiem lietotājiem.\r\n\r\nInstalējot programmu, jūs piekrītat šiem noteikumiem un nosacījumiem: http://aka.ms/officechromeextensionterms\r\n\r\nKonfidencialitātes politika: http://aka.ms/privacy\r\n"
+   },
+   "AppName": {
+      "message": "Office"
+   },
+   "AppNameEdge": {
+      "message": "Office pārlūkprogrammas paplašinājums"
+   },
+   "AppShortName": {
+      "message": "Office"
+   },
+   "AppTermsOfServiceLCA": {
+      "message": "PLEASE NOTE: Refer to your license terms for Microsoft Office browser extension software (the \"software\") to identify the entity licensing this supplement to you and for support information. You may use a copy of this supplement with each validly licensed copy of the software. You may not use the supplement if you do not have a license for the software. The license terms for the software apply to your use of this supplement."
+   },
+   "BrowseToOpenLabel": {
+      "message": "Augšupielādēt un atvērt..."
+   },
+   "CopyrightLabel": {
+      "message": "Microsoft Corporation 2015"
+   },
+   "CreateAccountLabel": {
+      "message": "Izveidot kontu"
+   },
+   "CreateDocsMessageLabel": {
+      "message": "Nav nesen skatītu dokumentu."
+   },
+   "CreateNewLabel": {
+      "message": "Jauns"
+   },
+   "DisableEditorOnThisSiteLabel": {
+      "message": "Atspējot redaktoru lapā $host$",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "DocumentsNotFoundMessageLabel": {
+      "message": "Šobrīd nevaram iegūt neseno dokumentu sarakstu."
+   },
+   "EditorBrandText": {
+      "message": "Redaktors"
+   },
+   "EditorGrammarToggleLabel": {
+      "message": "Gramatika"
+   },
+   "EditorIsBlockedOnThisSiteLabel": {
+      "message": "Redaktors lapā $host$ pašlaik netiek atbalstīts",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "EditorIsDisabledOnThisSiteLabel": {
+      "message": "Redaktors lapā $host$ šobrīd ir atspējots",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "EditorIsOffLabel": {
+      "message": "Redaktors ir izslēgts."
+   },
+   "EditorNativeSupportOnThisSiteLabel": {
+      "message": "Redaktors ir iekļauts kopā ar $host$",
+      "placeholders": {
+         "host": {
+            "content": "1 $",
+            "example": "outlook.com"
+         }
+      }
+   },
+   "EditorPreviewLabel": {
+      "message": "(priekšskatījums)"
+   },
+   "EditorPriorityShutdownLabel": {
+      "message": "Redaktora pakalpojumu nodrošina Microsoft redaktora paplašinājums."
+   },
+   "EditorRefinementsGoPremiumTooltip": {
+      "message": "Iegūstiet uzlabotas rakstīšanas idejas un 1 TB krātuvi, pārejot uz maksas abonementu."
+   },
+   "EditorRefinementsToggleLabel": {
+      "message": "Precizējumi"
+   },
+   "EditorRefinementsTooltip": {
+      "message": "Precizējumi ir uzlabotas rakstīšanas ieteikumi, kas palīdz padarīt rakstīto skaidrāku, mazāk izplūdušu vai formālāku."
+   },
+   "EditorSpellingToggleLabel": {
+      "message": "Pareizrakstība"
+   },
+   "EnableEditorOnThisSiteLabel": {
+      "message": "Iespējot redaktoru lapā $host$",
+      "placeholders": {
+         "host": {
+            "content": "$1",
+            "example": "facebook.com"
+         }
+      }
+   },
+   "ExcelAppName": {
+      "message": "Excel"
+   },
+   "ExcelOnlineAppName": {
+      "message": "Excel"
+   },
+   "FileTypeErrorMessage": {
+      "message": "Failu tips netiek atbalstīts. Lūdzu, izvēlieties Word, Excel vai PowerPoint dokumentu."
+   },
+   "LoadingRecentsLabel": {
+      "message": "Notiek ielāde..."
+   },
+   "MoreFilesLabel": {
+      "message": "Citi dokumenti"
+   },
+   "MyAccountLabel": {
+      "message": "Skatīt savu kontu"
+   },
+   "NextLabel": {
+      "message": "Pierakstīties"
+   },
+   "NotificationAutoSaveButton": {
+      "message": "Vairs nerādīt šo ziņojumu"
+   },
+   "NotificationAutoSaveToOneDrive": {
+      "message": "Failu saglabājām jūsu OneDrive mapē \"Office paplašinājums\"."
+   },
+   "NotificationAutoSaveToSharePoint": {
+      "message": "Failu saglabājām jūsu OneDrive darbam mapē \"Office paplašinājums\"."
+   },
+   "NotificationFileAccess": {
+      "message": "Ja vēlaties failus vilkt un nomest pārlūkprogrammā, tad paplašinājumu iestatījumos atzīmējiet izvēles rūtiņu Atļaut piekļuvi failu vietrāžiem URL."
+   },
+   "NotificationFileMaxSizeByteLimitReached": {
+      "message": "Office pārlūka paplašinājums nevar atvērt jūsu dokumentu tā lieluma dēļ. Lai atvērtu dokumentu, lūdzu, augšupielādējiet tieši OneDrive krātuvē."
+   },
+   "NotificationFileUploadFailureGeneric": {
+      "message": "Diemžēl nevarējām atvērt failu."
+   },
+   "NotificationFileUploadFailureServer": {
+      "message": "Diemžēl nevarējām atvērt failu. Lūdzu, vēlāk mēģiniet vēlreiz."
+   },
+   "NotificationFileUploadFailureUnsupportedMedia": {
+      "message": "Diemžēl nevarējām atvērt failu. Lūdzu, izvēlieties failu, kas ir izveidots ar programmu Word, Excel vai PowerPoint"
+   },
+   "NotificationFileUploadInProgress": {
+      "message": "Šobrīd augšupielādējam jūsu dokumentus."
+   },
+   "NotificationInvalidSubscription": {
+      "message": "Iespējams, ir beidzies Office 365 abonementa derīguma termiņš vai tajā nav iekļauts pakalpojums OneDrive darbam. Pārbaudiet savu abonementu vai piesakieties ar Microsoft kontu."
+   },
+   "NotificationNotSignedIn": {
+      "message": "Pierakstieties paplašinājumā, lai failus skatītu un rediģētu programmā Office tīmeklī."
+   },
+   "NotificationSetDefault": {
+      "message": "Programmā Faili pieskarieties dokumentiem ar diviem pirkstiem, lai atvērtu, izmantojot Office."
+   },
+   "NotificationUnsupportedFileType": {
+      "message": "Izvēlieties failu, kas izveidots ar programmu Word, Excel vai PowerPoint."
+   },
+   "NotificationWebDocRedirect": {
+      "message": "Office paplašinājums atver jūsu dokumentu pārlūkprogrammā"
+   },
+   "NotificationWebDocRedirectButton": {
+      "message": "Vairs nerādīt šo ziņojumu"
+   },
+   "O365FilesLabel": {
+      "message": "No OneDrive darbam"
+   },
+   "OfficeOnlineAppName": {
+      "message": "Office"
+   },
+   "OfflineLabel": {
+      "message": "Jūs esat bezsaistē. Lūdzu, atkārtoti izveidojiet savienojumu ar Office pārlūkprogrammas paplašinājumu."
+   },
+   "OneDriveAppName": {
+      "message": "OneDrive"
+   },
+   "OneDriveFilesLabel": {
+      "message": "No OneDrive"
+   },
+   "OneNoteAppName": {
+      "message": "OneNote"
+   },
+   "OneNoteOnlineAppName": {
+      "message": "OneNote"
+   },
+   "OpenDocumentLabel": {
+      "message": "Atvērt"
+   },
+   "OutlookAppName": {
+      "message": "Outlook"
+   },
+   "PowerPointAppName": {
+      "message": "PowerPoint"
+   },
+   "PowerPointOnlineAppName": {
+      "message": "PowerPoint"
+   },
+   "RecentDocsLabel": {
+      "message": "Nesenie"
+   },
+   "SettingsLabel": {
+      "message": "Iestatījumi"
+   },
+   "ShareMessage": {
+      "message": "Kopīgot"
+   },
+   "SharePermissionsErrorMessage": {
+      "message": "Nepieciešama atļauja"
+   },
+   "SharePermissionsTooltip": {
+      "message": "Jums nav atļaujas kopīgot"
+   },
+   "SharePointAppName": {
+      "message": "SharePoint"
+   },
+   "SharePointSiteAppName": {
+      "message": "SharePoint"
+   },
+   "SignInHeaderLabel": {
+      "message": "Kur vēlaties saglabāt savus failus?"
+   },
+   "SignInLabel": {
+      "message": "Pierakstīties"
+   },
+   "SignInMSALabel": {
+      "message": "Pierakstīties ar Microsoft kontu"
+   },
+   "SignInO365Label": {
+      "message": "Pierakstīties ar darba vai mācību kontu"
+   },
+   "SignOutLabel": {
+      "message": "Izrakstīties"
+   },
+   "StandaloneExtensionInstalledLabel": {
+      "message": "Redaktora pakalpojumu nodrošina Microsoft redaktora paplašinājums."
+   },
+   "SupportPageLabel": {
+      "message": "Vai nepieciešama palīdzība ar pieteikšanos?"
+   },
+   "SwayAppName": {
+      "message": "Sway"
+   },
+   "TeamsAppName": {
+      "message": "Teams"
+   },
+   "TelemetrySettingLabel": {
+      "message": "Automātiski nosūtīt datus, lai palīdzētu mums uzlabot produktus."
+   },
+   "TurnOnEditorLabel": {
+      "message": "Ieslēgt redaktoru"
+   },
+   "UploadToOneDriveBusinessLabel": {
+      "message": "Augšupielādēt pakalpojumā OneDrive darbam"
+   },
+   "UploadToOneDriveLabel": {
+      "message": "Augšupielādēt pakalpojumā OneDrive"
+   },
+   "UsernameLabel": {
+      "message": "Nav pierakstījies"
+   },
+   "WebRedirectSettingLabel": {
+      "message": "Atvērt Office failus tieši pārlūkprogrammā, izmantojot Office."
+   },
+   "WordAppName": {
+      "message": "Word"
+   },
+   "WordOnlineAppName": {
+      "message": "Word"
+   }
+}

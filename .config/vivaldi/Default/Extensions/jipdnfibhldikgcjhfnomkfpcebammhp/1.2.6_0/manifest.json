@@ -1,0 +1,31 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": "images/ba.png"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "rikaicontent.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*", "ftp://*/*", "file:///*" ]
+   } ],
+   "description": "rikaikun shows the reading and English definition of Japanese words when you hover over Japanese text in the browser.",
+   "icons": {
+      "128": "images/icon128.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCV+thKfbUTniiM2V/FimB5vzRw8ghPJHVvNUJFhw5XSd1XpwuVm8J4xWG0Okw98/5isJLk6bswbP3tTBSzwBzC4vFLh9IJZIR6t6t6OIqzqMpaTyQvFOvARgUkFaEWss4eWIsF89KHLWMrUYKy77NXs39azKKEDs0RFE053koAzwIDAQAB",
+   "manifest_version": 2,
+   "name": "rikaikun",
+   "options_ui": {
+      "open_in_tab": false,
+      "page": "options.html"
+   },
+   "permissions": [ "clipboardWrite", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.6",
+   "web_accessible_resources": [ "css/popup-black.css", "css/popup-blue.css", "css/popup-lightblue.css", "css/popup-yellow.css" ]
+}
