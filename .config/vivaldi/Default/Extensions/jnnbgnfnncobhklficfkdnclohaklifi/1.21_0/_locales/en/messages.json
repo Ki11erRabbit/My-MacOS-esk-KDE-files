@@ -1,8 +1,0 @@
-{
-   "manifestExtDescription": {
-      "message": "Looks up the readings for kanji words and inserts them as furigana"
-   },
-   "manifestExtName": {
-      "message": "IPA furigana"
-   }
-}
