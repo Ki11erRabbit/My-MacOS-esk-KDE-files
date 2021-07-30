@@ -35,8 +35,9 @@ Wallpapers can be found [here](https://wallpapercave.com/genshin-impact-wallpape
 
 ## Setup
 
-Clone the repository and paste the contents into the Home directory, overwriting the originally existing files.
-Put the wallpapers wherever you wish and change Ditto Menu's icon to be the Distro Icon of your choosing (more coming soon!) or the paimon icon if you increase the top panels width.
+1. Clone the repository and paste the contents into the Home directory, overwriting the originally existing files.
+2. Use the Latte layout file to change the dock's look and import the plasma config saver file for the plasmoids.
+3. Put the wallpapers wherever you wish and change Ditto Menu's icon to be the Distro Icon of your choosing (more coming soon!) or the paimon icon if you increase the top panels width.
 
 ## Some Notes
 
