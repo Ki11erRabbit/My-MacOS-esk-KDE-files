@@ -1,11 +1,29 @@
 # My-MacOS-esk-KDE-files
 Holds a backup of my dot files for my Elementary OS/MacOS inspired KDE Plasma.
 
-The Plasmoids that I use include CompactShutdown, PlasmaConfigSaver, Better Inline Clock, Window Title, and Ditto Menu.
-
 There is a custom ArcoLinux Menubar Icon in the .icons folder to make it match the Genshin Impact color scheme used.
 
-I tried making cursors but lost my mind. The cursor I wanted to use were [these Paimon](https://www.deviantart.com/rioyami/art/Paimon-cursors-Genshin-Impact-840207973) ones created by RioYami.
++ **DE:** KDE Plasma
++ **Terminal:** Konsole
++ **File Manager:** Dolphin
++ **Dock:** Latte Dock
++ **Global Theme:** Materia Light
++ **Application Style:** Lightly
++ **Plasma Style:** Materia Color
++ **Color Scheme:** Genshin
++ **Window Decorations:** Lightly
++ **Font:** Noto Sans
++ **Icons:** Papirus Light
++ **Cursor:** Bibata Original Ice
++ **Desktop Effects:** Lightly Shaders
+
+# Required Plasmoids
+
+1. Compact Shutdown
+2. Plasma Config Saver
+3. Better Inline Clock
+4. Window Title
+5. Ditto Menu
 
 ## Images
 
@@ -14,3 +32,14 @@ I tried making cursors but lost my mind. The cursor I wanted to use were [these 
 ![Screenshot_20210717_134320](https://user-images.githubusercontent.com/20647749/126049043-38df59d2-fd13-4f04-8ed7-e7822081b1ab.png)
 
 Wallpapers can be found [here](https://wallpapercave.com/genshin-impact-wallpapers) at WallpaperCave.com.
+
+## Setup
+
+Clone the repository and paste the contents into the Home directory, overwriting the originally existing files.
+Put the wallpapers wherever you wish and change Ditto Menu's icon to be the Distro Icon of your choosing (more coming soon!) or the paimon icon if you increase the top panels width.
+
+## Some Notes
+
+I tried making cursors but lost my mind. The cursor I wanted to use were [these Paimon](https://www.deviantart.com/rioyami/art/Paimon-cursors-Genshin-Impact-840207973) ones created by RioYami.
+
+There might be some missing or extra dotfiles in the repository. Please let me know and I will remove them.
