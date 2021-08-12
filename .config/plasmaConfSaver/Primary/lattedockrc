@@ -1,0 +1,31 @@
+[DownloadDialog Settings]
+HDMI-A-0 DisplayPort-1 Height 1920x1080=550
+HDMI-A-0 DisplayPort-1 Width 1920x1080=800
+
+[KFileDialog Settings]
+Recent Files[$e]=latte dock 7-13-2021.layout.latte,file:$HOME/pCloudDrive/latte dock 7-13-2021.layout.latte
+Recent URLs[$e]=file:$HOME/pCloudDrive/
+detailViewIconSize=16
+
+[PlasmaThemeExtended]
+outlineWidth=1
+
+[ScreenConnectors]
+10=HDMI-A-0
+11=DisplayPort-1
+
+[UniversalSettings]
+badges3DStyle=false
+canDisableBorders=false
+currentLayout=latte dock 7-13-2021
+downloadWindowSize=800,550
+lastNonAssignedLayout=latte dock 7-13-2021
+launchers=
+layoutsColumnWidths=129,89,76,0
+layoutsWindowSize=700,674
+memoryUsage=0
+metaPressAndHoldEnabled=true
+mouseSensitivity=2
+screenTrackerInterval=2500
+showInfoWindow=true
+version=2
