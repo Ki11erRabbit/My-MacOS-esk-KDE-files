@@ -37,10 +37,11 @@ Wallpapers can be found [here](https://wallpapercave.com/genshin-impact-wallpape
 
 1. Clone the repository and paste the contents into the Home directory, overwriting the originally existing files.
 2. Use the Latte layout file to change the dock's look and import the plasma config saver tar.gz for the plasmoids.
-3. Put the wallpapers wherever you wish and change Ditto Menu's icon to be the Distro Icon of your choosing (more coming soon!) or the paimon icon if you increase the top panels width.
+3. Put the wallpapers wherever you wish and change Ditto Menu's icon to be the Distro Icon of your choosing or the Paimon icon if you increase the top panels thickness.
 
 ## Some Notes
 
+Distro icons included: Arch, Arco, Debian, KDE, Plasma, Manjaro, and Ubuntu.
 I tried making cursors but lost my mind. The cursor I wanted to use were [these Paimon](https://www.deviantart.com/rioyami/art/Paimon-cursors-Genshin-Impact-840207973) ones created by RioYami.
 
 There might be some missing or extra dotfiles in the repository. Please let me know and I will remove them.
