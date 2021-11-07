@@ -258,7 +258,7 @@ alias personal='cp -Rf /personal/* ~'
 
 # reporting tools - install when not installed
 # install neofetch
-neofetch
+#neofetch
 # install screenfetch
 #screenfetch
 # install ufetch-git
@@ -273,3 +273,7 @@ neofetch
 #hfetch
 # install lolcat
 #sfetch | lolcat
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

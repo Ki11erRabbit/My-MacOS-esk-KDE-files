@@ -7,18 +7,31 @@ Recent Files[$e]=latte dock 7-13-2021.layout.latte,file:$HOME/pCloudDrive/latte 
 Recent URLs[$e]=file:$HOME/pCloudDrive/
 detailViewIconSize=16
 
+[LatteSettingsDialog]
+downloadWindowSize=980,600
+windowSize=1100,750
+
+[LatteSettingsDialog][TabLayouts]
+columnWidths=52,508,129,104
+sortColumn=3
+sortOrder=0
+
 [PlasmaThemeExtended]
 outlineWidth=1
 
 [ScreenConnectors]
-10=HDMI-A-0
-11=DisplayPort-1
+10=HDMI-A-0:::0,0 1920x1080
+11=DisplayPort-1:::1920,0 1920x1080
+12=DisplayPort-0:::1920,0 1920x1080
 
 [UniversalSettings]
 badges3DStyle=false
 canDisableBorders=false
+contextMenuActionsAlwaysShown=
 currentLayout=latte dock 7-13-2021
 downloadWindowSize=800,550
+inAdvancedModeForEditSettings=false
+isAvailableGeometryBroadcastedToPlasma=true
 lastNonAssignedLayout=latte dock 7-13-2021
 launchers=
 layoutsColumnWidths=129,89,76,0
@@ -28,4 +41,5 @@ metaPressAndHoldEnabled=true
 mouseSensitivity=2
 screenTrackerInterval=2500
 showInfoWindow=true
+singleModeLayoutName=latte dock 7-13-2021
 version=2

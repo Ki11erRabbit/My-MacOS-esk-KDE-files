@@ -1,6 +1,6 @@
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/Pictures/arco-calamares-logo.png,file:$HOME/Pictures/Arcolinux Genshin Impact.svg
-Recent URLs[$e]=file:$HOME/Pictures/,file:$HOME/
+Recent Files[$e]=file:$HOME/.icons/My Icons/Arcolinux Genshin Impact.svg,file:$HOME/.icons/My Icons/Arcolinux Genshin Impact.svg,file:$HOME/.icons/My Icons/Arch Genshin Impact.svg,file:$HOME/.icons/My Icons/Fedora Genshin Impact.svg,file:$HOME/.icons/My Icons/Fedora Genshin Impact Alt.svg,file:$HOME/Pictures/Wallpapers/wp7487015-genshin-impact-wallpapers.jpg,file:$HOME/Pictures/Wallpapers/wp7486978-genshin-impact-wallpapers.jpg,file:$HOME/Pictures/Wallpapers/wp7486872-genshin-impact-wallpapers.jpg
+Recent URLs[$e]=file:$HOME/Pictures/,file:$HOME/,file:$HOME/Pictures/Wallpapers/,file:$HOME/.icons/My Icons/,file:$HOME/.icons/
 detailViewIconSize=16
 
 [PlasmaViews][Panel 41][Defaults]
@@ -24,6 +24,8 @@ thickness=50
 [ScreenConnectors]
 0=HDMI-A-0
 1=DisplayPort-1
+2=:0.0
+3=DisplayPort-0
 
 [Updates]
 performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js

@@ -133,11 +133,11 @@ ForegroundVisited=69,40,134
 [General]
 ColorScheme=Genshin
 Name=Genshin
-font=Noto Sans,10,-1,5,50,0,0,0,0,0,Regular
-menuFont=Noto Sans,10,-1,5,50,0,0,0,0,0,Regular
+font=TT_Skip-E,10,-1,5,50,0,0,0,0,0,85W
+menuFont=TT_Skip-E,10,-1,5,50,0,0,0,0,0,85W
 shadeSortColumn=true
 smallestReadableFont=Noto Sans,10,-1,5,50,0,0,0,0,0,Regular
-toolBarFont=Noto Sans,10,-1,5,50,0,0,0,0,0,Regular
+toolBarFont=TT_Skip-E,10,-1,5,50,0,0,0,0,0,85W
 widgetStyle=Lightly
 
 [Icons]

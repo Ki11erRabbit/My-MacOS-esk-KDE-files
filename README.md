@@ -8,7 +8,7 @@ There is a custom ArcoLinux Menubar Icon in the .icons folder to make it match t
 + **File Manager:** Dolphin
 + **Dock:** Latte Dock
 + **Global Theme:** Materia Light
-+ **Application Style:** Lightly
++ **Application Style:** Sierra Breeze Enhanced
 + **Plasma Style:** Materia Color
 + **Color Scheme:** Genshin
 + **Window Decorations:** Lightly
@@ -38,6 +38,7 @@ Wallpapers can be found [here](https://wallpapercave.com/genshin-impact-wallpape
 1. Clone the repository and paste the contents into the Home directory, overwriting the originally existing files.
 2. Use the Latte layout file to change the dock's look and import the plasma config saver tar.gz for the plasmoids.
 3. Put the wallpapers wherever you wish and change Ditto Menu's icon to be the Distro Icon of your choosing (more coming soon!) or the paimon icon if you increase the top panels width.
+4. `sudo make install` in the dmenu folder and the current hotkey is `ctrl + alt + d`
 
 ## Some Notes
 

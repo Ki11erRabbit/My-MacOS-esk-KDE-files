@@ -1,7 +1,28 @@
 [Applications][discord]
 Seen=true
 
+[Applications][firefox]
+Seen=true
+
+[Applications][org.desktop.balsa]
+Seen=true
+
+[Applications][org.gnome.dejadup]
+Seen=true
+
+[Applications][org.gnome.evolution]
+Seen=true
+
 [Applications][org.manjaro.pamac.manager]
+Seen=true
+
+[Applications][slack]
+Seen=true
+
+[Applications][thunderbird]
+Seen=true
+
+[Applications][tutanota-desktop]
 Seen=true
 
 [Applications][vivaldi-stable]
