@@ -33,9 +33,14 @@ There is a custom ArcoLinux Menubar Icon in the .icons folder to make it match t
 ![Screenshot_20210717_134320](https://user-images.githubusercontent.com/20647749/126049043-38df59d2-fd13-4f04-8ed7-e7822081b1ab.png)
 
 ### Astolfo
+![Screenshot_20211109_170758](https://user-images.githubusercontent.com/20647749/141026132-9f04bbe1-c9a4-468d-9a88-05fc7e7dcc7c.png)
+![Screenshot_20211109_170727](https://user-images.githubusercontent.com/20647749/141026129-f0539ac9-a0d6-44d8-8217-f760836ad4c2.png)
+![Screenshot_20211109_170944](https://user-images.githubusercontent.com/20647749/141026136-fbacda63-9e2f-4ed7-a065-8d01344eed20.png)
+![Screenshot_20211109_170925](https://user-images.githubusercontent.com/20647749/141026135-a38f8438-8649-4c70-9458-544cf8261fb9.png)
 
-Genshin Impact wallpapers were found [here](https://wallpapercave.com/genshin-impact-wallpapers) at WallpaperCave.com.
-Astolfo Wallpapers where found on [Pixiv](https://www.pixiv.net/en/). Links to various artists in Wallpaper folders.
+
++ Genshin Impact wallpapers were found [here](https://wallpapercave.com/genshin-impact-wallpapers) at WallpaperCave.com.
++ Astolfo Wallpapers where found on [Pixiv](https://www.pixiv.net/en/). Links to various artists in Wallpaper folders.
 
 ## Setup
 
